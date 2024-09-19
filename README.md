@@ -20,7 +20,7 @@ Este diretório inclui o segundo exercício feito em sala.
 
 Este diretório possui o terceiro exercício realizado em sala.
 
-#### Exercício_em_Casa_1 : Ligar e desligar o LED com o botão
+### Exercício_em_Casa_1 : Ligar e desligar o LED com o botão
 
 Este diretório contém o primeiro exercício de casa. 
 
