@@ -9,7 +9,7 @@ Este projeto demonstra como controlar um LED integrado no pino 13 de uma placa A
 - **1 Botão**
 - **1 Resistor de 10 kΩ (pull-up)**
 - **Fios de conexão (jumpers)**
-- **Protoboard (opcional)**
+- **Protoboard**
 
 ## Diagrama de Montagem
 
