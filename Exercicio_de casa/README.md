@@ -11,7 +11,7 @@ Este projeto demonstra como controlar um LED integrado no pino 13 de uma placa A
 - **Fios de conexão (jumpers)**
 - **Protoboard (opcional)**
 
-## Diagrama de Conexões
+## Diagrama de Conexões (MONTAGEM)
 1. **Conectar o Botão:**
    - Um terminal do botão deve ser conectado ao pino digital 2 do Arduino.
    - O outro terminal do botão deve ser conectado ao GND da placa.
@@ -19,9 +19,9 @@ Este projeto demonstra como controlar um LED integrado no pino 13 de uma placa A
 2. **Configuração do Resistor Pull-up**:
    - Conecte um resistor de 10 kΩ entre o pino 2 (onde o botão está conectado) e o VCC (5V). Isso garantirá que o pino 2 esteja em um estado alto quando o botão não estiver pressionado.
 
-3. **Código**
+3. **Código Comentado**
 
-const int buttonPin = 2; // Pino onde o botão está conectado
+```const int buttonPin = 2; // Pino onde o botão está conectado
 const int ledPin = 13;   // Pino do LED integrado
 
 void setup() {
@@ -39,4 +39,8 @@ void loop() {
 }
 Funcionamento do Código
 setup(): Inicializa os pinos do LED como saída e do botão como entrada, ativando o resistor pull-up.
-loop(): Verifica constantemente o estado do botão. Se o botão estiver pressionado (estado baixo), o LED é aceso. Caso contrário, o LED é desligado.
+loop(): Verifica constantemente o estado do botão. Se o botão estiver pressionado (estado baixo), o LED é aceso. Caso contrário, o LED é desligado.  
+```
+##Participações
+### Este projeto contou com a assistência do ChatGPT, um assistente virtual da OpenAI, para fornecer informações e orientações durante o desenvolvimento e a elaboração da documentação.
+OPENAI. ChatGPT. Disponível em: https://www.openai.com/chatgpt. Acesso em: 19/09/24.
