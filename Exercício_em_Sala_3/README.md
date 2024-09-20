@@ -34,7 +34,7 @@ O objetivo deste projeto é aprender a controlar múltiplos LEDs com um Arduino 
      
    **Terceiro LED:**
    - Conecte o ânodo ao pino digital 6 do Arduino através de um resistor de 220 Ω.
-   - Conecte o cátodo ao GND do Arduino.
+   - Conecte o cátodo ao terceiro resistor.
 
 2. **Conexões dos Resistores:**
    - Os resistores  de 220 Ω, separadamente, devem ser conectados a extremidade de cada ânodo de cada LED. A extremidade restante do resistor deve ser conectada ao GND do Arduino.
