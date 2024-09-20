@@ -1,6 +1,7 @@
 # Montagem Básica com LEDs
 
 ## Descrição
+*hoi*
 Este projeto demonstra uma montagem básica utilizando um Arduino Uno e dois LEDs. O objetivo é aprender como controlar LEDs através do Arduino, ligando e desligando-os de forma sequencial. Essa prática ajuda a compreender conceitos fundamentais de programação e eletrônica.
 
 ## Objetivo
