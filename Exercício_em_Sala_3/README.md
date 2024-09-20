@@ -40,7 +40,7 @@ O objetivo deste projeto é aprender a controlar múltiplos LEDs com um Arduino 
    - Os resistores  de 220 Ω, separadamente, devem ser conectados a extremidade de cada ânodo de cada LED. A extremidade restante do resistor deve ser conectada ao GND do Arduino.
 
 3. **Diagrama do Circuito:**
-
+![fotodd](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_3/Diagrama_Aula_3.jpeg)
 
 ## Código Comentado
 ````// Define os pinos dos LEDs
