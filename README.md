@@ -20,22 +20,22 @@ Os diagramas de cada projeto utilizam o Tinkercad. Uma ferramenta online capaz d
 ### [Exercício_em_Sala_1: Programa BLINK](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Sala_1)
 Este diretório contém o primeiro exercício realizado em sala de aula. 
 
-### Exercício_em_Sala_2: Luzes de sinalização de Garagem
+### [Exercício_em_Sala_2: Luzes de Sinalização de Garagem](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Sala_2)
 Este diretório inclui o segundo exercício feito em sala. 
 
-### Exercício_em_Sala_3: Luzes de sinalização de Garagem
+### [Exercício_em_Sala_3: Montagem Básica com LEDs](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Sala_3)
 
 Este diretório possui o terceiro exercício realizado em sala.
 
-### Exercício_em_Casa_1: Ligar e desligar o LED com o botão
+### [Exercício_em_Casa_1: Ligar e Desligar o LED com o Botão](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Casa_1)
 
 Este diretório contém o primeiro exercício de casa. 
 
-### Exercício_em_Casa_2:Contagem de pressionamentos de botão.
+### [Exercício_em_Casa_2: Contagem de Pressionamentos de Botão.](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Sala_2)
 
 Este diretório inclui o segundo exercício de casa.
 
-### Exercício_em_Casa_3: Enviando dados para porta serial 
+### [Exercício_em_Casa_3: Enviando Dados para Porta Serial](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Sala_3)
 
 Este diretório possui o terceiro exercício de casa.
 
