@@ -14,14 +14,16 @@ Este projeto demonstra como contar o número de vezes que um botão é pressiona
 
 
 ## Montagem do Circuito
+#### Organização do Circuito:
+   - Utilize a protoboard para montar o circuito e organizar as conexões de forma limpa.
+   - Use fios de conexão (jumpers) para ligar os componentes ao Arduino.
+     
 1. **Conexões do Botão:**
    - Conecte um terminal do botão ao pino digital 2 do Arduino.
    - Conecte o outro terminal do botão a uma fonte de 5V.
-   - Conecte um resistor de 10 kΩ entre o pino 2 e o GND para configurar o resistor pull-up.
 
-2. **Organização do Circuito:**
-   - Utilize a protoboard para montar o circuito e organizar as conexões de forma limpa.
-   - Use fios de conexão (jumpers) para ligar os componentes ao Arduino.
+2. **Conexões do Resistor:**
+   - Conecte um resistor de 10 kΩ entre o pino 2 e o GND para configurar o resistor pull-up.
 
 ## Código Comentado
 ````const int buttonPin = 2; // Pino onde o botão está conectado
