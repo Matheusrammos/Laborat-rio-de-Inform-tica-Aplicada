@@ -1,10 +1,13 @@
 # Montagem Básica com LEDs
 
+
 ## Descrição
 Este projeto utiliza um Arduino Uno para acender três LEDs conectados aos pinos 4, 5 e 6 de forma sequencial. Cada LED permanece aceso por 1 segundo antes que o próximo seja ativado. Após o terceiro LED acender, o ciclo se reinicia, repetindo indefinidamente.
 
+
 ## Objetivo
 O objetivo deste projeto é aprender a controlar múltiplos LEDs com um Arduino Uno, acendendo-os sequencialmente. Isso ajuda a entender o controle digital, praticar a programação e a montagem de circuitos, além de familiarizar-se com o uso de resistores.
+
 
 ## Materiais Necessários
 - **1 Arduino Uno**
@@ -13,6 +16,7 @@ O objetivo deste projeto é aprender a controlar múltiplos LEDs com um Arduino 
 - **Fios de conexão (jumpers)**
 - **1 Protoboard**
 
+
 ## Montagem do Circuito
 #### Organização do Circuito:
    - Utilize a protoboard para montar o circuito e organizar as conexões de forma limpa.
@@ -20,25 +24,23 @@ O objetivo deste projeto é aprender a controlar múltiplos LEDs com um Arduino 
 
 1. **Conexões dos LEDs:**
 
-Primeiro LED:
-    - Conecte o ânodo (terminal positivo) do primeiro LED ao pino digital 2 do Arduino.
-    - Conecte o cátodo (terminal negativo) do primeiro LED a um resistor de 220 Ω.
-  **Segundo LED:
-    - Conecte o ânodo do segundo LED ao pino digital 3 do Arduino.
-    - Conecte o cátodo do segundo LED a outro resistor de 220 Ω.
-
-1. **Conexões dos LEDs:**
-  **Primeiro LED:**
+   **Primeiro LED:**
     - Conecte o ânodo (terminal positivo) ao pino digital 4 do Arduino através de um resistor de 220 Ω.
-    - Conecte o cátodo (terminal negativo) ao GND do Arduino.
-  **Segundo LED:**
+    - Conecte o cátodo (terminal negativo) a um resistor.
+   
+   **Segundo LED:**
    - Conecte o ânodo ao pino digital 5 do Arduino através de um resistor de 220 Ω.
-   - Conecte o cátodo ao GND do Arduino. 
-  **Terceiro LED:**
+   - Conecte o cátodo a outro resistor.
+     
+   **Terceiro LED:**
    - Conecte o ânodo ao pino digital 6 do Arduino através de um resistor de 220 Ω.
    - Conecte o cátodo ao GND do Arduino.
 
-2. **Diagrama do Circuito:**
+2. **Conexões dos Resistores:**
+   - Os resistores  de 220 Ω, separadamente, devem ser conectados a extremidade de cada ânodo de cada LED. A extremidade restante do resistor deve ser conectada ao GND do Arduino.
+
+3. **Diagrama do Circuito:**
+
 
 ## Código Comentado
 ````// Define os pinos dos LEDs
@@ -76,18 +78,3 @@ void loop() {
   *(OPENAI. ChatGPT. Disponível em: ChatGPT - [OpenAI](https://www.openai.com/chatgpt). Acesso em: 19/09/24.)*
 - [Epaminondaslage](https://www.bing.com/ck/a?!&&p=cf945232149fce13JmltdHM9MTcyNjcwNDAwMCZpZ3VpZD0yNGZkYWYyYS1lMjZiLTYzMWYtMzY0MC1iYmJiZTNlZTYyZGImaW5zaWQ9NTE5Mg&ptn=3&ver=2&hsh=3&fclid=24fdaf2a-e26b-631f-3640-bbbbe3ee62db&psq=src%3d%22https%3a%2f%2fgithub.com%2fEpaminondaslage%2fAluno_Fulano_de_Tal%2fblob%2fmain%2fExercicio_em_Casa_1%2fFigura.jpeg%22+alt%3d%22Circuito%22+width%3d%2250%25%22&u=a1aHR0cHM6Ly9naXRodWIuY29tL0VwYW1pbm9uZGFzbGFnZQ&ntb=1) responsável por intruir e coordernar este projeto.
 
-
-
-
-## Montagem do Circuito
-### Organização do Circuito:
-- Utilize a protoboard para montar o circuito e organizar as conexões de forma limpa.
-- Use fios de conexão (jumpers) para ligar os componentes ao Arduino.
-
-1. **Conexões dos LEDs:**
-  **Primeiro LED:**
-    - Conecte o ânodo (terminal positivo) do primeiro LED ao pino digital 2 do Arduino.
-    - Conecte o cátodo (terminal negativo) do primeiro LED a um resistor de 220 Ω.
-  **Segundo LED:
-    - Conecte o ânodo do segundo LED ao pino digital 3 do Arduino.
-    - Conecte o cátodo do segundo LED a outro resistor de 220 Ω.
