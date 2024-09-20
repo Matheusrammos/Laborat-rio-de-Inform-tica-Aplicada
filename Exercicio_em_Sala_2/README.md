@@ -1,10 +1,13 @@
 # Montagem Básica com LEDs
 
+
 ## Descrição
 Este projeto demonstra uma montagem básica utilizando um Arduino Uno e dois LEDs. O objetivo é aprender como controlar LEDs através do Arduino, ligando e desligando-os de forma sequencial. Essa prática ajuda a compreender conceitos fundamentais de programação e eletrônica.
 
+
 ## Objetivo
 O objetivo deste projeto é aprender a controlar LEDs com um Arduino Uno, ligando e desligando-os sequencialmente. Isso permite entender o controle digital, praticar a programação básica e a montagem de circuitos em protoboard, além de compreender a função dos resistores na limitação de corrente. Essas atividades contribuem para construir uma base sólida para projetos eletrônicos futuros.
+
 
 ## Materiais Necessários
 - **1 Arduino Uno**
@@ -12,6 +15,7 @@ O objetivo deste projeto é aprender a controlar LEDs com um Arduino Uno, ligand
 - **2 Resistores de 220 Ω (para limitar a corrente dos LEDs)**
 - **Fios de conexão (jumpers)**
 - **1 Protoboard (opcional, para montagem do circuito)**
+
 
 ## Montagem do Circuito
 ### Organização do Circuito:
@@ -39,6 +43,7 @@ O objetivo deste projeto é aprender a controlar LEDs com um Arduino Uno, ligand
       - Ânodo (terminal positivo): Conecte ao pino digital 3 do Arduino.
       - Cátodo (terminal negativo): Conecte a uma extremidade de outro resistor de 220 Ω.
       - Outras extremidades do resistor: Conecte ao GND (terra) do Arduino
+
 
 # Código Comentado
 ````
@@ -68,10 +73,13 @@ void loop() {
   digitalWrite(led2Pin, LOW);
 }
 ````
+
+
 ## Funcionamento
 1. **Configuração Inicial:** O código configura os pinos 2 e 3 como saídas no Arduino.
 2. **Sequência de Ação:** O primeiro LED é aceso, aguarda 1 segundo e é apagado. Em seguida, o segundo LED é aceso, aguarda 1 segundo e é apagado.
 3. **Repetição:** Essa sequência se repete indefinidamente enquanto o programa estiver em execução, permitindo observar o controle sequencial dos LEDs.
+
 
 ## Participações
 - Este projeto contou com a assistência do ChatGPT, um assistente virtual da OpenAI, para fornecer informações e orientações durante o desenvolvimento e a elaboração da documentação.
