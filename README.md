@@ -17,7 +17,7 @@ Os diagramas de cada projeto utilizam o Tinkercad. Uma ferramenta online capaz d
 
 
 ## Diretórios
-### Exercício_em_Sala_1: Programa BLINK
+### [Exercício_em_Sala_1: Programa BLINK](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Sala_1)
 Este diretório contém o primeiro exercício realizado em sala de aula. 
 
 ### Exercício_em_Sala_2: Luzes de sinalização de Garagem
