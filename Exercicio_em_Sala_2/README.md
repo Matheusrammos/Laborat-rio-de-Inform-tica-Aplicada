@@ -26,7 +26,7 @@ O objetivo deste projeto é aprender a controlar LEDs com um Arduino Uno, ligand
     - Conecte o ânodo do segundo LED ao pino digital 3 do Arduino.
     - Conecte o cátodo do segundo LED a outro resistor de 220 Ω.
     
-2. **Conexões dos Resistores
+2. **Conexões dos Resistores**
   **Primeiro LED:**
     - Ânodo (terminal positivo): Conecte ao pino digital 2 do Arduino.
     - Cátodo (terminal negativo): Conecte a uma extremidade de um resistor de 220 Ω.
@@ -37,11 +37,8 @@ O objetivo deste projeto é aprender a controlar LEDs com um Arduino Uno, ligand
     - Outras extremidades do resistor: Conecte ao GND (terra) do Arduino
 
 
-Código Arduino
-Aqui está um código simples para controlar os LEDs sequencialmente:
-
-cpp
-Copiar código
+#Código Comentado
+````
 // Define os pinos dos LEDs
 const int led1Pin = 2; // Pino do primeiro LED
 const int led2Pin = 3; // Pino do segundo LED
@@ -67,9 +64,8 @@ void loop() {
   // Apaga o segundo LED
   digitalWrite(led2Pin, LOW);
 }
-Funcionamento
-Configuração Inicial: O código configura os pinos 2 e 3 como saídas no Arduino.
-Sequência de Ação:
-O primeiro LED é aceso, aguarda 1 segundo e é apagado.
-Em seguida, o segundo LED é aceso, aguarda 1 segundo e é apagado.
-Repetição: Essa sequência se repete indefinidamente enquanto o programa estiver em execução, permitindo observar o controle sequencial dos LEDs.
+````
+## Funcionamento
+1. **Configuração Inicial:** O código configura os pinos 2 e 3 como saídas no Arduino.
+2. **Sequência de Ação:** O primeiro LED é aceso, aguarda 1 segundo e é apagado. Em seguida, o segundo LED é aceso, aguarda 1 segundo e é apagado.
+3. **Repetição:** Essa sequência se repete indefinidamente enquanto o programa estiver em execução, permitindo observar o controle sequencial dos LEDs.
