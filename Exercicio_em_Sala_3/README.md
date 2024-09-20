@@ -19,6 +19,7 @@ O objetivo deste projeto é aprender a controlar múltiplos LEDs com um Arduino 
    - Use fios de conexão (jumpers) para ligar os componentes ao Arduino.
 
 1. **Conexões dos LEDs:**
+
 Primeiro LED:
     - Conecte o ânodo (terminal positivo) do primeiro LED ao pino digital 2 do Arduino.
     - Conecte o cátodo (terminal negativo) do primeiro LED a um resistor de 220 Ω.
