@@ -20,27 +20,27 @@ O objetivo deste projeto é aprender a controlar LEDs com um Arduino Uno, ligand
 
 1. **Conexões dos LEDs:**
    
-    **Primeiro LED:**
-        - Conecte o ânodo (terminal positivo) do primeiro LED ao pino digital 2 do Arduino.
-        - Conecte o cátodo (terminal negativo) do primeiro LED a um resistor de 220 Ω.
+   **Primeiro LED:**
+      - Conecte o ânodo (terminal positivo) do primeiro LED ao pino digital 2 do Arduino.
+      - Conecte o cátodo (terminal negativo) do primeiro LED a um resistor de 220 Ω.
 
    **Segundo LED:**
-        - Conecte o ânodo do segundo LED ao pino digital 3 do Arduino.
-        - Conecte o cátodo do segundo LED a outro resistor de 220 Ω.
-    
+      - Conecte o ânodo do segundo LED ao pino digital 3 do Arduino.
+      - Conecte o cátodo do segundo LED a outro resistor de 220 Ω.
+   
 3. **Conexões dos Resistores**
 
-**Primeiro LED:**
-    - Ânodo (terminal positivo): Conecte ao pino digital 2 do Arduino.
-    - Cátodo (terminal negativo): Conecte a uma extremidade de um resistor de 220 Ω.
-    - Outras extremidades do resistor: Conecte ao GND (terra) do Arduino.
-  **Segundo LED:**
-    - Ânodo (terminal positivo): Conecte ao pino digital 3 do Arduino.
-    - Cátodo (terminal negativo): Conecte a uma extremidade de outro resistor de 220 Ω.
-    - Outras extremidades do resistor: Conecte ao GND (terra) do Arduino
+   **Primeiro LED:**
+      - Ânodo (terminal positivo): Conecte ao pino digital 2 do Arduino.
+      - Cátodo (terminal negativo): Conecte a uma extremidade de um resistor de 220 Ω.
+      - Outras extremidades do resistor: Conecte ao GND (terra) do Arduino.
+   
+   **Segundo LED:**
+      - Ânodo (terminal positivo): Conecte ao pino digital 3 do Arduino.
+      - Cátodo (terminal negativo): Conecte a uma extremidade de outro resistor de 220 Ω.
+      - Outras extremidades do resistor: Conecte ao GND (terra) do Arduino
 
-
-#Código Comentado
+# Código Comentado
 ````
 // Define os pinos dos LEDs
 const int led1Pin = 2; // Pino do primeiro LED
