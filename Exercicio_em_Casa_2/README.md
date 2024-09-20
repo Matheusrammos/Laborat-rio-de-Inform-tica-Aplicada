@@ -4,11 +4,11 @@
 Este projeto demonstra como contar o número de vezes que um botão é pressionado utilizando um Arduino. O objetivo é detectar as transições do estado do botão de desligado (LOW) para ligado (HIGH) e contabilizar cada pressionamento. Os resultados são exibidos no Serial Monitor, permitindo monitorar a contagem em tempo real.
 
 ## Materiais Necessários
-- 1 Arduino Uno
-- 1 Botão de pressão
-- 1 Resistor de 10 kΩ (pull-up)
-- Fios de conexão (jumpers)
-- Protoboard (opcional)
+- **1 Arduino Uno**
+- **1 Botão de pressão**
+- **1 Resistor de 10 kΩ (pull-up)**
+- **Fios de conexão (jumpers)**
+- **Protoboard (opcional)**
 
 ## Montagem do Circuito
 1. **Conexões do Botão:**
