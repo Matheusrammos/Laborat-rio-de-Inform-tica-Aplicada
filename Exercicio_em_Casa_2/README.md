@@ -3,13 +3,6 @@
 ## Descrição
 Este projeto demonstra como contar o número de vezes que um botão é pressionado utilizando um Arduino. O objetivo é detectar as transições do estado do botão de desligado (LOW) para ligado (HIGH) e contabilizar cada pressionamento. Os resultados são exibidos no Serial Monitor, permitindo monitorar a contagem em tempo real.
 
-## Funcionamento
-O programa opera da seguinte maneira:
-1. **Leitura do Estado do Botão:** A cada iteração do loop principal, o Arduino lê o estado atual do botão.
-2. **Comparação de Estados:** O estado atual do botão é comparado com o estado anterior, que é armazenado em uma variável.
-3. **Detecção de Pressionamento:** Se o estado atual for diferente do estado anterior e for igual a HIGH, o contador de pressionamentos é incrementado.
-4. **Exibição no Serial Monitor:** A cada incremento, o valor da contagem é enviado ao Serial Monitor, permitindo a visualização imediata do número de pressões.
-
 ## Materiais Necessários
 - 1 Arduino Uno
 - 1 Botão de pressão
@@ -52,8 +45,14 @@ void loop() {
 }
 ````
 
-## Participações
+## Funcionamento
+O programa opera da seguinte maneira:
+1. **Leitura do Estado do Botão:** A cada iteração do loop principal, o Arduino lê o estado atual do botão.
+2. **Comparação de Estados:** O estado atual do botão é comparado com o estado anterior, que é armazenado em uma variável.
+3. **Detecção de Pressionamento:** Se o estado atual for diferente do estado anterior e for igual a HIGH, o contador de pressionamentos é incrementado.
+4. **Exibição no Serial Monitor:** A cada incremento, o valor da contagem é enviado ao Serial Monitor, permitindo a visualização imediata do número de pressões.
 
+## Participações
 - Este projeto contou com a assistência do ChatGPT, um assistente virtual da OpenAI, para fornecer informações e orientações durante o desenvolvimento e a elaboração da documentação.
   *(OPENAI. ChatGPT. Disponível em: ChatGPT - [OpenAI](https://www.openai.com/chatgpt). Acesso em: 19/09/24.)*
 - [Epaminondaslage](https://www.bing.com/ck/a?!&&p=cf945232149fce13JmltdHM9MTcyNjcwNDAwMCZpZ3VpZD0yNGZkYWYyYS1lMjZiLTYzMWYtMzY0MC1iYmJiZTNlZTYyZGImaW5zaWQ9NTE5Mg&ptn=3&ver=2&hsh=3&fclid=24fdaf2a-e26b-631f-3640-bbbbe3ee62db&psq=src%3d%22https%3a%2f%2fgithub.com%2fEpaminondaslage%2fAluno_Fulano_de_Tal%2fblob%2fmain%2fExercicio_em_Casa_1%2fFigura.jpeg%22+alt%3d%22Circuito%22+width%3d%2250%25%22&u=a1aHR0cHM6Ly9naXRodWIuY29tL0VwYW1pbm9uZGFzbGFnZQ&ntb=1) responsável por intruir e coordernar este trabalho.
