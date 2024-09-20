@@ -43,7 +43,10 @@ O objetivo deste projeto é aprender a controlar LEDs com um Arduino Uno, ligand
       - Ânodo (terminal positivo): Conecte ao pino digital 3 do Arduino.
       - Cátodo (terminal negativo): Conecte a uma extremidade de outro resistor de 220 Ω.
       - Outras extremidades do resistor: Conecte ao GND (terra) do Arduino
-
+  
+4. **Diagrama do Circuito:**
+   
+![fotoi](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_2/Diagrama_Aula_2.jpeg)
 
 # Código Comentado
 ````
