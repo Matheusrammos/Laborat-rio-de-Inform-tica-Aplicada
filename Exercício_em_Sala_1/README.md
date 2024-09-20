@@ -31,8 +31,8 @@ O objetivo do projeto é demonstrar como controlar um pino de saída digital no 
 
 4. **Diagrama do Circuito:**
    
-<img src="https://github.com/Epaminondaslage/Aluno_Fulano_de_Tal/blob/main/Exercicio_em_Sala_1/Fig_pisca.jpg" alt="Circuito" width="50%">
-
+<img src=["https://github.com/Epaminondaslage/Aluno_Fulano_de_Tal/blob/main/Exercicio_em_Sala_1/Fig_pisca.jpg" alt="Circuito" width="50%"](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_1/Diagrama_Aula_1.jpeg?raw=true)>
+!(.)[https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_1/Diagrama_Aula_1.jpeg?raw=true/https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_1/Diagrama_Aula_1.jpeg]
 
 ## Código Comentado
 ````// Define o pino onde o LED está conectado
