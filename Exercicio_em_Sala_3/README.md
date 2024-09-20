@@ -17,15 +17,22 @@ O objetivo deste projeto é aprender a controlar múltiplos LEDs com um Arduino 
 #### Organização do Circuito:
    - Utilize a protoboard para montar o circuito e organizar as conexões de forma limpa.
    - Use fios de conexão (jumpers) para ligar os componentes ao Arduino.
+
+1. **Conexões dos LEDs:**
+  **Primeiro LED:**
+    - Conecte o ânodo (terminal positivo) do primeiro LED ao pino digital 2 do Arduino.
+    - Conecte o cátodo (terminal negativo) do primeiro LED a um resistor de 220 Ω.
+  **Segundo LED:
+    - Conecte o ânodo do segundo LED ao pino digital 3 do Arduino.
+    - Conecte o cátodo do segundo LED a outro resistor de 220 Ω.
+
 1. **Conexões dos LEDs:**
   **Primeiro LED:**
     - Conecte o ânodo (terminal positivo) ao pino digital 4 do Arduino através de um resistor de 220 Ω.
     - Conecte o cátodo (terminal negativo) ao GND do Arduino.
-
   **Segundo LED:**
    - Conecte o ânodo ao pino digital 5 do Arduino através de um resistor de 220 Ω.
-   - Conecte o cátodo ao GND do Arduino.
-     
+   - Conecte o cátodo ao GND do Arduino. 
   **Terceiro LED:**
    - Conecte o ânodo ao pino digital 6 do Arduino através de um resistor de 220 Ω.
    - Conecte o cátodo ao GND do Arduino.
