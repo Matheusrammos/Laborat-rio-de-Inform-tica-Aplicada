@@ -25,6 +25,10 @@ Este projeto demonstra como contar o número de vezes que um botão é pressiona
 2. **Conexões do Resistor:**
    - Conecte um resistor de 10 kΩ entre o pino 2 e o GND para configurar o resistor pull-up.
 
+3. **Diagrama do Circuito:**
+![fotodid](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Casa_2/Diagrama_Casa_2.jpeg)
+
+
 ## Código Comentado
 ````
 const int buttonPin = 2;      // Pino onde o botão está conectado
@@ -57,6 +61,7 @@ O programa opera da seguinte maneira:
 2. **Comparação de Estados:** O estado atual do botão é comparado com o estado anterior, que é armazenado em uma variável.
 3. **Detecção de Pressionamento:** Se o estado atual for diferente do estado anterior e for igual a HIGH, o contador de pressionamentos é incrementado.
 4. **Exibição no Serial Monitor:** A cada incremento, o valor da contagem é enviado ao Serial Monitor, permitindo a visualização imediata do número de pressões.
+
 
 ## Participações
 - Este projeto contou com a assistência do ChatGPT, um assistente virtual da OpenAI, para fornecer informações e orientações durante o desenvolvimento e a elaboração da documentação.
