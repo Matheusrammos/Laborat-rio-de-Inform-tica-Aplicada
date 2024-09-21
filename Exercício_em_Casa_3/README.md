@@ -21,7 +21,7 @@ Este diretório contém o terceiro exercício de casa, onde demonstramos como en
 2. **Diagrama do Circuito:**
 
 
-Código Comentado
+## Código Comentado
 ````
 const int buttonPin = 2;  // Pino onde o botão está conectado
 const int ledPin = 13;    // Pino do LED integrado
