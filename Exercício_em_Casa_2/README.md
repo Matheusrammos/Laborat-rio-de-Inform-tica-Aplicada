@@ -30,7 +30,7 @@ Este projeto demonstra como contar o número de vezes que um botão é pressiona
 ![fotodbid](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Casa_2/Diagrama_Casa_2.jpeg)
 
 ## Código Comentado
-````
+```cpp
 const int buttonPin = 2;      // Pino onde o botão está conectado
 int buttonState;               // Estado atual do botão
 int lastButtonState = LOW;     // Estado anterior do botão
