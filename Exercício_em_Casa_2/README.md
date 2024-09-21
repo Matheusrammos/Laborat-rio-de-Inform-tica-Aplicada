@@ -26,8 +26,7 @@ Este projeto demonstra como contar o número de vezes que um botão é pressiona
    - Conecte um resistor de 10 kΩ entre o pino 2 e o GND para configurar o resistor pull-up.
 
 3. **Diagrama do Circuito:**
-![fotodid](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Casa_2/Diagrama_Casa_2.jpeg)
-
+![fotodbid](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Casa_2/Diagrama_Casa_2.jpeg)
 
 ## Código Comentado
 ````
