@@ -19,7 +19,7 @@ Este diretório contém o terceiro exercício de casa, onde demonstramos como en
 - O resistor pull-up está conectado ao GND. O outro pino do botão está conectado a uma fonte de alimentação de 5V.
 
 2. **Diagrama do Circuito:**
-
+![fotodbid](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Casa_3/Diagrama_Casa_3.jpeg)
 
 ## Código Comentado
 ````
