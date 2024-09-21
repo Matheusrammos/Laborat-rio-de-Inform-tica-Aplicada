@@ -26,14 +26,14 @@ Este projeto demonstra como contar o número de vezes que um botão é pressiona
    - Conecte um resistor de 10 kΩ entre o pino 2 e o GND para configurar o resistor pull-up.
 
 ## Código Comentado
-````const int buttonPin = 2; // Pino onde o botão está conectado
-int buttonState;          // Estado atual do botão
-int lastButtonState = LOW; // Estado anterior do botão
-int pressCount = 0;      // Contador de pressionamentos
+````
+const int buttonPin = 2;      // Pino onde o botão está conectado
+int buttonState;               // Estado atual do botão
+int lastButtonState = LOW;     // Estado anterior do botão
+int pressCount = 0;            // Contador de pressionamentos
 
 void setup() {
-  pinMode(buttonPin, INPUT); // Define o pino do botão como entrada
-  Serial.begin(9600);        // Inicia a comunicação serial
+  pinMode(buttonPin, INPUT);   // Define o pino do botão como entrada
 }
 
 void loop() {
@@ -42,8 +42,8 @@ void loop() {
   // Detecta a transição de LOW para HIGH
   if (buttonState == HIGH && lastButtonState == LOW) {
     pressCount++; // Incrementa o contador
-    Serial.print("Contador de Pressionamentos: ");
-    Serial.println(pressCount); // Exibe a contagem no Serial Monitor
+    // Aqui você pode adicionar algum código para usar a contagem
+    // Exemplo: acender um LED, acionar um motor, etc.
   }
 
   lastButtonState = buttonState; // Atualiza o estado anterior
