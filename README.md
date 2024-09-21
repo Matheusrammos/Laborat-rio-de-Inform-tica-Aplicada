@@ -3,9 +3,9 @@
 ## Repositório de Projetos e Exercícios da Disciplina de Laboratório de Informática Aplicada
 Este repositório é destinado a expor os projetos, trabalhos e atividades que foram feitos através do arduíno. Cada diretório corresponde a uma tarefa realizada.
 
-## Códigos no Arduino IDE
+## Códigos com a Arduino IDE
 A Arduino IDE (Ambiente de Desenvolvimento Integrado) é um software utilizado para programar placas Arduino. Ela oferece uma interface amigável que facilita a escrita, compilação e upload de códigos para os microcontroladores.
-### Para que serve?
+### O que faz a Arduino IDE?
 A Arduino IDE serve para:
 - **Desenvolvimento de Código:** Permite que usuários escrevam e editem códigos em uma linguagem baseada em C/C++, oferecendo ferramentas como realce de sintaxe e autocompletar.
 - **Compilação e Upload:** Compila o código escrito e carrega o programa diretamente na placa Arduino, além de fornecer um Serial Monitor para visualização de dados e depuração em tempo real.
