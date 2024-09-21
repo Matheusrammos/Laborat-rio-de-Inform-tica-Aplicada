@@ -6,7 +6,7 @@ Este projeto demonstra como controlar um LED integrado no pino 13 de uma placa A
 ## Componentes Utilizados
 - **1 Placa Arduino (por exemplo, Arduino Uno)**
 - **1 LED (integrado no pino 13)**
-- **1 Botão**
+- **1 Botão (integrado no pino 2)**
 - **1 Resistor de 10 kΩ (pull-up)**
 - **Fios de conexão (jumpers)**
 - **Protoboard**
@@ -24,7 +24,8 @@ Este projeto demonstra como controlar um LED integrado no pino 13 de uma placa A
 <img src="https://github.com/Epaminondaslage/Aluno_Fulano_de_Tal/blob/main/Exercicio_em_Casa_1/Figura.jpeg" alt="Circuito" width="50%">
 
 ## Código Comentado
-```const int buttonPin = 2; // Pino onde o botão está conectado
+```
+const int buttonPin = 2; // Pino onde o botão está conectado
 const int ledPin = 13;   // Pino do LED integrado
 
 void setup() {
