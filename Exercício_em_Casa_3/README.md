@@ -22,7 +22,7 @@ Este diretório contém o terceiro exercício de casa, onde demonstramos como en
 ![fotodbid](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Casa_3/Diagrama_Casa_3.jpeg)
 
 ## Código Comentado
-````
+```cpp
 const int buttonPin = 2;  // Pino onde o botão está conectado
 const int ledPin = 13;    // Pino do LED integrado
 int buttonState;           // Estado atual do botão
