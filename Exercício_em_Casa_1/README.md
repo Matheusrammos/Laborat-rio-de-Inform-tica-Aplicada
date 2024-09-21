@@ -21,7 +21,7 @@ Este projeto demonstra como controlar um LED integrado no pino 13 de uma placa A
    - Conecte um resistor de 10 kΩ entre o pino 2 (onde o botão está conectado) e o VCC (5V). Isso garantirá que o pino 2 esteja em um estado alto quando o botão não estiver pressionado.
      
 3. **Diagrama de montagem**
-<img src="https://github.com/Epaminondaslage/Aluno_Fulano_de_Tal/blob/main/Exercicio_em_Casa_1/Figura.jpeg" alt="Circuito" width="50%">
+![fotodd](
 
 ## Código Comentado
 ```
@@ -30,8 +30,7 @@ const int ledPin = 13;   // Pino do LED integrado
 
 void setup() {
   pinMode(ledPin, OUTPUT);      // Define o pino do LED como saída
-  pinMode(buttonPin, INPUT);    // Define o pino do botão como entrada
-  digitalWrite(buttonPin, HIGH); // Ativa o resistor pull-up
+  pinMode(buttonPin, INPUT_PULLUP); // Define o pino do botão como entrada com pull-up interno
 }
 
 void loop() {
@@ -41,9 +40,6 @@ void loop() {
     digitalWrite(ledPin, LOW);         // Desliga o LED
   }
 }
-Funcionamento do Código
-setup(): Inicializa os pinos do LED como saída e do botão como entrada, ativando o resistor pull-up.
-loop(): Verifica constantemente o estado do botão. Se o botão estiver pressionado (estado baixo), o LED é aceso. Caso contrário, o LED é desligado.  
 ```
 
 ## Funcionamento
