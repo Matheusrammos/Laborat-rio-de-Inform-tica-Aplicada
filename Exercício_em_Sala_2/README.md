@@ -49,7 +49,7 @@ O objetivo deste projeto é aprender a controlar LEDs com um Arduino Uno, ligand
 ![fotoi](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_2/Diagrama_Aula_2.jpeg)
 
 # Código Comentado
-````
+```cpp
 // Define os pinos dos LEDs
 const int led1Pin = 2; // Pino do primeiro LED
 const int led2Pin = 3; // Pino do segundo LED
