@@ -43,7 +43,8 @@ O objetivo deste projeto é aprender a controlar múltiplos LEDs com um Arduino 
 ![fotodd](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_3/Diagrama_Aula_3.jpeg)
 
 ## Código Comentado
-````// Define os pinos dos LEDs
+````
+// Define os pinos dos LEDs
 const int led1Pin = 4; // Pino do primeiro LED
 const int led2Pin = 5; // Pino do segundo LED
 const int led3Pin = 6; // Pino do terceiro LED
