@@ -24,7 +24,7 @@ Este projeto demonstra como controlar um LED integrado no pino 13 de uma placa A
 ![fotodd](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Casa_1/Diagrama_Casa_1.jpeg)
 
 ## Código Comentado
-```
+```cpp
 const int buttonPin = 2; // Pino onde o botão está conectado
 const int ledPin = 13;   // Pino do LED integrado
 
