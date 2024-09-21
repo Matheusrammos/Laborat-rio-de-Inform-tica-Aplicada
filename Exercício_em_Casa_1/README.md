@@ -21,7 +21,7 @@ Este projeto demonstra como controlar um LED integrado no pino 13 de uma placa A
    - Conecte um resistor de 10 kΩ entre o pino 2 (onde o botão está conectado) e o VCC (5V). Isso garantirá que o pino 2 esteja em um estado alto quando o botão não estiver pressionado.
      
 3. **Diagrama de montagem**
-![fotodd](
+![fotodd](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Casa_1/Diagrama_Casa_1.jpeg)
 
 ## Código Comentado
 ```
