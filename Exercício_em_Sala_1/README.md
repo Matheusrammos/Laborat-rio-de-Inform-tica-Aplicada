@@ -35,7 +35,7 @@ O objetivo do projeto é demonstrar como controlar um pino de saída digital no 
 
 
 ## Código Comentado
-````
+```cpp
 // Define o pino onde o LED está conectado
 const int ledPin = 13; // O LED embutido geralmente está no pino 13
 
