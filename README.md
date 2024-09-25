@@ -39,7 +39,7 @@ Este diretório inclui o segundo exercício de casa.
 
 Este diretório possui o terceiro exercício de casa.
 
-### Projeto_Final_de_Disciplina
+### [Projeto_Final_de_Disciplina](https://github.com/Matheusrammos/LIA-Docs/tree/main/Projeto_Final_de_Disciplina)
 Este diretório contém o projeto final da disciplina. O projeto finalizou os conceitos abordados ao longo do curso, com foco em ........
 
 ## Como Usar
