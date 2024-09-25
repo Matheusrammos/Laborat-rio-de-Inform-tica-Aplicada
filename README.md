@@ -51,7 +51,7 @@ Este diretório contém o projeto final da disciplina. O projeto finalizou os co
 2. Cada diretório contém um README adicional  explicando em detalhes o funcionamento do código e as instruções para execução.
 
 ### Considerações
-Primeiramente agradeço a Deus; após, agradeço ao professor que nos deu a chance de reger um Arduino. Além de doar kits de Arduíno, também compartilhar seu conhecimento, ele nos inspirou a explorar e conhecer o mundo da programação. A experiência de trabalhar com o Arduino não só tem desenvolvido nossas habilidades técnicas, mas também tem formalizado a criatividade e a colaboração entre os alunos.
+Primeiramente agradeço a Deus; após, agradeço ao professor [Epaminondaslage](https://www.bing.com/ck/a?!&&p=cf945232149fce13JmltdHM9MTcyNjcwNDAwMCZpZ3VpZD0yNGZkYWYyYS1lMjZiLTYzMWYtMzY0MC1iYmJiZTNlZTYyZGImaW5zaWQ9NTE5Mg&ptn=3&ver=2&hsh=3&fclid=24fdaf2a-e26b-631f-3640-bbbbe3ee62db&psq=src%3d%22https%3a%2f%2fgithub.com%2fEpaminondaslage%2fAluno_Fulano_de_Tal%2fblob%2fmain%2fExercicio_em_Casa_1%2fFigura.jpeg%22+alt%3d%22Circuito%22+width%3d%2250%25%22&u=a1aHR0cHM6Ly9naXRodWIuY29tL0VwYW1pbm9uZGFzbGFnZQ&ntb=1) que nos deu a chance de reger um Arduino. Além de doar kits de Arduíno, também compartilhar seu conhecimento, ele nos inspirou a explorar e conhecer o mundo da programação. A experiência de trabalhar com o Arduino não só tem desenvolvido nossas habilidades técnicas, mas também tem formalizado a criatividade e a colaboração entre os alunos.
 
 
 >[!CAUTION]  
