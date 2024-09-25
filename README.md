@@ -55,4 +55,4 @@ Primeiramente agradeço a Deus; após, agradeço ao professor [Epaminondaslage](
 
 
 >[!CAUTION]  
-"Recomenda-se veementemente que todas as conexões sejam realizadas com o Arduino desconectado da fonte de energia, pois há um alto risco de danificá-lo se a montagem for feita com a corrente elétrica ativada" *(ADAPTADO de GOMES, Pedro. LIA-ATIVIDADES. Github, 20 junh. 2024. Disponível em: https://github.com/PedroGomes-Albuquerque/LIA-ATIVIDADES. Acesso em: 25 julh. 2024)*.
+"Recomenda-se veementemente que todas as conexões sejam realizadas com o Arduino desconectado da fonte de energia, pois há um alto risco de danificá-lo se a montagem for feita com a corrente elétrica ativada" *(ADAPTADO de GOMES, Pedro. LIA-ATIVIDADES. Github, 20 Set. 2024. Disponível em: https://github.com/PedroGomes-Albuquerque/LIA-ATIVIDADES. Acesso em: 25 Set. 2024)*.
