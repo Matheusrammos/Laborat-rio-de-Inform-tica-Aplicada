@@ -9,6 +9,8 @@ A Arduino IDE (Ambiente de Desenvolvimento Integrado) é um software utilizado p
 A Arduino IDE serve para:
 - **Desenvolvimento de Código:** Permite que usuários escrevam e editem códigos em uma linguagem baseada em C/C++, oferecendo ferramentas como realce de sintaxe e autocompletar.
 - **Compilação e Upload:** Compila o código escrito e carrega o programa diretamente na placa Arduino, além de fornecer um Serial Monitor para visualização de dados e depuração em tempo real.
+### Sobre a Plataforma da IDE
+Versão 1.0 Plataforma: Arduino UNO
 
 ## Diagramas com o Tinkercad
 Os diagramas de cada projeto utilizam o Tinkercad. Uma ferramenta online capaz de simular o funcionamento de um arduíno, representando-o por imagens 3D. A ferramenta permitiu montar e construir diagramas 3D dos circuitos em cada projeto de uma maneira totalmente online.
