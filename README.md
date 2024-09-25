@@ -15,7 +15,7 @@ Versão 1.0 Plataforma: Arduino UNO
 ## Diagramas com o Tinkercad
 Os diagramas de cada projeto utilizam o Tinkercad. Uma ferramenta online capaz de simular o funcionamento de um arduíno, representando-o por imagens 3D. A ferramenta permitiu montar e construir diagramas 3D dos circuitos em cada projeto de uma maneira totalmente online.
 ### O que é Tinkercad?
-"O Tinkercad, desenvolvido pela Autodesk, é uma plataforma web que combina modelagem 3D e simulação de circuitos eletrônicos. Reconhecido por sua interface amigável e acessibilidade, tornou-se uma escolha popular entre estudantes, educadores e entusiastas de design. O Tinkercad permite criar modelos 3D facilmente, utilizando formas básicas como cubos, esferas e cilindros, que podem ser combinadas, agrupadas e modificadas para criar designs mais complexos. É frequentemente utilizado para projetos de impressão 3D, prototipagem rápida, design de objetos e para ensinar conceitos básicos de modelagem e design 3D" *(GUSE,Rosana. O que é Tinkercad?. MakerHero, 12 junh. 2024. Disponível em https://www.makerhero.com/guia/tinkercad/o-que-e/. Acesso em: 19 set. 2024)*.
+"O Tinkercad, desenvolvido pela Autodesk, é uma plataforma web que combina modelagem 3D e simulação de circuitos eletrônicos. Reconhecido por sua interface amigável e acessibilidade, tornou-se uma escolha popular entre estudantes, educadores e entusiastas de design. O Tinkercad permite criar modelos 3D facilmente, utilizando formas básicas como cubos, esferas e cilindros, que podem ser combinadas, agrupadas e modificadas para criar designs mais complexos. É frequentemente utilizado para projetos de impressão 3D, prototipagem rápida, design de objetos e para ensinar conceitos básicos de modelagem e design 3D" *(GUSE,Rosana. O que é Tinkercad?. MakerHero, 12 junh. 2024. Disponível em: https://www.makerhero.com/guia/tinkercad/o-que-e/. Acesso em: 19 set. 2024)*.
 
 
 ## Diretórios
@@ -49,3 +49,8 @@ Este diretório contém o projeto final da disciplina. O projeto finalizou os co
 1. Navegue pelos diretórios acima para acessar os códigos e relatórios de cada exercício ou projeto.
 2. Cada diretório contém um README adicional  explicando em detalhes o funcionamento do código e as instruções para execução.
 
+
+## Notas Finais
+
+>[!CAUTION]  
+"Recomenda-se veementemente que todas as conexões sejam realizadas com o Arduino desconectado da fonte de energia, pois há um alto risco de danificá-lo se a montagem for feita com a corrente elétrica ativada" *(ADAPTADO de GOMES, Pedro. [LIA-ATIVIDADES](https://github.com/PedroGomes-Albuquerque/LIA-ATIVIDADES/blob/main/README.md). Github, 20 junh. 2024. Disponível em: https://github.com/PedroGomes-Albuquerque/LIA-ATIVIDADES. Acesso em: 25 julh. 2024)*.
