@@ -19,36 +19,33 @@ Os diagramas de cada projeto utilizam o Tinkercad. Uma ferramenta online capaz d
 
 
 ## Diretórios
+
 ### [Exercício_em_Sala_1: Programa BLINK](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Sala_1)
-Este diretório contém o primeiro exercício realizado em sala de aula. 
+Primeiro exercício que ensina o básico do Arduino com o programa "Blink", fazendo um LED piscar.
 
 ### [Exercício_em_Sala_2: Luzes de Sinalização de Garagem](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Sala_2)
-Este diretório inclui o segundo exercício feito em sala. 
+Segundo exercício focado em controlar LEDs para simular luzes de garagem, introduzindo condições lógicas.
 
 ### [Exercício_em_Sala_3: Montagem Básica com LEDs](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Sala_3)
-
-Este diretório possui o terceiro exercício realizado em sala.
+Terceiro exercício que envolve a montagem de circuitos simples com LEDs, aprendendo sobre componentes eletrônicos.
 
 ### [Exercício_em_Casa_1: Ligar e Desligar o LED com o Botão](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Casa_1)
+Exercício de casa onde os alunos criam um circuito para ligar e desligar um LED com um botão.
 
-Este diretório contém o primeiro exercício de casa. 
+### [Exercício_em_Casa_2: Contagem de Pressionamentos de Botão](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Casa_2)
+Neste exercício, os alunos contam quantas vezes um botão é pressionado, reforçando o uso de variáveis.
 
-### [Exercício_em_Casa_2: Contagem de Pressionamentos de Botão.](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Sala_2)
-
-Este diretório inclui o segundo exercício de casa.
-
-### [Exercício_em_Casa_3: Enviando Dados para Porta Serial](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Sala_3)
-
-Este diretório possui o terceiro exercício de casa.
+### [Exercício_em_Casa_3: Enviando Dados para Porta Serial](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Casa_3)
+Os alunos aprendem a enviar e receber dados entre o Arduino e um computador via porta serial.
 
 ### [Projeto_Final_de_Disciplina](https://github.com/Matheusrammos/LIA-Docs/tree/main/Projeto_Final_de_Disciplina)
-Este diretório contém o projeto final da disciplina. O projeto finalizou os conceitos abordados ao longo do curso, com foco em ........
+O projeto final integra todos os conceitos do curso, desafiando os alunos a criar um sistema interativo complexo.
 
 ## Notas Finais
 ### Como Navegar
 
-1. Navegue pelos diretórios acima para acessar os códigos e relatórios de cada exercício ou projeto.
-2. Cada diretório contém um README adicional  explicando em detalhes o funcionamento do código e as instruções para execução.
+- Navegue pelos diretórios acima para acessar os códigos e relatórios de cada exercício ou projeto.
+- Cada diretório contém um README adicional  explicando em detalhes o funcionamento do código e as instruções para execução.
 
 ### Considerações
 Primeiramente agradeço a Deus; após, agradeço ao professor [Epaminondaslage](https://www.bing.com/ck/a?!&&p=cf945232149fce13JmltdHM9MTcyNjcwNDAwMCZpZ3VpZD0yNGZkYWYyYS1lMjZiLTYzMWYtMzY0MC1iYmJiZTNlZTYyZGImaW5zaWQ9NTE5Mg&ptn=3&ver=2&hsh=3&fclid=24fdaf2a-e26b-631f-3640-bbbbe3ee62db&psq=src%3d%22https%3a%2f%2fgithub.com%2fEpaminondaslage%2fAluno_Fulano_de_Tal%2fblob%2fmain%2fExercicio_em_Casa_1%2fFigura.jpeg%22+alt%3d%22Circuito%22+width%3d%2250%25%22&u=a1aHR0cHM6Ly9naXRodWIuY29tL0VwYW1pbm9uZGFzbGFnZQ&ntb=1) que nos deu a chance de reger um Arduino. Além de doar [kits de Arduíno](https://github.com/Epaminondaslage/Kit-Arduino) e também compartilhar seu conhecimento, ele nos inspirou a explorar e conhecer o mundo da programação. A experiência de trabalhar com o Arduino não só tem desenvolvido nossas habilidades técnicas, mas também tem formalizado a criatividade e a colaboração entre os alunos.
