@@ -53,4 +53,4 @@ Este diretório contém o projeto final da disciplina. O projeto finalizou os co
 ## Notas Finais
 
 >[!CAUTION]  
-"Recomenda-se veementemente que todas as conexões sejam realizadas com o Arduino desconectado da fonte de energia, pois há um alto risco de danificá-lo se a montagem for feita com a corrente elétrica ativada" *(ADAPTADO de GOMES, Pedro. [LIA-ATIVIDADES](https://github.com/PedroGomes-Albuquerque/LIA-ATIVIDADES/blob/main/README.md). Github, 20 junh. 2024. Disponível em: https://github.com/PedroGomes-Albuquerque/LIA-ATIVIDADES. Acesso em: 25 julh. 2024)*.
+"Recomenda-se veementemente que todas as conexões sejam realizadas com o Arduino desconectado da fonte de energia, pois há um alto risco de danificá-lo se a montagem for feita com a corrente elétrica ativada" *(ADAPTADO de GOMES, Pedro. LIA-ATIVIDADES. Github, 20 junh. 2024. Disponível em: https://github.com/PedroGomes-Albuquerque/LIA-ATIVIDADES. Acesso em: 25 julh. 2024)*.
