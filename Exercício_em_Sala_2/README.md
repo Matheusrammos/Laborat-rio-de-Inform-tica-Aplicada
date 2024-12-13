@@ -44,7 +44,7 @@ O objetivo deste projeto é aprender a controlar LEDs com um Arduino Uno, ligand
   
 4. **Diagrama do Circuito:**
    
-![fotoi](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_2/Diagrama_Aula_2.jpeg)
+![fotoi](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_2/Diagrama_Aula_2.png)
 
 # Código Comentado
 ```cpp
