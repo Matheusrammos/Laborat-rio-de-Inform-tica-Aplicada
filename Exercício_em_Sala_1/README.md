@@ -31,7 +31,7 @@ O objetivo do projeto é demonstrar como controlar um pino de saída digital no 
 
 4. **Diagrama do Circuito:**
    
-![foto](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_1/Diagrama_Aula_1.png?raw=true)
+![foto](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_1/Diagrama_Aula_1.png)
 
 
 ## Código Comentado
