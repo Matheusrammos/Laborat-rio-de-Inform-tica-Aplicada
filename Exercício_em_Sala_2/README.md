@@ -50,30 +50,24 @@ O objetivo deste projeto é aprender a controlar LEDs com um Arduino Uno, ligand
 
 # Código Comentado
 ```cpp
-// Define os pinos dos LEDs
-const int led1Pin = 2; // Pino do primeiro LED
-const int led2Pin = 3; // Pino do segundo LED
+// Definindo os pinos dos LEDs
+const int led1Pin = 9; // Pino do primeiro LED
+const int led2Pin = 13; // Pino do segundo LED
 
 void setup() {
-  // Configura os pinos dos LEDs como saída
+  // Configurando os pinos dos LEDs como saída
   pinMode(led1Pin, OUTPUT);
   pinMode(led2Pin, OUTPUT);
 }
 
 void loop() {
-  // Acende o primeiro LED
-  digitalWrite(led1Pin, HIGH);
+  digitalWrite(led1Pin, HIGH); // Acende o primeiro LED
+  digitalWrite(led2Pin, LOW); // Apaga o segundo LED
   delay(1000); // Aguarda 1 segundo
 
-  // Apaga o primeiro LED
-  digitalWrite(led1Pin, LOW);
-  
-  // Acende o segundo LED
-  digitalWrite(led2Pin, HIGH);
+  digitalWrite(led1Pin, LOW); // Apaga o primeiro LED
+  digitalWrite(led2Pin, HIGH); // Acende o segundo LED
   delay(1000); // Aguarda 1 segundo
-
-  // Apaga o segundo LED
-  digitalWrite(led2Pin, LOW);
 }
 ````
 
