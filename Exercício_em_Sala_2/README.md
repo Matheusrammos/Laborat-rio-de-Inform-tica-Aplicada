@@ -10,7 +10,7 @@ O objetivo deste projeto é aprender a controlar LEDs com um Arduino Uno, ligand
 
 
 ## Materiais Necessários
-- **1 Arduino Uno**
+- **1 Arduino Uno (ou qualquer outra placa Arduino)**
 - **2 LEDs**
 - **2 Resistores de 220 Ω (para limitar a corrente dos LEDs)**
 - **Fios de conexão (jumpers)**
