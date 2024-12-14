@@ -1,4 +1,4 @@
-# Aplicação da função While e Controle de Pisca-Pisca de LED com Variáveis Configuráveis
+# Controle de Pisca-Pisca de LED com Variáveis Configuráveis
 
 ## Descrição
 Este projeto utiliza um Arduino para controlar um LED conectado ao pino 10, fazendo-o piscar 3 vezes a cada 0,1 segundo (100ms) e, em seguida, apagar por 1,5 segundos (1500ms). O número de piscadas, a duração de cada piscada e a duração do apagamento são variáveis configuráveis no código, permitindo ajustes para testar diferentes comportamentos do sistema.
