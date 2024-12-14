@@ -43,10 +43,11 @@ Eles evitam estados flutuantes que podem causar leituras instáveis ou interfer�
 
 
 3. **Diagrama de montagem**
-### Ultilizando um resistor Pull-up:
+- Ultilizando um resistor Pull-up:
 ![fotodd](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Casa_1/Diagrama_Casa_1.jpeg)
 
-### Ultilizando um resistor Pull-dow:
+- Ultilizando um resistor Pull-dow:
+![fotodd](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Casa_1/Diagrama_Casa_1%3A%20pull-dow.png)
 
 
 ## Código Comentado
