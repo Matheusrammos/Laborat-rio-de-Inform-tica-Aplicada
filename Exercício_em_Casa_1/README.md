@@ -1,6 +1,6 @@
 # Montagem Básica com LEDs e Botão
 
-## Descrição do Projeto: Controle de LED com Botão usando Arduino
+## Descrição
 Este projeto demonstra como controlar um LED integrado no pino 13 de uma placa Arduino por meio de um botão. Ao pressionar o botão, o LED acende, proporcionando uma interação simples e eficaz com o microcontrolador. A configuração utiliza um resistor pull-up (ou pull-dow) de 10 kΩ para garantir que a entrada digital do Arduino seja lida corretamente, evitando flutuações indesejadas no sinal.
 
 ### O que são resistores pull-up e pull-dow?
