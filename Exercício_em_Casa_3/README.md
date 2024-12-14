@@ -14,7 +14,7 @@ Este diretório contém o terceiro exercício de casa, onde demonstramos como en
 - **1 Protoboard (opcional, para montagem do circuito)**
 
 
-### Ultilizando um resistor pull-dow:
+## Montagem:
 1. **Conectar o Botão:**
    - Um terminal do botão deve ser conectado ao pino digital 5 do Arduino.
    - O outro terminal do botão deve ser conectado ao VCC (5V) da placa.
@@ -23,8 +23,7 @@ Este diretório contém o terceiro exercício de casa, onde demonstramos como en
    - Conecte um resistor de 10 kΩ entre o pino 5 (onde o botão está conectado) e o GND (terra). Isso garantirá que o pino 5 esteja em um estado baixo quando o botão não estiver pressionado.
 
 3. **Diagrama de montagem**
-   - *Ultilizando um resistor pull-dow:*
-      > ![fotodd](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Casa_1/Diagrama_Casa_1%3A%20pull-dow.png)
+   > ![fotodd](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Casa_1/Diagrama_Casa_1%3A%20pull-dow.png)
 
 
 ## Código Comentado
