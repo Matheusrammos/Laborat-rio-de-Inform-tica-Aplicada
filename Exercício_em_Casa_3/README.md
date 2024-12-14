@@ -54,16 +54,11 @@ delay(50); // Debouncing
 ````
 
 ## Funcionamento
-1. **Configuração Inicial**  
-O Arduino é configurado para monitorar o botão no pino digital 5 e controlar o LED no pino digital 13. Inicialmente, o LED é configurado como apagado (**LOW**) e a comunicação serial é iniciada para enviar informações ao **Serial Monitor**.
-Leitura do Estado do Botão  
-A cada ciclo do programa, o estado do botão é lido utilizando o comando **`digitalRead(buttonPin)`** e armazenado na variável **`Estbutton`**.  
-### Controle do LED  
-Se o botão estiver pressionado (**HIGH**), o LED é aceso com **`digitalWrite(ledPin, HIGH)`**. Caso contrário, o LED é apagado com **`digitalWrite(ledPin, LOW)`**.  
-### Exibição no Serial Monitor  
-O estado atual do botão é exibido no **Serial Monitor** por meio de **`Serial.println(Estbutton)`**, permitindo que o usuário veja se o botão está pressionado ou não.  
-### Debouncing  
-Para evitar múltiplas leituras causadas por ruídos no botão, é aplicado um atraso de 50ms ao final de cada iteração do loop principal.
+1. **Configuração Inicial:** O Arduino é configurado para monitorar o botão no pino digital 5 e controlar o LED no pino digital 13. Inicialmente, o LED é configurado como apagado (**LOW**) e a comunicação serial é iniciada para enviar informações ao **Serial Monitor**.
+2. **Leitura do Estado do Botão:** A cada ciclo do programa, o estado do botão é lido utilizando o comando **`digitalRead(buttonPin)`** e armazenado na variável **`Estbutton`**.  
+3. **Controle do LED:** Se o botão estiver pressionado (**HIGH**), o LED é aceso com **`digitalWrite(ledPin, HIGH)`**. Caso contrário, o LED é apagado com **`digitalWrite(ledPin, LOW)`**.
+4. **Exibição no Serial Monitor:** O estado atual do botão é exibido no **Serial Monitor** por meio de **`Serial.println(Estbutton)`**, permitindo que o usuário veja se o botão está pressionado ou não.
+5. **Debouncing:** Para evitar múltiplas leituras causadas por ruídos no botão, é aplicado um atraso de 50ms ao final de cada iteração do loop principal.
 
 
 ## Participações
