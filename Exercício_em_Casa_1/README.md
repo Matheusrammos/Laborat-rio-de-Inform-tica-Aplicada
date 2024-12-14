@@ -11,6 +11,9 @@ Este projeto demonstra como controlar um LED integrado no pino 13 de uma placa A
    - **Pull-up:** Conecta o pino ao 5V (ou VCC) através de um resistor, forçando o estado HIGH quando o botão ou dispositivo está aberto.
 Eles evitam estados flutuantes que podem causar leituras instáveis ou interferências.
 
+![fotodd](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Casa_1/Diagrama_Casa_1%3A%20pull_resistors.jpg)
+
+
 
 ## Componentes Utilizados
 - **1 Placa Arduino (por exemplo, Arduino Uno)**
