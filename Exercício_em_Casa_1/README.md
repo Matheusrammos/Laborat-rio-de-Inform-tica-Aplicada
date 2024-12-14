@@ -25,22 +25,25 @@ Este projeto demonstra como controlar um LED integrado no pino 13 de uma placa A
 
 ## Código Comentado
 ```cpp
-const int buttonPin = 2; // Pino onde o botão está conectado
-const int ledPin = 13;   // Pino do LED integrado
+// Definindo os pinos
+const int ledPin = 9; // Pino do LED
+const int buttonPin = 5; // Pino do Botão
 
 void setup() {
-  pinMode(ledPin, OUTPUT);      // Define o pino do LED como saída
-  pinMode(buttonPin, INPUT_PULLUP); // Define o pino do botão como entrada com pull-up interno
+  // Configurando o pino do Led como saída, e o do Botão, como entrada
+  pinMode(ledPin, OUTPUT);
+  pinMode(buttonPin, HIGH);
+  digitalWrite(ledPin, LOW); // Estado inicial do LED é em baixo (LOW)
 }
 
 void loop() {
-  if (digitalRead(buttonPin) == LOW) { // Se o botão for pressionado
-    digitalWrite(ledPin, HIGH);        // Liga o LED
-  } else {
-    digitalWrite(ledPin, LOW);         // Desliga o LED
+  if (digitalRead(buttonPin) == HIGH) { // Se o botão for precionado
+    digitalWrite(ledPin, HIGH); // Acende o LED
+  } else { // Se o botão não for precionado
+    digitalWrite(ledPin, LOW); // Apaga o LED
   }
 }
-```
+````
 
 ## Funcionamento
 O projeto de contagem de pressionamentos de botão opera de forma simples e eficaz. Abaixo estão os principais passos que descrevem seu funcionamento:
