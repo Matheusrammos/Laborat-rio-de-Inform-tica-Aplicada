@@ -1,13 +1,31 @@
 # Montagem Básica com LEDs e Botão
 
 ## Descrição do Projeto: Controle de LED com Botão usando Arduino
-Este projeto demonstra como controlar um LED integrado no pino 13 de uma placa Arduino por meio de um botão. Ao pressionar o botão, o LED acende, proporcionando uma interação simples e eficaz com o microcontrolador. A configuração utiliza um resistor pull-up de 10 kΩ para garantir que a entrada digital do Arduino seja lida corretamente, evitando flutuações indesejadas no sinal.
+Este projeto demonstra como controlar um LED integrado no pino 13 de uma placa Arduino por meio de um botão. Ao pressionar o botão, o LED acende, proporcionando uma interação simples e eficaz com o microcontrolador. A configuração utiliza um resistor pull-up (ou pull-dow) de 10 kΩ para garantir que a entrada digital do Arduino seja lida corretamente, evitando flutuações indesejadas no sinal.
+
+### O que são resistores pull-up e pull-dow?
+- Resistores pull-down e pull-up são usados para garantir que um pino de entrada digital tenha um estado lógico definido (LOW ou HIGH) quando nenhum sinal está sendo enviado.
+
+**Pull-down:** Conecta o pino ao GND (0V) através de um resistor, forçando o estado LOW quando o botão ou outro dispositivo está aberto.
+
+**Pull-up:** Conecta o pino ao 5V (ou VCC) através de um resistor, forçando o estado HIGH quando o botão ou dispositivo está aberto.
+Eles evitam estados flutuantes que podem causar leituras instáveis ou interferências.
+
 
 ## Componentes Utilizados
+### Ultilizando um resistor Pull-up:
 - **1 Placa Arduino (por exemplo, Arduino Uno)**
 - **1 LED (integrado no pino 13)**
-- **1 Botão (integrado no pino 2)**
+- **1 Botão (integrado no pino 5)**
 - **1 Resistor de 10 kΩ (pull-up)**
+- **Fios de conexão (jumpers)**
+- **Protoboard**
+
+### Ultilizando um resistor Pull-dow:
+- **1 Placa Arduino (por exemplo, Arduino Uno)**
+- **1 LED (integrado no pino 13)**
+- **1 Botão (integrado no pino 5)**
+- **1 Resistor de 10 kΩ (pull-dow)**
 - **Fios de conexão (jumpers)**
 - **Protoboard**
 
@@ -26,7 +44,7 @@ Este projeto demonstra como controlar um LED integrado no pino 13 de uma placa A
 ## Código Comentado
 ```cpp
 // Definindo os pinos
-const int ledPin = 9; // Pino do LED
+const int ledPin = 13; // Pino do LED
 const int buttonPin = 5; // Pino do Botão
 
 void setup() {
