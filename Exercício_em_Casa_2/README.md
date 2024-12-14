@@ -31,26 +31,34 @@ Este projeto demonstra como contar o número de vezes que um botão é pressiona
 
 ## Código Comentado
 ```cpp
-const int buttonPin = 2;      // Pino onde o botão está conectado
-int buttonState;               // Estado atual do botão
-int lastButtonState = LOW;     // Estado anterior do botão
-int pressCount = 0;            // Contador de pressionamentos
+// Definindo os pinos e algumas variáveis
+const int ledPin = 13; // Pino do LED
+const int buttonPin = 5; // Pino do Botão
+int PushCounter = 0; // Contador
+int LastState = 0; // Estado anterior
+int Estbutton = 0; // Estado atual
 
 void setup() {
-  pinMode(buttonPin, INPUT);   // Define o pino do botão como entrada
+  // Configurando o pino do Led como saída, e o do Botão, como entrada
+  pinMode(ledPin, OUTPUT);
+  pinMode(buttonPin, INPUT);
+  digitalWrite(ledPin, LOW); // Estado inicial do LED é em baixo (LOW)
+  Serial.begin(9600); // Inicializa a comunicação serial a 9600 bps. Isso é necessário para começar a enviar dados ao Serial Monitor
 }
 
 void loop() {
-  buttonState = digitalRead(buttonPin); // Lê o estado atual do botão
-
-  // Detecta a transição de LOW para HIGH
-  if (buttonState == HIGH && lastButtonState == LOW) {
-    pressCount++; // Incrementa o contador
-    // Aqui você pode adicionar algum código para usar a contagem
-    // Exemplo: acender um LED, acionar um motor, etc.
+Estbutton = digitalRead(buttonPin); // Sincronizando o estado do botão a leitura atual do mesmo
+  if ((LastState == LOW) && (Estbutton == HIGH)) { // Se houver uma transição positiva (negativo -> positivo)
+    PushCounter++; // Soma 1 à variável "PushCounter"
+    digitalWrite(ledPin, HIGH); // Acende o LED
+    Serial.print("Número de apertadas no botão:"); // Printa a informação no serial monitor
+    Serial.println(PushCounter); 
   }
-
-  lastButtonState = buttonState; // Atualiza o estado anterior
+  if (Estbutton == LOW)  { // Se o botão não for precionado
+    digitalWrite(ledPin, LOW); // Apaga o LED
+    }
+  delay(50);
+LastState = Estbutton; //Save State
 }
 ````
 
