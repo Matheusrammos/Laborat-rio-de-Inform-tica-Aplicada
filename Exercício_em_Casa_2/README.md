@@ -3,19 +3,18 @@
 
 ## Descrição
 Este projeto demonstra como contar o número de vezes que um botão é pressionado utilizando um Arduino. O objetivo é detectar as transições do estado do botão de desligado (LOW) para ligado (HIGH) e contabilizar cada pressionamento. Os resultados são exibidos no Serial Monitor, permitindo monitorar a contagem em tempo real.
-> *A montagem do circuito desse exercício é coincidente à vista em [Exercício_em_Casa_1](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Casa_1). Alem disso, nesse projeto, optei por usar o modelo [pull-dow](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Casa_1/Diagrama_Casa_1%3A%20pull-dow.png).*
+> *A montagem do circuito desse exercício é coincidente à vista em [Exercício_em_Casa_1](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Casa_1). Alem disso, nesse projeto, optei por usar o modelo [pull-dow](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Casa_1/Diagrama_Casa_1%3A%20pull-dow.png), mas não se pode descartar a possibilidade do uso de [pull-up]( com algumas alterações na montagem e no código.
 
-
-## Materiais Necessários
-- **1 Arduino Uno**
-- **1 Botão de pressão**
-- **1 Resistor de 10 kΩ (pull-up)**
+## Componentes Utilizados
+- **1 Placa Arduino (por exemplo, Arduino Uno)**
+- **1 LED (integrado no pino 13)**
+- **1 Botão (integrado no pino 5)**
+- **1 Resistor de 10 kΩ (pull-dow)**
 - **Fios de conexão (jumpers)**
-- **Protoboard (opcional)**
+- **1 Protoboard (opcional, para montagem do circuito)**
 
 
 ## Montagem do Circuito
-### Ultilizando um resistor pull-dow:
 1. **Conectar o Botão:**
    - Um terminal do botão deve ser conectado ao pino digital 5 do Arduino.
    - O outro terminal do botão deve ser conectado ao VCC (5V) da placa.
