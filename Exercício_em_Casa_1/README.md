@@ -13,19 +13,10 @@ Eles evitam estados flutuantes que podem causar leituras instáveis ou interfer�
 
 
 ## Componentes Utilizados
-### Ultilizando um resistor Pull-up:
 - **1 Placa Arduino (por exemplo, Arduino Uno)**
 - **1 LED (integrado no pino 13)**
 - **1 Botão (integrado no pino 5)**
-- **1 Resistor de 10 kΩ (pull-up)**
-- **Fios de conexão (jumpers)**
-- **1 Protoboard (opcional, para montagem do circuito)**
-
-### Ultilizando um resistor Pull-dow:
-- **1 Placa Arduino (por exemplo, Arduino Uno)**
-- **1 LED (integrado no pino 13)**
-- **1 Botão (integrado no pino 5)**
-- **1 Resistor de 10 kΩ (pull-dow)**
+- **1 Resistor de 10 kΩ (pull-up ou pull-dow)**
 - **Fios de conexão (jumpers)**
 - **1 Protoboard (opcional, para montagem do circuito)**
 
@@ -33,19 +24,19 @@ Eles evitam estados flutuantes que podem causar leituras instáveis ou interfer�
 ## Montagem do Circuito
 ### Ultilizando um resistor Pull-up:
 1. **Conectar o Botão:**
-   - Um terminal do botão deve ser conectado ao pino digital 2 do Arduino.
-   - O outro terminal do botão deve ser conectado ao GND da placa.
+   - Um terminal do botão deve ser conectado ao pino digital 5 do Arduino.
+   - O outro terminal do botão deve ser conectado ao GND (terra) da placa.
 
 2. **Configuração do Resistor Pull-up**:
-   - Conecte um resistor de 10 kΩ entre o pino 2 (onde o botão está conectado) e o VCC (5V). Isso garantirá que o pino 2 esteja em um estado alto quando o botão não estiver pressionado.
+   - Conecte um resistor de 10 kΩ entre o pino 5 (onde o botão está conectado) e o VCC (5V). Isso garantirá que o pino 2 esteja em um estado alto quando o botão não estiver pressionado.
 
 ### Ultilizando um resistor Pull-dow:
 1. **Conectar o Botão:**
-   - Um terminal do botão deve ser conectado ao pino digital 2 do Arduino.
-   - O outro terminal do botão deve ser conectado ao GND da placa.
+   - Um terminal do botão deve ser conectado ao pino digital 5 do Arduino.
+   - O outro terminal do botão deve ser conectado ao VCC (5V) da placa.
 
 2. **Configuração do Resistor Pull-up**:
-   - Conecte um resistor de 10 kΩ entre o pino 2 (onde o botão está conectado) e o VCC (5V). Isso garantirá que o pino 2 esteja em um estado alto quando o botão não estiver pressionado.
+   - Conecte um resistor de 10 kΩ entre o pino 5 (onde o botão está conectado) e o GND (terra). Isso garantirá que o pino 5 esteja em um estado baixo quando o botão não estiver pressionado.
 
 
 3. **Diagrama de montagem**
