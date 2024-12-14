@@ -14,18 +14,17 @@ Este diretório contém o terceiro exercício de casa, onde demonstramos como en
 - **1 Protoboard (opcional, para montagem do circuito)**
 
 
-## Montagem do Circuito
-### Ultilizando um resistor pull-up:
+### Ultilizando um resistor pull-dow:
 1. **Conectar o Botão:**
    - Um terminal do botão deve ser conectado ao pino digital 5 do Arduino.
-   - O outro terminal do botão deve ser conectado ao GND (terra) da placa.
+   - O outro terminal do botão deve ser conectado ao VCC (5V) da placa.
 
-2. **Configuração do Resistor pull-up**:
-   - Conecte um resistor de 10 kΩ entre o pino 5 (onde o botão está conectado) e o VCC (5V). Isso garantirá que o pino 2 esteja em um estado alto quando o botão não estiver pressionado.
+2. **Configuração do Resistor pull-dow**:
+   - Conecte um resistor de 10 kΩ entre o pino 5 (onde o botão está conectado) e o GND (terra). Isso garantirá que o pino 5 esteja em um estado baixo quando o botão não estiver pressionado.
 
 3. **Diagrama de montagem**
-   - *Ultilizando um resistor pull-up:*
-      > ![fotodd](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Casa_1/Diagrama_Casa_1%3A%20pull-up.png)
+   - *Ultilizando um resistor pull-dow:*
+      > ![fotodd](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Casa_1/Diagrama_Casa_1%3A%20pull-dow.png)
 
 
 ## Código Comentado
@@ -70,6 +69,6 @@ Para evitar múltiplas leituras causadas por ruídos no botão, é aplicado um a
 
 ## Participações
 - Este projeto contou com a assistência do ChatGPT, um assistente virtual da OpenAI, para fornecer informações e orientações durante o desenvolvimento e a elaboração da documentação.
-  *(OPENAI. ChatGPT. Disponível em: ChatGPT - [OpenAI](https://www.openai.com/chatgpt). Acesso em: 20/09/24.)*
+  *(OPENAI. ChatGPT. Disponível em: ChatGPT - [OpenAI](https://www.openai.com/chatgpt). Acesso em: 14/12/24.)*
 - [Epaminondaslage](https://www.bing.com/ck/a?!&&p=cf945232149fce13JmltdHM9MTcyNjcwNDAwMCZpZ3VpZD0yNGZkYWYyYS1lMjZiLTYzMWYtMzY0MC1iYmJiZTNlZTYyZGImaW5zaWQ9NTE5Mg&ptn=3&ver=2&hsh=3&fclid=24fdaf2a-e26b-631f-3640-bbbbe3ee62db&psq=src%3d%22https%3a%2f%2fgithub.com%2fEpaminondaslage%2fAluno_Fulano_de_Tal%2fblob%2fmain%2fExercicio_em_Casa_1%2fFigura.jpeg%22+alt%3d%22Circuito%22+width%3d%2250%25%22&u=a1aHR0cHM6Ly9naXRodWIuY29tL0VwYW1pbm9uZGFzbGFnZQ&ntb=1) foi responsável por instruir e coordernar este projeto.
 
