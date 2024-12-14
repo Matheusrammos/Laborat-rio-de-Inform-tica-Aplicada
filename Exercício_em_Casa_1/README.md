@@ -6,9 +6,9 @@ Este projeto demonstra como controlar um LED integrado no pino 13 de uma placa A
 ### O que são resistores pull-up e pull-dow?
 - Resistores pull-down e pull-up são usados para garantir que um pino de entrada digital tenha um estado lógico definido (LOW ou HIGH) quando nenhum sinal está sendo enviado.
 
-**Pull-down:** Conecta o pino ao GND (0V) através de um resistor, forçando o estado LOW quando o botão ou outro dispositivo está aberto.
+   - **Pull-down:** Conecta o pino ao GND (0V) através de um resistor, forçando o estado LOW quando o botão ou outro dispositivo está aberto.
 
-**Pull-up:** Conecta o pino ao 5V (ou VCC) através de um resistor, forçando o estado HIGH quando o botão ou dispositivo está aberto.
+   - **Pull-up:** Conecta o pino ao 5V (ou VCC) através de um resistor, forçando o estado HIGH quando o botão ou dispositivo está aberto.
 Eles evitam estados flutuantes que podem causar leituras instáveis ou interferências.
 
 
