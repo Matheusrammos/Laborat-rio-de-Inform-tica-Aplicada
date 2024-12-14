@@ -97,8 +97,6 @@ void loop() {
 }
 ````
 
-## Funcionamento
-Aqui está uma explicação no formato solicitado, adaptada para o seu código:
 
 ## Funcionamento
 ###  Ultilizando um resistor Pull-up:
