@@ -3,6 +3,8 @@
 ## Descrição
 Este projeto utiliza um Arduino para controlar um LED conectado ao pino 10, fazendo-o piscar 3 vezes a cada 0,1 segundo (100ms) e, em seguida, apagar por 1,5 segundos (1500ms). O número de piscadas, a duração de cada piscada e a duração do apagamento são variáveis configuráveis no código, permitindo ajustes para testar diferentes comportamentos do sistema.
 
+https://i.pinimg.com/originals/b9/b9/48/b9b948ec034a0c5474e2d82ecf41c9b1.gif
+
 ## Objetivo
 O objetivo deste projeto é aprender a manipular o comportamento de um LED através de variáveis configuráveis em um sketch Arduino. Este exercício permite a prática de controle de tempo (com o comando `delay()`), manipulação de pinos digitais e a modificação de variáveis para alterar o comportamento do sistema.
 
