@@ -101,7 +101,7 @@ void loop() {
 Aqui está uma explicação no formato solicitado, adaptada para o seu código:
 
 ## Funcionamento
-Aqui está a explicação do funcionamento do seu código utilizando o resistor **pull-up**:
+###  Ultilizando um resistor Pull-up:
 > O projeto de controle de LED com botão, utilizando o **pull-up** interno, opera de maneira simples e eficaz. Abaixo estão os principais passos que descrevem seu funcionamento:
 1. **Configuração Inicial:**  
    O Arduino é configurado para monitorar o pino digital 5, onde o botão está conectado. O pino 13 é configurado como a saída para controlar o LED. O estado inicial do LED é **LOW** (apagado). O pino do botão é configurado como **entrada com pull-up** usando a configuração **`pinMode(buttonPin, INPUT)`**, e o resistor pull-up interno é ativado automaticamente.
