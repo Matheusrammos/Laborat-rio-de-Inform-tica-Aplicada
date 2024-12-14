@@ -44,14 +44,21 @@ Estbutton = digitalRead(buttonPin); // O estado do botão recebe a leitura atual
     digitalWrite(ledPin, LOW); // Desliga o LED
   }
 Serial.println(Estbutton); // Mostre o estado do botão no Serial Monitor
-delay(50);
+delay(50); // Debouncing
 }
 ````
 
 ## Funcionamento
-1. **Setup:** Inicializa a porta serial a 9600 bps para comunicação entre a placa Arduino e o computador. Também inicializa o pino digital 2 como entrada para ler o estado do botão e o pino 13 como saída para controlar o LED.
-2. **Leitura do Botão:** Quando o botão é pressionado, a entrada no pino 2 recebe 5V (sinal HIGH). Caso contrário, o pino é conectado ao GND através do resistor (sinal LOW).
-3. **Envio para a Porta Serial:** O estado do botão é enviado para a porta serial sempre que ele é pressionado, permitindo monitorar a contagem em tempo real.
+### Configuração Inicial  
+O Arduino é configurado para monitorar o botão no pino digital 5 e controlar o LED no pino digital 13. Inicialmente, o LED é configurado como apagado (**LOW**) e a comunicação serial é iniciada para enviar informações ao **Serial Monitor**.  
+### Leitura do Estado do Botão  
+A cada ciclo do programa, o estado do botão é lido utilizando o comando **`digitalRead(buttonPin)`** e armazenado na variável **`Estbutton`**.  
+### Controle do LED  
+Se o botão estiver pressionado (**HIGH**), o LED é aceso com **`digitalWrite(ledPin, HIGH)`**. Caso contrário, o LED é apagado com **`digitalWrite(ledPin, LOW)`**.  
+### Exibição no Serial Monitor  
+O estado atual do botão é exibido no **Serial Monitor** por meio de **`Serial.println(Estbutton)`**, permitindo que o usuário veja se o botão está pressionado ou não.  
+### Debouncing  
+Para evitar múltiplas leituras causadas por ruídos no botão, é aplicado um atraso de 50ms ao final de cada iteração do loop principal.
 
 
 ## Participações
