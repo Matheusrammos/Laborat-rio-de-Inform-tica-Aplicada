@@ -14,7 +14,7 @@ Este diretório contém o terceiro exercício de casa, onde demonstramos como en
 - **1 Protoboard (opcional, para montagem do circuito)**
 
 
-## Montagem:
+## Montagem do Circuito
 1. **Conectar o Botão:**
    - Um terminal do botão deve ser conectado ao pino digital 5 do Arduino.
    - O outro terminal do botão deve ser conectado ao VCC (5V) da placa.
@@ -23,7 +23,7 @@ Este diretório contém o terceiro exercício de casa, onde demonstramos como en
    - Conecte um resistor de 10 kΩ entre o pino 5 (onde o botão está conectado) e o GND (terra). Isso garantirá que o pino 5 esteja em um estado baixo quando o botão não estiver pressionado.
 
 3. **Diagrama de montagem**
-   > ![fotodd](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Casa_1/Diagrama_Casa_1%3A%20pull-dow.png)
+![fotodd](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Casa_1/Diagrama_Casa_1%3A%20pull-dow.png)
 
 
 ## Código Comentado
@@ -54,9 +54,9 @@ delay(50); // Debouncing
 ````
 
 ## Funcionamento
-### Configuração Inicial  
-O Arduino é configurado para monitorar o botão no pino digital 5 e controlar o LED no pino digital 13. Inicialmente, o LED é configurado como apagado (**LOW**) e a comunicação serial é iniciada para enviar informações ao **Serial Monitor**.  
-### Leitura do Estado do Botão  
+1. **Configuração Inicial**  
+O Arduino é configurado para monitorar o botão no pino digital 5 e controlar o LED no pino digital 13. Inicialmente, o LED é configurado como apagado (**LOW**) e a comunicação serial é iniciada para enviar informações ao **Serial Monitor**.
+Leitura do Estado do Botão  
 A cada ciclo do programa, o estado do botão é lido utilizando o comando **`digitalRead(buttonPin)`** e armazenado na variável **`Estbutton`**.  
 ### Controle do LED  
 Se o botão estiver pressionado (**HIGH**), o LED é aceso com **`digitalWrite(ledPin, HIGH)`**. Caso contrário, o LED é apagado com **`digitalWrite(ledPin, LOW)`**.  
