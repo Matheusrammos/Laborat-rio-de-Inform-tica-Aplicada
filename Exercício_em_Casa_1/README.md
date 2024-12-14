@@ -19,7 +19,7 @@ Eles evitam estados flutuantes que podem causar leituras instáveis ou interfer�
 - **1 Botão (integrado no pino 5)**
 - **1 Resistor de 10 kΩ (pull-up)**
 - **Fios de conexão (jumpers)**
-- **Protoboard**
+- **1 Protoboard (opcional, para montagem do circuito)**
 
 ### Ultilizando um resistor Pull-dow:
 - **1 Placa Arduino (por exemplo, Arduino Uno)**
@@ -27,21 +27,38 @@ Eles evitam estados flutuantes que podem causar leituras instáveis ou interfer�
 - **1 Botão (integrado no pino 5)**
 - **1 Resistor de 10 kΩ (pull-dow)**
 - **Fios de conexão (jumpers)**
-- **Protoboard**
+- **1 Protoboard (opcional, para montagem do circuito)**
 
 
 ## Montagem do Circuito
+### Ultilizando um resistor Pull-up:
 1. **Conectar o Botão:**
    - Um terminal do botão deve ser conectado ao pino digital 2 do Arduino.
    - O outro terminal do botão deve ser conectado ao GND da placa.
 
 2. **Configuração do Resistor Pull-up**:
    - Conecte um resistor de 10 kΩ entre o pino 2 (onde o botão está conectado) e o VCC (5V). Isso garantirá que o pino 2 esteja em um estado alto quando o botão não estiver pressionado.
-     
+
+### Ultilizando um resistor Pull-dow:
+1. **Conectar o Botão:**
+   - Um terminal do botão deve ser conectado ao pino digital 2 do Arduino.
+   - O outro terminal do botão deve ser conectado ao GND da placa.
+
+2. **Configuração do Resistor Pull-up**:
+   - Conecte um resistor de 10 kΩ entre o pino 2 (onde o botão está conectado) e o VCC (5V). Isso garantirá que o pino 2 esteja em um estado alto quando o botão não estiver pressionado.
+
+
 3. **Diagrama de montagem**
+### Ultilizando um resistor Pull-up:
 ![fotodd](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Casa_1/Diagrama_Casa_1.jpeg)
 
+### Ultilizando um resistor Pull-dow:
+
+
 ## Código Comentado
+### Ultilizando um resistor Pull-up:
+
+### Ultilizando um resistor Pull-dow:
 ```cpp
 // Definindo os pinos
 const int ledPin = 13; // Pino do LED
