@@ -61,11 +61,6 @@ LastState = Estbutton; //Save State
 
 
 ## Funcionamento
-Claro! Aqui está o "Funcionamento" do código de forma resumida e estruturada, como solicitado:
-
----
-
-## Funcionamento
 > Este projeto visa contar o número de pressões de um botão utilizando o Arduino, acendendo e apagando um LED conforme o botão é pressionado. O número de pressões é exibido no **Serial Monitor**. O código utiliza detecção de transições de estado para garantir que cada pressionamento seja contado corretamente.
 1. **Configuração Inicial:**
    - O pino 13 é configurado como **saída** para controlar o LED, e o pino 5 como **entrada** para o botão.
