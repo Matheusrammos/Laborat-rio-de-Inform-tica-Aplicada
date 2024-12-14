@@ -4,23 +4,29 @@
 Este diretório contém o terceiro exercício de casa, onde demonstramos como enviar dados para a porta serial. Neste código, ao pressionar o botão, o LED integrado no pino 13 da placa Arduino é acionado e imediatamente é transmitido um sinal à Porta Serial.
 > *A montagem do circuito desse exercício é coincidente à vista em [Exercício_em_Casa_1](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Casa_1). Alem disso, nesse projeto, optei por usar o modelo [pull-dow](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Casa_1/Diagrama_Casa_1%3A%20pull-dow.png), mas não se pode descartar a possibilidade do uso de [pull-up](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Casa_1/Diagrama_Casa_1%3A%20pull-up.png) com algumas alterações na montagem e no código.*
 
-## Materiais Necessários
-- **1 Arduino Uno**
-- **1 Botão de pressão**
-- **1 Resistor de 10 kΩ (pull-up)**
+
+## Componentes Utilizados
+- **1 Placa Arduino (por exemplo, Arduino Uno)**
+- **1 LED (integrado no pino 13)**
+- **1 Botão (integrado no pino 5)**
+- **1 Resistor de 10 kΩ (pull-dow)**
 - **Fios de conexão (jumpers)**
-- **Protoboard (opcional)**
+- **1 Protoboard (opcional, para montagem do circuito)**
 
 
 ## Montagem do Circuito
+### Ultilizando um resistor pull-up:
+1. **Conectar o Botão:**
+   - Um terminal do botão deve ser conectado ao pino digital 5 do Arduino.
+   - O outro terminal do botão deve ser conectado ao GND (terra) da placa.
 
-1. **Esquema de Montagem:**
+2. **Configuração do Resistor pull-up**:
+   - Conecte um resistor de 10 kΩ entre o pino 5 (onde o botão está conectado) e o VCC (5V). Isso garantirá que o pino 2 esteja em um estado alto quando o botão não estiver pressionado.
 
-- O botão é conectado ao pino 2 (ou qualquer outra entrada digital) com um resistor de pull-up de 10 kΩ.
-- O resistor pull-up está conectado ao GND. O outro pino do botão está conectado a uma fonte de alimentação de 5V.
+3. **Diagrama de montagem**
+   - *Ultilizando um resistor pull-up:*
+      > ![fotodd](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Casa_1/Diagrama_Casa_1%3A%20pull-up.png)
 
-2. **Diagrama do Circuito:**
-![fotodbid](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Casa_3/Diagrama_Casa_3.jpeg)
 
 ## Código Comentado
 ```cpp
