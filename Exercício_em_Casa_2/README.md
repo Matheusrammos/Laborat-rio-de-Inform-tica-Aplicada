@@ -5,6 +5,7 @@
 Este projeto demonstra como contar o número de vezes que um botão é pressionado utilizando um Arduino. O objetivo é detectar as transições do estado do botão de desligado (LOW) para ligado (HIGH) e contabilizar cada pressionamento. Os resultados são exibidos no Serial Monitor, permitindo monitorar a contagem em tempo real.
 > *A montagem do circuito desse exercício é coincidente à vista em [Exercício_em_Casa_1](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Casa_1). Alem disso, nesse projeto, optei por usar o modelo [pull-dow](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Casa_1/Diagrama_Casa_1%3A%20pull-dow.png).*
 
+
 ## Materiais Necessários
 - **1 Arduino Uno**
 - **1 Botão de pressão**
@@ -14,20 +15,17 @@ Este projeto demonstra como contar o número de vezes que um botão é pressiona
 
 
 ## Montagem do Circuito
-#### Organização do Circuito:
-   - Utilize a protoboard para montar o circuito e organizar as conexões de forma limpa.
-   - Use fios de conexão (jumpers) para ligar os componentes ao Arduino.
-     
-1. **Conexões do Botão:**
-   - Conecte um terminal do botão ao pino digital 2 do Arduino.
-   - Conecte o outro terminal do botão a uma fonte de 5V.
+### Ultilizando um resistor pull-dow:
+1. **Conectar o Botão:**
+   - Um terminal do botão deve ser conectado ao pino digital 5 do Arduino.
+   - O outro terminal do botão deve ser conectado ao VCC (5V) da placa.
 
-2. **Conexões do Resistor:**
-   - Conecte um resistor de 10 kΩ entre o pino 2 e o GND para configurar o resistor pull-up.
+2. **Configuração do Resistor pull-dow**:
+   - Conecte um resistor de 10 kΩ entre o pino 5 (onde o botão está conectado) e o GND (terra). Isso garantirá que o pino 5 esteja em um estado baixo quando o botão não estiver pressionado.
 
-3. **Diagrama do Circuito:**
-   
-![fotodbid](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Casa_2/Diagrama_Casa_2.jpeg)
+3. **Diagrama de montagem**
+![fotodd](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Casa_1/Diagrama_Casa_1%3A%20pull-dow.png)
+
 
 ## Código Comentado
 ```cpp
