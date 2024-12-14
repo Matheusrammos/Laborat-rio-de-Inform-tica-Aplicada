@@ -63,22 +63,21 @@ LastState = Estbutton; //Save State
 ## Funcionamento
 > Este projeto visa contar o número de pressões de um botão utilizando o Arduino, acendendo e apagando um LED conforme o botão é pressionado. O número de pressões é exibido no **Serial Monitor**. O código utiliza detecção de transições de estado para garantir que cada pressionamento seja contado corretamente.
 1. **Configuração Inicial:**
-   - O pino 13 é configurado como **saída** para controlar o LED, e o pino 5 como **entrada** para o botão.
-   - O LED começa apagado (estado **LOW**), e a comunicação serial é inicializada para enviar dados ao **Serial Monitor** a 9600 bps.
+   O pino 13 é configurado como **saída** para controlar o LED, e o pino 5 como **entrada** para o botão. O LED começa apagado (estado **LOW**), e a comunicação serial, que envia enviar dados a 9600bps, é ativada para exibir a contagem de pressionamentos no Serial Monitora.
 2. **Leitura do Estado do Botão:**
-   - O estado do botão é lido a cada ciclo do **loop()** e armazenado na variável `Estbutton`. O valor pode ser **HIGH** (botão pressionado) ou **LOW** (botão não pressionado).
+   O estado do botão é lido a cada ciclo do **loop()** e armazenado na variável `Estbutton`. O valor pode ser **HIGH** (botão pressionado) ou **LOW** (botão não pressionado).
 3. **Detecção de Transição de Estado (Pressionamento):**
-   - O código verifica se houve uma **transição de LOW para HIGH**, ou seja, se o botão foi pressionado. Isso é feito com a condição:
+   O código verifica se houve uma **transição de LOW para HIGH**, ou seja, se o botão foi pressionado. Isso é feito com a condição:
      ```cpp
      if ((LastState == LOW) && (Estbutton == HIGH))
      ```
-   - Quando essa transição é detectada, a variável `PushCounter` é incrementada em 1, e o LED é aceso. O número de pressões do botão é então impresso no **Serial Monitor**.
+Quando essa transição é detectada, a variável `PushCounter` é incrementada em 1, e o LED é aceso. O número de pressões do botão é então impresso no **Serial Monitor**.
 4. **Controle do LED:**
-   - Se o botão estiver pressionado (`Estbutton == HIGH`), o LED é aceso.
-   - Caso contrário, se o botão não estiver pressionado (`Estbutton == LOW`), o LED é apagado.
-5. **Atraso e Atualização do Estado do Botão:**
-   - O comando `delay(50)` é usado para criar um pequeno atraso de 50 milissegundos, que ajuda a evitar múltiplas leituras indesejadas do botão (debouncing simples).
-   - O estado do botão é armazenado na variável `LastState` para ser comparado na próxima iteração do loop e detectar a próxima transição.
+   Se o botão estiver pressionado (`Estbutton == HIGH`), o LED é aceso com **`digitalWrite(ledPin, HIGH)`**. Caso contrário, se o botão não estiver pressionado (`Estbutton == LOW`), o LED é apagado com **`digitalWrite(ledPin, LOW)`**.
+5. **Debouncing:**
+   O comando `delay(50)` é usado para criar um pequeno atraso de 50 milissegundos, que ajuda a evitar múltiplas leituras indesejadas do botão (debouncing simples). 
+6. **Atualização do Estado Anterior (save):**  
+   O estado do botão é armazenado na variável `LastState` para ser comparado na próxima iteração do loop e detectar a próxima transição.
 
 
 ## Participações
