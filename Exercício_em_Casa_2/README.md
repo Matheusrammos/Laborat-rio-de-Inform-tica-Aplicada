@@ -3,7 +3,7 @@
 
 ## Descrição
 Este projeto demonstra como contar o número de vezes que um botão é pressionado utilizando um Arduino. O objetivo é detectar as transições do estado do botão de desligado (LOW) para ligado (HIGH) e contabilizar cada pressionamento. Os resultados são exibidos no Serial Monitor, permitindo monitorar a contagem em tempo real.
-> *A montagem do circuito desse exercício é coincidente à vista em [Exercício_em_Casa_1](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Casa_1). Alem disso, nesse projeto, optei por usar o modelo [pull-dow](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Casa_1/Diagrama_Casa_1%3A%20pull-dow.png), mas não se pode descartar a possibilidade do uso de [pull-up]( com algumas alterações na montagem e no código.
+> *A montagem do circuito desse exercício é coincidente à vista em [Exercício_em_Casa_1](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Casa_1). Alem disso, nesse projeto, optei por usar o modelo [pull-dow](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Casa_1/Diagrama_Casa_1%3A%20pull-dow.png), mas não se pode descartar a possibilidade do uso de [pull-up](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Casa_1/Diagrama_Casa_1%3A%20pull-up.png) com algumas alterações na montagem e no código.
 
 ## Componentes Utilizados
 - **1 Placa Arduino (por exemplo, Arduino Uno)**
@@ -61,11 +61,29 @@ LastState = Estbutton; //Save State
 
 
 ## Funcionamento
-O programa opera da seguinte maneira:
-1. **Leitura do Estado do Botão:** A cada iteração do loop principal, o Arduino lê o estado atual do botão.
-2. **Comparação de Estados:** O estado atual do botão é comparado com o estado anterior, que é armazenado em uma variável.
-3. **Detecção de Pressionamento:** Se o estado atual for diferente do estado anterior e for igual a HIGH, o contador de pressionamentos é incrementado.
-4. **Exibição no Serial Monitor:** A cada incremento, o valor da contagem é enviado ao Serial Monitor, permitindo a visualização imediata do número de pressões.
+Claro! Aqui está o "Funcionamento" do código de forma resumida e estruturada, como solicitado:
+
+---
+
+## Funcionamento
+> Este projeto visa contar o número de pressões de um botão utilizando o Arduino, acendendo e apagando um LED conforme o botão é pressionado. O número de pressões é exibido no **Serial Monitor**. O código utiliza detecção de transições de estado para garantir que cada pressionamento seja contado corretamente.
+1. **Configuração Inicial:**
+   - O pino 13 é configurado como **saída** para controlar o LED, e o pino 5 como **entrada** para o botão.
+   - O LED começa apagado (estado **LOW**), e a comunicação serial é inicializada para enviar dados ao **Serial Monitor** a 9600 bps.
+2. **Leitura do Estado do Botão:**
+   - O estado do botão é lido a cada ciclo do **loop()** e armazenado na variável `Estbutton`. O valor pode ser **HIGH** (botão pressionado) ou **LOW** (botão não pressionado).
+3. **Detecção de Transição de Estado (Pressionamento):**
+   - O código verifica se houve uma **transição de LOW para HIGH**, ou seja, se o botão foi pressionado. Isso é feito com a condição:
+     ```cpp
+     if ((LastState == LOW) && (Estbutton == HIGH))
+     ```
+   - Quando essa transição é detectada, a variável `PushCounter` é incrementada em 1, e o LED é aceso. O número de pressões do botão é então impresso no **Serial Monitor**.
+4. **Controle do LED:**
+   - Se o botão estiver pressionado (`Estbutton == HIGH`), o LED é aceso.
+   - Caso contrário, se o botão não estiver pressionado (`Estbutton == LOW`), o LED é apagado.
+5. **Atraso e Atualização do Estado do Botão:**
+   - O comando `delay(50)` é usado para criar um pequeno atraso de 50 milissegundos, que ajuda a evitar múltiplas leituras indesejadas do botão (debouncing simples).
+   - O estado do botão é armazenado na variável `LastState` para ser comparado na próxima iteração do loop e detectar a próxima transição.
 
 
 ## Participações
