@@ -10,11 +10,12 @@ O objetivo deste projeto é aprender a controlar múltiplos LEDs com um Arduino 
 
 
 ## Materiais Necessários
-- **1 Arduino Uno**
+- **1 Arduino Uno (ou qualquer outra placa Arduino)**
 - **3 LEDs**
 - **3 Resistores de 220 Ω (para limitar a corrente dos LEDs)**
 - **Fios de conexão (jumpers)**
-- **1 Protoboard**
+- **1 Protoboard (opcional, para montagem do circuito)**
+
 
 
 ## Montagem do Circuito
