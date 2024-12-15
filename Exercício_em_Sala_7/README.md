@@ -23,7 +23,7 @@ O projeto utiliza um display de 7 segmentos para exibir caracteres no formato he
    - O outro terminal do botão deve ser conectado ao VCC (5V) da placa.
 
 1. **Diagrama de montagem:**
-![foto](oddfud
+![fotgfjsdo](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_7/Diagrama_Aula_7.png)
 
 
 ## Código
