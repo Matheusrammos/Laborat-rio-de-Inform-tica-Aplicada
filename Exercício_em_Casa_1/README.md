@@ -103,14 +103,19 @@ void loop() {
 > O projeto de controle de LED com botão, utilizando o **pull-up** interno, opera de maneira simples e eficaz. Abaixo estão os principais passos que descrevem seu funcionamento:
 1. **Configuração Inicial:**  
    O Arduino é configurado para monitorar o pino digital 5, onde o botão está conectado. O pino 13 é configurado como a saída para controlar o LED. O estado inicial do LED é **LOW** (apagado). O pino do botão é configurado como **entrada com pull-up** usando a configuração **`pinMode(buttonPin, INPUT)`**, e o resistor pull-up interno é ativado automaticamente.
+   
 2. **Leitura do Estado do Botão:**  
    A cada iteração do loop principal, o Arduino lê o estado atual do botão com o comando **`digitalRead(buttonPin)`**. O estado do botão pode ser "HIGH" (botão não pressionado, devido ao pull-up) ou "LOW" (botão pressionado, puxando para o GND).
+   
 3. **Comparação de Estados:**  
    O código verifica se o botão está em **LOW** (pressionado). Isso ocorre porque, com o **pull-up interno** ativado, o pino do botão fica em **HIGH** quando não pressionado e vai para **LOW** quando pressionado.
+   
 4. **Detecção de Pressionamento:**  
    Quando o botão é pressionado, o estado do pino do botão será **LOW**, indicando que há uma conexão com o GND. Nesse momento, o código acende o LED com o comando **`digitalWrite(ledPin, HIGH)`**.
+   
 5. **Exibição do Estado do LED:**  
    Se o botão estiver pressionado (**LOW**), o LED será aceso. Caso contrário, quando o botão não estiver pressionado (**HIGH**), o LED será apagado.
+   
 6. **Atualização do Estado Anterior:**  
    Não há necessidade de uma variável para comparar o estado anterior, pois o código apenas verifica continuamente o estado atual do botão. Se o botão for pressionado, o LED acende, e se não for pressionado, o LED apaga.
 
@@ -118,14 +123,19 @@ void loop() {
 > O projeto de controle de LED com um botão opera de forma simples e eficaz. Abaixo estão os principais passos que descrevem seu funcionamento:
 1. **Configuração Inicial:** 
    O Arduino é configurado para monitorar o pino digital 5, onde o botão está conectado. O pino do LED (pino 13) é configurado como saída. O estado inicial do LED é **LOW** (desligado).
+
 2. **Leitura do Estado do Botão:** 
    A cada iteração do loop principal, o Arduino lê o estado atual do botão com o comando **`digitalRead(buttonPin)`**. O estado do botão pode ser "HIGH" (botão pressionado) ou "LOW" (botão não pressionado).
+
 3. **Comparação de Estados:** 
    O estado do botão é comparado a **HIGH** ou **LOW**. Quando o botão é pressionado, o pino de entrada do botão recebe **HIGH**. Caso contrário, ele está em **LOW**.
+
 4. **Detecção de Pressionamento:** 
    Quando o botão está pressionado, o estado do pino do botão será **HIGH**, e o código entra no bloco do `if`. Nesse momento, o LED é aceso, com o comando **`digitalWrite(ledPin, HIGH)`**.
+
 5. **Exibição do Estado do LED:** 
    Se o botão estiver pressionado, o LED acende. Caso o botão não esteja pressionado, o LED apaga, com o comando **`digitalWrite(ledPin, LOW)`**.
+
 6. **Atualização do Estado Anterior:** 
    Não há um armazenamento explícito de estados anteriores do botão nesse código, pois ele apenas verifica o estado atual do botão a cada iteração do loop. O comportamento do LED depende diretamente do estado atual do botão, sem a necessidade de variáveis de comparação.
 
