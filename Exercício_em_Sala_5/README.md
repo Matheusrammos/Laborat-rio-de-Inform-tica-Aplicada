@@ -95,8 +95,8 @@ Controlar quatro LEDs conectados ao Arduino, fazendo-os acender e apagar de form
 
 ## Montagem do Circuito
 1. **Conexão dos LEDs:**
-   - Conecte os ânodos (terminais positivos) dos LEDs aos pinos digitais 13, 9, 6 e 3 do Arduino através de resistores de 220 Ω.
-   - Conecte os cátodos (terminais negativos) dos LEDs ao GND (terra) do Arduino.
+   - Conecte os ânodos (terminais positivos) dos LEDs aos pinos digitais 13, 9, 6 e 3 do Arduino.
+   - Conecte os cátodos (terminais negativos) dos LEDs ao GND (terra) do Arduino através de resistores de 220 Ω.
 
 2. **Diagrama de montagem:**
 ![fotoddd](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_5/Diagrama_Aula_5.png)
