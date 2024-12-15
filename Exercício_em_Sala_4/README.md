@@ -1,31 +1,23 @@
 # Controle de Pisca-Pisca de LED com Variáveis Configuráveis
 
 ## Descrição
-Este projeto utiliza um Arduino para controlar um LED conectado ao pino 10, fazendo-o piscar 3 vezes a cada 0,1 segundo (100ms) através do while e, em seguida, apagar por 1,5 segundos (1500ms). O número de piscadas, a duração de cada piscada e a duração do apagamento são variáveis configuráveis no código, permitindo ajustes para testar diferentes comportamentos do sistema.
+Este projeto utiliza um Arduino para controlar um LED conectado ao pino 10, fazendo-o piscar 3 vezes a cada 0,1 segundo (100ms) através do `while` e, em seguida, apagar por 1,5 segundos (1500ms). O número de piscadas, a duração de cada piscada e a duração do apagamento são variáveis configuráveis no código, permitindo ajustes para testar diferentes comportamentos do sistema.
 
+### O que é, e o que faz a estrutura `while`?
 - O `while` em C++ é uma estrutura de repetição que executa um bloco de código enquanto uma condição for verdadeira. 
+    - A condição é avaliada antes de cada execução.
+    - Se for verdadeira, o bloco é executado; caso contrário, o loop termina.
+    - É essencial atualizar a condição dentro do loop para evitar loops infinitos.
 
-**Sintaxe:**
+##
+
+> <img alt="WhileDIAGRAMA" src="https://i.pinimg.com/originals/b9/b9/48/b9b948ec034a0c5474e2d82ecf41c9b1.gif">
+- **Sintaxe:**
 ```cpp
 while (condição) {
     // Código a ser repetido
 }
-```
-
-1. A condição é avaliada antes de cada execução.
-2. Se for verdadeira, o bloco é executado; caso contrário, o loop termina.
-3. É essencial atualizar a condição dentro do loop para evitar loops infinitos.
-
-**Exemplo básico:**
-```cpp
-int i = 0;
-while (i < 5) {
-    cout << i << endl;
-    i++;
-}
-```
-
-  <img alt="WhileDIAGRAMA" src="https://i.pinimg.com/originals/b9/b9/48/b9b948ec034a0c5474e2d82ecf41c9b1.gif">
+```````
 
 ## Objetivo
 O objetivo deste projeto é aprender a manipular o comportamento de um LED através de variáveis configuráveis em um sketch Arduino. Este exercício permite a prática de controle de tempo (com o comando `delay()`), manipulação de pinos digitais e a modificação de variáveis para alterar o comportamento do sistema.
