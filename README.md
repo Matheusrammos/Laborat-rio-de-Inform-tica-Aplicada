@@ -29,11 +29,11 @@ Segundo exercício focado em controlar LEDs para simular luzes de garagem, intro
 ### [Exercício_em_Sala_3: Montagem Básica com LEDs](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Sala_3)
 Terceiro exercício que envolve a montagem de circuitos simples com LEDs, aprendendo sobre componentes eletrônicos.
 
-### [Exercício_em_Sala_4: Montagem Básica com LEDs](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Sala_3)
+### [Exercício_em_Sala_4: Controle de Pisca-Pisca de LED com Variáveis Configuráveis](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Sala_4)
 
-### [Exercício_em_Sala_5: Montagem Básica com LEDs](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Sala_3)
+### [Exercício_em_Sala_5: Sequência de 4 canais com Arduino](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Sala_5)
 
-### [Exercício_em_Sala_6: Montagem Básica com LEDs](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Sala_3)
+### [Exercício_em_Sala_6: Pisca-Pisca Led aleatório de 4 canais](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Sala_6)
 
 ### [Exercício_em_Sala_7: Montagem Básica com LEDs](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Sala_3)
 
