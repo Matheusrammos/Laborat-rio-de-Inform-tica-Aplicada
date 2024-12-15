@@ -99,7 +99,7 @@ Controlar quatro LEDs conectados ao Arduino, fazendo-os acender e apagar de form
    - Conecte os cátodos (terminais negativos) dos LEDs ao GND (terra) do Arduino.
 
 2. **Diagrama de montagem:**
-
+![fotoddd](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_5/Diagrama_Aula_5.png)
 
 
 ## Código Comentado
