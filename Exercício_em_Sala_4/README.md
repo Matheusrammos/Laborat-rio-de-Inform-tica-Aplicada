@@ -4,6 +4,7 @@
 Este projeto utiliza um Arduino para controlar um LED conectado ao pino 10, fazendo-o piscar 3 vezes a cada 0,1 segundo (100ms) através do `while` e, em seguida, apagar por 1,5 segundos (1500ms). O número de piscadas, a duração de cada piscada e a duração do apagamento são variáveis configuráveis no código, permitindo ajustes para testar diferentes comportamentos do sistema.
 
 ### O que é, e o que faz a estrutura `while`?
+
 - O `while` em C++ é uma estrutura de repetição que executa um bloco de código enquanto uma condição for verdadeira.
 
     - **Primeira etapa:** A condição do loop é avaliada antes de cada execução. Essa condição é geralmente uma expressão booleana (como i < 10), que determina se o loop continuará ou será encerrado. Se a condição for avaliada como falsa desde o início, o bloco de código dentro do loop nem será executado uma única vez.
@@ -14,16 +15,19 @@ Este projeto utiliza um Arduino para controlar um LED conectado ao pino 10, faze
     <br>
     
     > <img alt="WhileDIAGRAMA" height="520" width="733" src="https://i.pinimg.com/originals/b9/b9/48/b9b948ec034a0c5474e2d82ecf41c9b1.gif">
-
-**Sintaxe:**
+<details>
+<summary>: :open_file_folder: Sintaxe  </summary>
+    
 ```cpp
 while (condição) {
     // Código a ser repetido
 }
 ```````
+</details>
+
 
 ## Objetivo
-O objetivo deste projeto é aprender a manipular o comportamento de um LED através de variáveis configuráveis em um sketch Arduino. Este exercício permite a prática de controle de tempo (com o comando `delay()`), manipulação de pinos digitais e a modificação de variáveis para alterar o comportamento do sistema.
+O objetivo deste projeto é aprender a manipular o comportamento de um LED através de variáveis configuráveis em um sketch Arduino. Este exercício permite a prática de controle de tempo (com o comando `delay()`e `while`), manipulação de pinos digitais e a modificação de variáveis para alterar o comportamento do sistema.
 
 ## Materiais Necessários
 - **1 Arduino Uno (ou outra placa compatível)**
