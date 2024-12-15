@@ -6,11 +6,6 @@ O projeto utiliza um display de 7 segmentos para exibir caracteres no formato he
 ### Sobre o Display de Sete Segmentos:
 - Um display de sete segmentos é um componente eletrônico usado para exibir números e algumas letras. Ele é composto por sete LEDs organizados em forma de "8", identificados como A, B, C, D, E, F e G, além de um ponto decimal (DP) opcional. É amplamente utilizado em dispositivos como relógios digitais, calculadoras e termômetros, sendo fácil de controlar e econômico. Apesar de sua simplicidade, é limitado à exibição de caracteres básicos.
 
-    - O display de sete segmentos continua sendo uma escolha popular para aplicações que exigem exibição básica, devido à sua simplicidade e custo-benefício.
-      
-    - Nesse caso, os pinos 3 e 8 (comuns) foram ligados ao terra. 
-
-
 <details>
 <summary> :bangbang: Tipos de Configuração  </summary>
 
@@ -23,9 +18,18 @@ O projeto utiliza um display de 7 segmentos para exibir caracteres no formato he
    - Todos os cátodos (terminais negativos) dos LEDs estão conectados ao GND, e os segmentos são ativados ao aplicar tensão positiva nos ânodos (terminais positivos).  
 </details>
 
-> <img alt="WhileDIAGRAMA" src="https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_7/Displ_Sete_Seg2.png">
 
-> <img alt="WhileDIAGRAMA" height="400" width="773" src="https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_7/Displ_Sete_Seg.png">
+> - Aplicações
+Dispositivos portáteis: relógios e calculadoras; Medidores: termômetros digitais, multímetros e balanças eletrônicas; Eletrodomésticos: micro-ondas e máquinas de lavar.
+
+- Ponderações
+    - O display de sete segmentos continua sendo uma escolha popular para aplicações que exigem exibição básica, devido à sua simplicidade e custo-benefício.
+      
+    - Nesse caso, os pinos 3 e 8 (comuns) foram ligados ao terra. 
+
+    <img height="300em" align="right" alt="WhileDIAGRAMA" src="https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_7/Displ_Sete_Seg2.png">
+
+    > <img alt="WhileDIAGRAMA" height="320" width="583" src="https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_7/Displ_Sete_Seg.png">
 
 
 ## Objetivo  
