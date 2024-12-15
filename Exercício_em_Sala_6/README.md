@@ -1,6 +1,7 @@
 # Pisca-Pisca Led aleatório de 4 canais
 
 ## Descrição
+O projeto consiste em um circuito com quatro LEDs e um botão conectado a um Arduino. O código controla os LEDs para que pisquem de forma aleatória enquanto o botão estiver pressionado. Quando o botão é solto, todos os LEDs são apagados. A função `random()` é usada para selecionar qual LED acender, e a lógica monitora o estado do botão para alternar entre piscar os LEDs e apagá-los.
 
 ## Objetivo
 Este projeto faz com que quatro LEDs pisquem aleatoriamente sempre que o botão for pressionado. A função random(min, max) é usada para gerar aleatoriamente os pinos dos LEDs, e a contagem de tempo entre o acendimento e apagamento é controlada com delay(). O código utiliza a variável a para armazenar o pino do LED que será acionado a cada iteração.
