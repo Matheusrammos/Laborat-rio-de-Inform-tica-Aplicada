@@ -25,11 +25,11 @@ Este projeto faz com que quatro LEDs pisquem aleatoriamente sempre que o botão 
    - Conecte um resistor de 10 kΩ entre o pino 3 (onde o botão está conectado) e o GND (terra). Isso garantirá que o pino 5 esteja em um estado baixo quando o botão não estiver pressionado.
 
 3. **Conexão dos LEDs:**
-   - Conecte os ânodos (terminais positivos) dos LEDs aos pinos digitais 13, 9, 6 e 3 do Arduino através de resistores de 220 Ω.
-   - Conecte os cátodos (terminais negativos) dos LEDs ao GND (terra) do Arduino.
+   - Conecte os ânodos (terminais positivos) dos LEDs aos pinos digitais 8, 9, 10 e 11 do Arduino.
+   - Conecte os cátodos (terminais negativos) dos LEDs ao GND (terra) do Arduino através de resistores de 220 Ω.
 
-4. **Diagrama de montagem**
-![fotoddfd](
+4. **Diagrama de montagem:**
+![fotoddfd](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_6/Diagrama_Aula_6.png)
 
 ## Código: LEDs Piscando Aleatoriamente com Contagem de Pressionamento de Botão
 
