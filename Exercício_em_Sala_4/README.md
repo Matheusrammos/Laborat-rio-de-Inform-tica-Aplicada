@@ -11,7 +11,7 @@ Este projeto utiliza um Arduino para controlar um LED conectado ao pino 10, faze
     <br>
 
 
-    > <img alt="WhileDIAGRAMA" height="685em" src="https://i.pinimg.com/originals/b9/b9/48/b9b948ec034a0c5474e2d82ecf41c9b1.gif">
+    > <img alt="WhileDIAGRAMA" height="520" width="723" src="https://i.pinimg.com/originals/b9/b9/48/b9b948ec034a0c5474e2d82ecf41c9b1.gif">
 - **Sintaxe:**
 ```cpp
 while (condição) {
