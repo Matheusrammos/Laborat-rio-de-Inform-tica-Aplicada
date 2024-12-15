@@ -35,7 +35,7 @@ Terceiro exercício que envolve a montagem de circuitos simples com LEDs, aprend
 
 ### [Exercício_em_Sala_6: Pisca-Pisca Led aleatório de 4 canais](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Sala_6)
 
-### [Exercício_em_Sala_7: Montagem Básica com LEDs](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Sala_3)
+### [Exercício_em_Sala_7: Display Sete Segmentos: Hexadecimal](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Sala_7)
 
 ### [Exercício_em_Casa_1: Ligar e Desligar o LED com o Botão](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Casa_1)
 Exercício de casa onde os alunos criam um circuito para ligar e desligar um LED com um botão.
