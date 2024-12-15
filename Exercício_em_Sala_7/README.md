@@ -119,13 +119,13 @@ void displayDigit(int num) {
 
 
 ## Funcionamento  
+> O projeto utiliza um display de sete segmentos para exibir os números de 0 a F (sistema hexadecimal). Cada segmento do display é controlado individualmente por pinos digitais do Arduino, que recebem valores para acender ou apagar os LEDs correspondentes.
 1. **Configuração dos Pinos:**  
    - Cada segmento do display é conectado a um pino digital do Arduino (`segA` a `segG`), configurado como saída no `setup()`.  
 
 2. **Mapeamento de Dígitos:**  
    - Uma matriz (`digit`) armazena os estados necessários (ligado ou desligado) para cada segmento, mapeando caracteres de 0 a F.  
    - Exemplo: Para exibir o número "0", os segmentos A, B, C, D, E e F são ativados, enquanto o segmento G é desligado.  
-
 3. **Exibição de Caracteres:**  
    - A função `displayDigit()` recebe o número ou letra como entrada e ativa os segmentos correspondentes com base no mapeamento da matriz.  
 
@@ -133,10 +133,8 @@ void displayDigit(int num) {
    - No `loop()`, um laço `for` percorre todos os caracteres de 0 a F.  
    - A cada iteração, o número ou letra é exibido no display por 1 segundo antes de mudar para o próximo caractere.  
 
-## Aplicações  
-Este projeto é útil para aprender o funcionamento de displays de 7 segmentos e pode ser aplicado em:  
-- Sistemas de contagem ou cronômetros.  
-- Interfaces simples para microcontroladores.  
-- Exibição de informações numéricas ou alfanuméricas em sistemas embarcados.  
 
-O projeto exemplifica o controle básico de um display, oferecendo uma introdução prática ao uso de matrizes e controle de hardware no Arduino.  
+## Participações
+- Este projeto contou com a assistência do ChatGPT, um assistente virtual da OpenAI, para fornecer informações e orientações durante o desenvolvimento e a elaboração da documentação.
+  *(OPENAI. ChatGPT. Disponível em: ChatGPT - [OpenAI](https://www.openai.com/chatgpt). Acesso em: 15/12/24.)*
+- [Epaminondaslage](https://www.bing.com/ck/a?!&&p=cf945232149fce13JmltdHM9MTcyNjcwNDAwMCZpZ3VpZD0yNGZkYWYyYS1lMjZiLTYzMWYtMzY0MC1iYmJiZTNlZTYyZGImaW5zaWQ9NTE5Mg&ptn=3&ver=2&hsh=3&fclid=24fdaf2a-e26b-631f-3640-bbbbe3ee62db&psq=src%3d%22https%3a%2f%2fgithub.com%2fEpaminondaslage%2fAluno_Fulano_de_Tal%2fblob%2fmain%2fExercicio_em_Casa_1%2fFigura.jpeg%22+alt%3d%22Circuito%22+width%3d%2250%25%22&u=a1aHR0cHM6Ly9naXRodWIuY29tL0VwYW1pbm9uZGFzbGFnZQ&ntb=1) foi responsável por instruir e coordernar este projeto.
