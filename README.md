@@ -29,6 +29,14 @@ Segundo exercício focado em controlar LEDs para simular luzes de garagem, intro
 ### [Exercício_em_Sala_3: Montagem Básica com LEDs](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Sala_3)
 Terceiro exercício que envolve a montagem de circuitos simples com LEDs, aprendendo sobre componentes eletrônicos.
 
+### [Exercício_em_Sala_4: Montagem Básica com LEDs](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Sala_3)
+
+### [Exercício_em_Sala_5: Montagem Básica com LEDs](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Sala_3)
+
+### [Exercício_em_Sala_6: Montagem Básica com LEDs](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Sala_3)
+
+### [Exercício_em_Sala_7: Montagem Básica com LEDs](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Sala_3)
+
 ### [Exercício_em_Casa_1: Ligar e Desligar o LED com o Botão](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Casa_1)
 Exercício de casa onde os alunos criam um circuito para ligar e desligar um LED com um botão.
 
