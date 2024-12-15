@@ -4,9 +4,28 @@
 O projeto utiliza um display de 7 segmentos para exibir caracteres no formato hexadecimal (0–9 e A–F). O Arduino controla quais segmentos do display serão ativados para formar cada número ou letra. A exibição de caracteres ocorre de forma sequencial, alternando a cada segundo.
 
 ### Sobre o Display de Sete Segmentos:
-- Um display de sete segmentos é um componente eletrônico usado para exibir números e algumas letras. Ele é composto por sete LEDs organizados em forma de "8", identificados como A, B, C, D, E, F e G, além de um ponto decimal opcional. É amplamente utilizado em dispositivos como relógios digitais, calculadoras e termômetros, sendo fácil de controlar e econômico. Apesar de sua simplicidade, é limitado à exibição de caracteres básicos.
-    > <img alt="WhileDIAGRAMA" height="480" width="733" src="https://i.pinimg.com/originals/b9/b9/48/b9b948ec034a0c5474e2d82ecf41c9b1.gif">
-<
+- Um display de sete segmentos é um componente eletrônico usado para exibir números e algumas letras. Ele é composto por sete LEDs organizados em forma de "8", identificados como A, B, C, D, E, F e G, além de um ponto decimal (DP) opcional. É amplamente utilizado em dispositivos como relógios digitais, calculadoras e termômetros, sendo fácil de controlar e econômico. Apesar de sua simplicidade, é limitado à exibição de caracteres básicos.
+
+    - O display de sete segmentos continua sendo uma escolha popular para aplicações que exigem exibição básica, devido à sua simplicidade e custo-benefício.
+      
+    - Nesse caso, os pinos 3 e 8 (comuns) foram ligados ao terra. 
+
+
+<details>
+<summary> :bangbang: Tipos de Configuração  </summary>
+
+
+1. **Anodo Comum (CA):**  
+   - Todos os ânodos (terminais positivos) dos LEDs estão conectados juntos e precisam ser ligados a uma fonte de tensão positiva.  
+   - Os segmentos são ativados ao conectar seus cátodos (terminais negativos) ao GND.  
+
+2. **Cátodo Comum (CC):**  
+   - Todos os cátodos (terminais negativos) dos LEDs estão conectados ao GND, e os segmentos são ativados ao aplicar tensão positiva nos ânodos (terminais positivos).  
+</details>
+
+
+> <img alt="WhileDIAGRAMA" height="400" width="773" src="https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_7/Displ_Sete_Seg.png">
+
 
 ## Objetivo  
 
