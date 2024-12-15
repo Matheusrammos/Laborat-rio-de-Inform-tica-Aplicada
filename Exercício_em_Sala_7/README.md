@@ -3,6 +3,10 @@
 ## Descrição
 O projeto utiliza um display de 7 segmentos para exibir caracteres no formato hexadecimal (0–9 e A–F). O Arduino controla quais segmentos do display serão ativados para formar cada número ou letra. A exibição de caracteres ocorre de forma sequencial, alternando a cada segundo.
 
+### Sobre o Display de Sete Segmentos:
+- Um display de sete segmentos é um componente eletrônico usado para exibir números e algumas letras. Ele é composto por sete LEDs organizados em forma de "8", identificados como A, B, C, D, E, F e G, além de um ponto decimal opcional. É amplamente utilizado em dispositivos como relógios digitais, calculadoras e termômetros, sendo fácil de controlar e econômico. Apesar de sua simplicidade, é limitado à exibição de caracteres básicos.
+![foto](oddfud
+
 ## Objetivo  
 
 ## Materiais Necessários
@@ -19,7 +23,7 @@ O projeto utiliza um display de 7 segmentos para exibir caracteres no formato he
    - O outro terminal do botão deve ser conectado ao VCC (5V) da placa.
 
 1. **Diagrama de montagem:**
-![fotoddfud](
+![foto](oddfud
 
 
 ## Código
