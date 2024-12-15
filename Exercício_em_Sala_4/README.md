@@ -42,7 +42,7 @@ O objetivo deste projeto é aprender a manipular o comportamento de um LED atrav
    - Conecte o cátodo (terminal negativo) do LED ao GND (terra) do Arduino.
 
 2. **Diagrama do Circuito:**
-   (Aqui você pode incluir um diagrama básico mostrando a conexão do LED ao pino 10 e GND)
+ ![fotodud](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_4/Diagrama_Aula_4.png)
 
 ## Código Comentado
 
