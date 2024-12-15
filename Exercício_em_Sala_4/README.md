@@ -14,7 +14,7 @@ Este projeto utiliza um Arduino para controlar um LED conectado ao pino 10, faze
     - **Terceira etapa:** É fundamental que a condição do loop seja atualizada dentro do corpo do loop ou como parte da própria estrutura de controle. Isso evita loops infinitos, que ocorrem quando a condição nunca se torna falsa. Por exemplo, incrementar uma variável de controle (i++) ou modificar os valores avaliados na condição garante que o loop progrida e termine corretamente.
     <br>
     
-    > <img alt="WhileDIAGRAMA" height="520" width="733" src="https://i.pinimg.com/originals/b9/b9/48/b9b948ec034a0c5474e2d82ecf41c9b1.gif">
+    > <img alt="WhileDIAGRAMA" height="480" width="733" src="https://i.pinimg.com/originals/b9/b9/48/b9b948ec034a0c5474e2d82ecf41c9b1.gif">
 <details>
 <summary>: :file_folder: Sintaxe  </summary>
     
