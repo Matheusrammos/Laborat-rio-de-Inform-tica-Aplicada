@@ -22,7 +22,7 @@ Este projeto demonstra como contar o número de vezes que um botão é pressiona
 2. **Configuração do Resistor pull-dow**:
    - Conecte um resistor de 10 kΩ entre o pino 5 (onde o botão está conectado) e o GND (terra). Isso garantirá que o pino 5 esteja em um estado baixo quando o botão não estiver pressionado.
 
-3. **Diagrama de montagem**
+3. **Diagrama de montagem:**
 ![fotodd](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Casa_1/Diagrama_Casa_1%3A%20pull-dow.png)
 
 
