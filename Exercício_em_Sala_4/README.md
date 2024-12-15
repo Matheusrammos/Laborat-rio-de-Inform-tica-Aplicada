@@ -5,13 +5,13 @@ Este projeto utiliza um Arduino para controlar um LED conectado ao pino 10, faze
 
 ### O que é, e o que faz a estrutura `while`?
 - O `while` em C++ é uma estrutura de repetição que executa um bloco de código enquanto uma condição for verdadeira. 
-    - A condição é avaliada antes de cada execução.
-    - Se for verdadeira, o bloco é executado; caso contrário, o loop termina.
-    - É essencial atualizar a condição dentro do loop para evitar loops infinitos.
+    - **Primeira etapa:** A condição é avaliada antes de cada execução.
+    - **Segunda etapa:** Se for verdadeira, o bloco é executado; caso contrário, o loop termina.
+    - **Terceira etapa:** É essencial atualizar a condição dentro do loop para evitar loops infinitos.
+    <br>
 
-##
 
-> <img alt="WhileDIAGRAMA" src="https://i.pinimg.com/originals/b9/b9/48/b9b948ec034a0c5474e2d82ecf41c9b1.gif">
+    > <img alt="WhileDIAGRAMA" height="500em" src="https://i.pinimg.com/originals/b9/b9/48/b9b948ec034a0c5474e2d82ecf41c9b1.gif">
 - **Sintaxe:**
 ```cpp
 while (condição) {
