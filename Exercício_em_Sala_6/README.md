@@ -88,11 +88,12 @@ void loop() {
 ```
 
 ## Funcionamento
+> O código faz com que quatro LEDs pisquem aleatoriamente enquanto o botão está pressionado. Quando o botão é pressionado, um número aleatório entre 8 e 11 é gerado, determinando qual LED acender. O LED acende por 500 milissegundos, apaga, e depois repete o processo. Esse ciclo continua até o botão ser liberado, momento em que todos os LEDs são apagados. O gerador de números aleatórios é inicializado com a leitura do pino analógico 0 para garantir aleatoriedade. O controle do LED e a leitura do botão são feitos com as funções `digitalWrite()` e `digitalRead()`.
 1. **Definição de Pinos e Variáveis**
    - `led1`, `led2`, `led3`, `led4`: Representam os pinos digitais onde os LEDs estão conectados (8, 9, 10, 11).
    - `buttonPin`: Pino digital 3, que é usado para o botão.
    - `a`: Variável do tipo `long` que armazenará o valor aleatório gerado pela função `random()`, determinando qual LED acender.
-   - 
+   
 2. **Configuração Inicial (Setup)**
    - Os pinos dos LEDs são configurados como **saídas** (`pinMode(led1, OUTPUT)` e os outros LEDs).
    - O pino do botão é configurado como **entrada** (`pinMode(buttonPin, INPUT)`).
