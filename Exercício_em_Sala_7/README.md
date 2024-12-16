@@ -42,15 +42,11 @@ O projeto utiliza um display de 7 segmentos para exibir caracteres no formato he
 
 
 ## Montagem do Circuito
-1. **Conectar o Botão:**
-   - Um terminal do botão deve ser conectado ao pino digital 3 do Arduino.
-   - O outro terminal do botão deve ser conectado ao VCC (5V) da placa.
-
 1. **Diagrama de montagem:**
 ![fotgfjsdo](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_7/Diagrama_Aula_7.png)
 
 
-## Código
+## Código Comentado
 ```cpp
 // Definindo os pinos para cada segmento do display de 7 segmentos
 const int segA = 2;
