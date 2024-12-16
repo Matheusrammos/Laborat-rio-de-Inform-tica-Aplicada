@@ -30,7 +30,22 @@ O projeto utiliza um display de 7 segmentos para exibir caracteres no formato he
 
 
 ## Objetivo  
+O objetivo deste projeto é construir um circuito eletrônico utilizando um Arduino e um display de sete segmentos para exibir caracteres do sistema hexadecimal (0–9 e A–F). Além de explorar o funcionamento e o controle de um display de sete segmentos, o projeto visa:
 
+1. **Aprendizado Prático:**  
+   - Demonstrar como os displays de sete segmentos podem ser utilizados em aplicações básicas, como contadores ou interfaces visuais simples.
+   - Ensinar conceitos fundamentais de eletrônica, como controle de LEDs, mapeamento de pinos e gerenciamento de saídas digitais.
+
+2. **Automação Sequencial:**  
+   - Criar um sistema automatizado que altera os caracteres exibidos no display de forma sequencial e em intervalos regulares, simulando o funcionamento de contadores ou indicadores digitais.
+
+3. **Exploração de Matrizes:**  
+   - Utilizar uma matriz para simplificar o controle dos segmentos e exibir diferentes caracteres, reforçando a lógica de programação e a organização do código.
+
+4. **Prototipagem e Integração:**  
+   - Proporcionar experiência na montagem de circuitos em protoboard, conexões com resistores e jumpers, e a integração entre hardware e software no desenvolvimento de projetos eletrônicos.  
+
+> O resultado final será um display funcional que alterna entre os caracteres do sistema hexadecimal, com ampla aplicabilidade em dispositivos digitais básicos, como cronômetros, relógios, ou sistemas de medição.
 
 
 ## Materiais Necessários
