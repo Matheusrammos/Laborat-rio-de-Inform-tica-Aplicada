@@ -30,12 +30,16 @@ Segundo exercício focado em controlar LEDs para simular luzes de garagem, intro
 Terceiro exercício que envolve a montagem de circuitos simples com LEDs, aprendendo sobre componentes eletrônicos.
 
 ### [Exercício_em_Sala_4: Controle de Pisca-Pisca de LED com Variáveis Configuráveis](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Sala_4)
+Controle de LEDs com ajuste dinâmico do tempo de pisca utilizando variáveis configuráveis.
 
 ### [Exercício_em_Sala_5: Sequência de 4 canais com Arduino](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Sala_5)
+Sequência de LEDs em 4 canais, explorando controle digital e temporização.
 
 ### [Exercício_em_Sala_6: Pisca-Pisca Led aleatório de 4 canais](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Sala_6)
+Controle de LEDs com sequências aleatórias em 4 canais, usando geração de números aleatórios.
 
 ### [Exercício_em_Sala_7: Display Sete Segmentos: Hexadecimal](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Sala_7)
+Exibição de caracteres hexadecimais (0–9, A–F) em um display de sete segmentos.
 
 ### [Exercício_em_Casa_1: Ligar e Desligar o LED com o Botão](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Casa_1)
 Exercício de casa onde os alunos criam um circuito para ligar e desligar um LED com um botão.
