@@ -32,7 +32,7 @@ Este projeto faz com que quatro LEDs pisquem aleatoriamente sempre que o botão 
 4. **Diagrama de montagem:**
 ![fotoddfd](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_6/Diagrama_Aula_6.png)
 
-## Código: LEDs Piscando Aleatoriamente com Contagem de Pressionamento de Botão
+## Código Comentado
 
 ```cpp
 // Definição dos pinos dos LEDs
