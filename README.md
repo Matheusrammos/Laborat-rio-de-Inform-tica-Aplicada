@@ -53,7 +53,7 @@ Os alunos aprendem a enviar e receber dados entre o Arduino e um computador via 
 ### [Projeto_Final_de_Disciplina](https://github.com/Matheusrammos/LIA-Docs/tree/main/Projeto_Final_de_Disciplina)
 O projeto final integra todos os conceitos do curso, desafiando os alunos a criar um sistema interativo complexo.
 
-## Notas Finais
+## Notas
 > ### Como Navegar
 > - Navegue pelos diretórios acima para acessar os códigos e relatórios de cada exercício ou projeto.
 > - Cada diretório contém um README adicional  explicando em detalhes o funcionamento do código e as instruções para execução.
