@@ -27,7 +27,7 @@ Primeiro exercício que ensina o básico do Arduino com o programa "Blink", faze
 Segundo exercício focado em controlar LEDs para simular luzes de garagem, introduzindo condições lógicas.
 
 ### [Exercício_em_Sala_3: Montagem Básica com LEDs](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Sala_3)
-Terceiro exercício que envolve a montagem de circuitos simples com LEDs, aprendendo sobre componentes eletrônicos.
+Montagem de circuitos simples com LEDs, aprendendo sobre componentes eletrônicos.
 
 ### [Exercício_em_Sala_4: Controle de Pisca-Pisca de LED com Variáveis Configuráveis](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Sala_4)
 Controle de LEDs com ajuste dinâmico do tempo de pisca utilizando variáveis configuráveis.
