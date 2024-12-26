@@ -57,8 +57,10 @@ O objetivo deste projeto é construir um circuito eletrônico utilizando um Ardu
 
 
 ## Montagem do Circuito
+
 1. **Diagrama de montagem:**
-![fotgfjsdo](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_7/Diagrama_Aula_7.png)
+   
+    ![fotgfjsdo](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_7/Diagrama_Aula_7.png)
 
 
 ## Código Comentado
