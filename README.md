@@ -53,8 +53,10 @@ Exibição de caracteres hexadecimais (0–9, A–F) em um display de sete segme
 ### [Projeto_Final_de_Disciplina](https://github.com/Matheusrammos/LIA-Docs/tree/main/Projeto_Final_de_Disciplina)
 O projeto final integra todos os conceitos do curso, desafiando os alunos a criar um sistema interativo complexo.
 
+
 ## Notas
-> ### Como Navegar
+
+### Como Navegar
 > - Navegue pelos diretórios acima para acessar os códigos e relatórios de cada exercício ou projeto.
 > - Cada diretório contém um README adicional  explicando em detalhes o funcionamento do código e as instruções para execução.
 
@@ -78,4 +80,4 @@ Este repositório contém vídeos que utilizam músicas de terceiros. As música
 - [**"Boys"**](https://youtu.be/wtAHojB5LUk?si=ALWcN79NXvjWp1zN)
 - [**"Running Away/Running Away Link"**](https://youtu.be/x9BN5JjXdrw?si=PSzRSWoH8RIRtZlo)
 
-  *John Charles Fiddy (Londres, 1944 — 24 de dezembro de 2017) foi um compositor e arranjador de músicas britânico. Ganhou notoriedade por ser o arranjador da maioria das BGM (músicas de fundo) do Chaves e do Chapolin, de jingles para comerciais famosos, e de músicas para filmes, como Um Drink No Inferno 3: A Filha do Carrasco, e O Diário da Princesa.*
+> *John Charles Fiddy (Londres, 1944 — 24 de dezembro de 2017) foi um compositor e arranjador de músicas britânico. Ganhou notoriedade por ser o arranjador da maioria das BGM (músicas de fundo) do Chaves e do Chapolin, de jingles para comerciais famosos, e de músicas para filmes, como Um Drink No Inferno 3: A Filha do Carrasco, e O Diário da Princesa.*
