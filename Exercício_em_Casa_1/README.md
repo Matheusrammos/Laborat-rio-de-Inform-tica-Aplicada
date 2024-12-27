@@ -54,7 +54,7 @@ Eles evitam estados flutuantes que podem causar leituras instáveis ou interfer�
       <details>
       <summary> :dvd: Teste Prático: Circuito Pull-dow </summary>
 
-      https://github.com/user-attachments/assets/f7c91363-db0e-4735-83f3-607546ecbd15
+      [Montagem Básica com LEDs e Botão](https://github.com/user-attachments/assets/f7c91363-db0e-4735-83f3-607546ecbd15)
       </details>
 
 
