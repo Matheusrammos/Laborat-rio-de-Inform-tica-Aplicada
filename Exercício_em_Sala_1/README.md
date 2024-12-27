@@ -38,7 +38,6 @@ O objetivo do projeto é demonstrar como controlar um pino de saída digital no 
 </details>
 
 
-
 ## Código Comentado
 ```cpp
 // Define o pino onde o LED está conectado
@@ -60,12 +59,21 @@ void loop() {
 }
 ````
 
-## Funcionamento
-O código para o Blink opera de forma simples e direta:
-1. **Ligação do LED:** O LED é ligado.
-2. **Aguardar:** O programa aguarda 1 segundo (1000 milissegundos).
-3. **Desligamento do LED:** O LED é desligado.
-4. **Aguardar Novamente:** O programa aguarda mais 1 segundo.
+
+### Funcionamento do Projeto: Programa Blink  
+> O programa **Blink** é um exemplo básico para aprender como controlar um pino digital no Arduino. Ele alterna o estado de um LED (liga e desliga) a cada segundo, repetidamente.  
+1. **Definição do Pino:**
+   - O LED está configurado no **pino 13**, que é definido como constante (`ledPin`).
+
+2. **Configuração Inicial (setup):**
+   - O pino do LED é configurado como **saída** (`OUTPUT`), permitindo que o Arduino controle o estado (ligado/desligado).
+
+3. **Laço Infinito (loop):**
+   - O programa entra em um ciclo que:
+     1. Liga o LED (`HIGH`) e aguarda 1 segundo (`delay(1000)`).
+     2. Desliga o LED (`LOW`) e aguarda mais 1 segundo.
+   - Esse padrão de ligar e desligar se repete indefinidamente.
+
 
 ## Participações
 - Este projeto contou com a assistência do ChatGPT, um assistente virtual da OpenAI, para fornecer informações e orientações durante o desenvolvimento e a elaboração da documentação.
@@ -76,4 +84,3 @@ O código para o Blink opera de forma simples e direta:
 >[!WARNING]
 >
 >Este repositório contém materiais de terceiros protegidos por direitos autorais. A música "Story Time, Story Time Link" de John Fiddy é usada apenas para fins educacionais e sem intenção de infringir os direitos. Para mais detalhes, veja [DISCLAIMER.md](./DISCLAIMER.md).
-
