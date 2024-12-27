@@ -1,7 +1,9 @@
 # Pisca-Pisca Led aleatório de 4 canais
 
+
 ## Descrição
 O projeto consiste em um circuito com quatro LEDs e um botão conectado a um Arduino. O código controla os LEDs para que pisquem de forma aleatória enquanto o botão estiver pressionado. Quando o botão é solto, todos os LEDs são apagados. A função `random()` é usada para selecionar qual LED acender, e a lógica monitora o estado do botão para alternar entre piscar os LEDs e apagá-los.
+
 
 ## Objetivo
 Este projeto faz com que quatro LEDs pisquem aleatoriamente sempre que o botão for pressionado. A função random(min, max) é usada para gerar aleatoriamente os pinos dos LEDs, e a contagem de tempo entre o acendimento e apagamento é controlada com delay(). O código utiliza a variável a para armazenar o pino do LED que será acionado a cada iteração.
@@ -31,6 +33,13 @@ Este projeto faz com que quatro LEDs pisquem aleatoriamente sempre que o botão 
 
 4. **Diagrama de montagem:**
 ![fotoddfd](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_6/Diagrama_Aula_6.png)
+<details>
+<summary> :dvd: Teste Prático: Pisca-Pisca Led aleatório de 4 canais </summary>
+
+[Pisca-Pisca Led aleatório de 4 canais](https://github.com/user-attachments/assets/a67398cb-376a-404c-8098-02cf144e1a35)
+</details>
+
+
 
 ## Código Comentado
 
@@ -88,6 +97,7 @@ void loop() {
 }
 ```
 
+
 ## Funcionamento
 > O código faz com que quatro LEDs pisquem aleatoriamente enquanto o botão está pressionado. Quando o botão é pressionado, um número aleatório entre 8 e 11 é gerado, determinando qual LED acender. O LED acende por 500 milissegundos, apaga, e depois repete o processo. Esse ciclo continua até o botão ser liberado, momento em que todos os LEDs são apagados. O gerador de números aleatórios é inicializado com a leitura do pino analógico 0 para garantir aleatoriedade. O controle do LED e a leitura do botão são feitos com as funções `digitalWrite()` e `digitalRead()`.
 1. **Definição de Pinos e Variáveis**
@@ -114,5 +124,11 @@ void loop() {
 
 ## Participações
 - Este projeto contou com a assistência do ChatGPT, um assistente virtual da OpenAI, para fornecer informações e orientações durante o desenvolvimento e a elaboração da documentação.
-  *(OPENAI. ChatGPT. Disponível em: ChatGPT - [OpenAI](https://www.openai.com/chatgpt). Acesso em: 15/12/24.)*
+  *(OPENAI. ChatGPT. Disponível em: ChatGPT - [OpenAI](https://www.openai.com/chatgpt). Acesso em: 27/12/24.)*
 - [Epaminondaslage](https://www.bing.com/ck/a?!&&p=cf945232149fce13JmltdHM9MTcyNjcwNDAwMCZpZ3VpZD0yNGZkYWYyYS1lMjZiLTYzMWYtMzY0MC1iYmJiZTNlZTYyZGImaW5zaWQ9NTE5Mg&ptn=3&ver=2&hsh=3&fclid=24fdaf2a-e26b-631f-3640-bbbbe3ee62db&psq=src%3d%22https%3a%2f%2fgithub.com%2fEpaminondaslage%2fAluno_Fulano_de_Tal%2fblob%2fmain%2fExercicio_em_Casa_1%2fFigura.jpeg%22+alt%3d%22Circuito%22+width%3d%2250%25%22&u=a1aHR0cHM6Ly9naXRodWIuY29tL0VwYW1pbm9uZGFzbGFnZQ&ntb=1) foi responsável por instruir e coordernar este projeto.
+
+### Aviso de Direitos Autorais
+>[!WARNING]
+>
+>Este repositório contém materiais de terceiros protegidos por direitos autorais. A música "On the Go, On the Go Link" de John Fiddy é usada apenas para fins educacionais e sem intenção de infringir os direitos. Para mais detalhes, veja [DISCLAIMER.md](./DISCLAIMER.md).
+
