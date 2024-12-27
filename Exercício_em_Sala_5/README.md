@@ -113,6 +113,7 @@ Controlar quatro LEDs conectados ao Arduino, fazendo-os acender e apagar de form
 ## Código Comentado
 
 ```cpp
+// Definindo os pinos dos LEDs
 const int ledPins[] = {13, 9, 6, 3}; // Pinos onde os LEDs estão conectados
 
 void setup() {
