@@ -78,14 +78,29 @@ void loop() {
 }
 ````
 
+
+## Funcionamento
+> O projeto consiste em **acender três LEDs sequencialmente** utilizando uma placa Arduino Uno. Cada LED permanece aceso por **1 segundo** antes de apagar e ativar o próximo. O processo se repete em um **ciclo infinito**.
+1. **Definição dos Pinos:**
+   - No início do código, os pinos onde os LEDs estão conectados são definidos como constantes (`led1Pin`, `led2Pin`, `led3Pin`).
+
+2. **Configuração Inicial (setup):**
+   - A função `setup` configura os pinos dos LEDs como **saída** (`OUTPUT`), permitindo que o Arduino envie sinais para acendê-los.
+
+3. **Laço Infinito (loop):**
+   - O programa entra em um ciclo que:
+     1. **Acende o primeiro LED** (`HIGH`) e espera 1 segundo (`delay(1000)`).
+     2. Apaga o primeiro LED (`LOW`) e **acende o segundo LED**.
+     3. Após mais 1 segundo, apaga o segundo LED e **acende o terceiro LED**.
+     4. Depois de 1 segundo, apaga o terceiro LED, reiniciando o ciclo.
+
+
 ## Participações
 - Este projeto contou com a assistência do ChatGPT, um assistente virtual da OpenAI, para fornecer informações e orientações durante o desenvolvimento e a elaboração da documentação.
-  *(OPENAI. ChatGPT. Disponível em: ChatGPT - [OpenAI](https://www.openai.com/chatgpt). Acesso em: 26/12/24.)*
+  *(OPENAI. ChatGPT. Disponível em: ChatGPT - [OpenAI](https://www.openai.com/chatgpt). Acesso em: 27/12/24.)*
 - [Epaminondaslage](https://www.bing.com/ck/a?!&&p=cf945232149fce13JmltdHM9MTcyNjcwNDAwMCZpZ3VpZD0yNGZkYWYyYS1lMjZiLTYzMWYtMzY0MC1iYmJiZTNlZTYyZGImaW5zaWQ9NTE5Mg&ptn=3&ver=2&hsh=3&fclid=24fdaf2a-e26b-631f-3640-bbbbe3ee62db&psq=src%3d%22https%3a%2f%2fgithub.com%2fEpaminondaslage%2fAluno_Fulano_de_Tal%2fblob%2fmain%2fExercicio_em_Casa_1%2fFigura.jpeg%22+alt%3d%22Circuito%22+width%3d%2250%25%22&u=a1aHR0cHM6Ly9naXRodWIuY29tL0VwYW1pbm9uZGFzbGFnZQ&ntb=1) foi responsável por instruir e coordernar o conteúdo deste projeto.
 
 ### Aviso de Direitos Autorais
 >[!WARNING]
 >
 >Este repositório contém materiais de terceiros protegidos por direitos autorais. A música "Cornball" de John Fiddy é usada apenas para fins educacionais e sem intenção de infringir os direitos. Para mais detalhes, veja [DISCLAIMER.md](./DISCLAIMER.md).
-
-
