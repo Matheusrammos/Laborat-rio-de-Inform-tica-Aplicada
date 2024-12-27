@@ -64,7 +64,7 @@ O objetivo deste projeto é construir um circuito eletrônico utilizando um Ardu
 <details>
 <summary> :dvd: Teste Prático: Display Sete Segmentos: Hexadecimal </summary>
 
-[Display Sete Segmentos: Hexadecimal](https://github.com/user-attachments/assets/2bb3d1d8-f805-40ad-b18f-218ab6cd244a)
+[Display Sete Segmentos: Hexadecimal](https://github.com/user-attachments/assets/03fdbf51-9697-49a2-9bf1-2c41e625b01d)
 </details>
 
 ## Código Comentado
