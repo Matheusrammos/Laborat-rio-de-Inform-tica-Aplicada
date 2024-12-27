@@ -29,8 +29,6 @@ Este projeto demonstra como contar o número de vezes que um botão é pressiona
 <summary> :dvd: Teste Prático: Circuito Pull-dow </summary>
 
 https://github.com/user-attachments/assets/957b440d-5a92-4934-900a-3db9f1c8c693
-
-
 </details>
 
 
