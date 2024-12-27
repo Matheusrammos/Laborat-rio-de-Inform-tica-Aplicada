@@ -26,7 +26,7 @@ Este projeto demonstra como contar o número de vezes que um botão é pressiona
 3. **Diagrama de montagem:**
 ![fotodd](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Casa_1/Diagrama_Casa_1%3A%20pull-dow.png)
 <details>
-<summary> :dvd: Teste Prático: Circuito Pull-dow </summary>
+<summary> :dvd: Teste Prático: Contagem de Pressionamentos de Botão </summary>
 
 https://github.com/user-attachments/assets/957b440d-5a92-4934-900a-3db9f1c8c693
 </details>
