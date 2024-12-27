@@ -66,33 +66,15 @@ O projeto final integra todos os conceitos do curso, desafiando os alunos a cria
 
 
 ## Músicas Utilizadas
-Este repositório contém vídeos que utilizam músicas de terceiros. As músicas abaixo são usadas apenas para fins educacionais/demonstrativos e sem intenção de infringir os direitos autorais.
+Este repositório contém vídeos que utilizam músicas de terceiros. As músicas abaixo são usadas apenas para fins educacionais/demonstrativos e sem intenção de infringir os direitos autorais. O autor de todas elas se chama John Fiddy.
+- [**"Story Time, Story Time Link"**](
+- [**"Coloured Candles"**](
+- [**"By the River"**](
+- [**"On the Go, On the Go Link"**](
+- [**"Cornball"**](
+- [**"Busybodies"**](  
+- [**"Mechanical Toys"**](
+- [**"Walkin' the Dog"**]( 
+- [**"Boys"**](
 
-- **"Story Time, Story Time Link"**  
-  Autor: John Fiddy  
-  Lançamento: 1979  
-
-- **"Coloured Candles"**  
-  Autor: John Fiddy  
-
-- **"By the River"**  
-  Autor: John Fiddy  
-  Lançamento: 1979  
-
-- **"On the Go, On the Go Link"**  
-  Autor: John Fiddy  
-
-- **"Cornball"**  
-  Autor: John Fiddy  
-
-- **"Busybodies"**  
-  Autor: John Fiddy  
-
-- **"Mechanical Toys"**  
-  Autor: John Fiddy  
-
-- **"Walkin' the Dog"**  
-  Autor: John Fiddy  
-
-- **"Boys"**  
-  Autor: John Fiddy  
+  *John Charles Fiddy (Londres, 1944 — 24 de dezembro de 2017) foi um compositor e arranjador de músicas britânico. Ganhou notoriedade por ser o arranjador da maioria das BGM (músicas de fundo) do Chaves e do Chapolin, de jingles para comerciais famosos, e de músicas para filmes, como Um Drink No Inferno 3: A Filha do Carrasco, e O Diário da Princesa.*
