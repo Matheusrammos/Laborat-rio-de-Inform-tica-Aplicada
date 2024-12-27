@@ -25,13 +25,13 @@ O objetivo deste projeto é aprender a controlar múltiplos LEDs com um Arduino 
 1. **Conexões dos LEDs:**
 
    **Primeiro LED:**
-    - Conecte o ânodo (terminal positivo) ao pino digital 4 do Arduino através de um resistor de 220 Ω.
-    - Conecte o cátodo (terminal negativo) a um resistor.
+   - Conecte o ânodo (terminal positivo) ao pino digital 4 do Arduino através de um resistor de 220 Ω.
+   - Conecte o cátodo (terminal negativo) a um resistor.
    
    **Segundo LED:**
    - Conecte o ânodo ao pino digital 5 do Arduino através de um resistor de 220 Ω.
    - Conecte o cátodo a outro resistor.
-     
+   
    **Terceiro LED:**
    - Conecte o ânodo ao pino digital 6 do Arduino através de um resistor de 220 Ω.
    - Conecte o cátodo ao terceiro resistor.
@@ -41,6 +41,12 @@ O objetivo deste projeto é aprender a controlar múltiplos LEDs com um Arduino 
 
 3. **Diagrama do Circuito:**
 ![fotodd](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_3/Diagrama_Aula_3.png)
+<details>
+<summary> :dvd: Teste Prático: Circuito Básico com LEDs </summary>
+
+[Circuito Básico com LEDs](https://github.com/user-attachments/assets/7c45ee72-c3c7-4e66-9d2f-1aa88b53a62c)
+</details>
+
 
 ## Código Comentado
 ```cpp
