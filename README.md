@@ -67,14 +67,15 @@ O projeto final integra todos os conceitos do curso, desafiando os alunos a cria
 
 ## Músicas Utilizadas
 Este repositório contém vídeos que utilizam músicas de terceiros. As músicas abaixo são usadas apenas para fins educacionais/demonstrativos e sem intenção de infringir os direitos autorais. O autor de todas elas se chama John Fiddy.
-- [**"Story Time, Story Time Link"**](
-- [**"Coloured Candles"**](
-- [**"By the River"**](
-- [**"On the Go, On the Go Link"**](
-- [**"Cornball"**](
-- [**"Busybodies"**](  
-- [**"Mechanical Toys"**](
-- [**"Walkin' the Dog"**]( 
-- [**"Boys"**](
+- [**"Story Time, Story Time Link"**](https://youtu.be/sQN4y77ANf4?si=kDnGZbttBVQGXfLl)
+- [**"Coloured Candles"**](https://youtu.be/wC3aYGmKwPY?si=aymPDryz2DqtOrIV)
+- [**"By the River"**](https://youtu.be/UecuX_t8AuI?si=2jMfzL_k6iZuHsJ9)
+- [**"On the Go, On the Go Link"**](https://youtu.be/RFTh2VhHxgo?si=bTiVi6D5ZZCR8qzh)
+- [**"Cornball"**](https://youtu.be/reYtUsRky-o?si=SRSfJioRA27XQDLd)
+- [**"Busybodies"**](https://youtu.be/vLHVTxPWJxs?si=CZ1xuyG4cgUgeYnJ)
+- [**"Mechanical Toys"**](https://youtu.be/dDOfzfifwGE?si=kb99Y6Ihq8EWaP6D)
+- [**"Walkin' the Dog"**](https://youtu.be/URQrsuiDfOI?si=S_0Qix9WMIMmgrVd)
+- [**"Boys"**](https://youtu.be/wtAHojB5LUk?si=ALWcN79NXvjWp1zN)
+- [**"Running Away/Running Away Link"**](https://youtu.be/x9BN5JjXdrw?si=PSzRSWoH8RIRtZlo)
 
   *John Charles Fiddy (Londres, 1944 — 24 de dezembro de 2017) foi um compositor e arranjador de músicas britânico. Ganhou notoriedade por ser o arranjador da maioria das BGM (músicas de fundo) do Chaves e do Chapolin, de jingles para comerciais famosos, e de músicas para filmes, como Um Drink No Inferno 3: A Filha do Carrasco, e O Diário da Princesa.*
