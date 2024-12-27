@@ -24,9 +24,10 @@ Este diretório contém o terceiro exercício de casa, onde demonstramos como en
 
 3. **Diagrama de montagem**
 ![fotodd](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Casa_1/Diagrama_Casa_1%3A%20pull-dow.png)
+<details>
 <summary> :dvd: Teste Prático: Enviando Dados para a Porta Serial </summary>
 
-https://github.com/user-attachments/assets/5c721e95-d484-4fbe-aead-86e4e88b54a2
+[Enviando Dados para a Porta Serial](https://github.com/user-attachments/assets/5c721e95-d484-4fbe-aead-86e4e88b54a2)
 </details>
 
 
