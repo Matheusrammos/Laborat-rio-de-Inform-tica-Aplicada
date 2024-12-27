@@ -23,7 +23,7 @@ O objetivo deste projeto é aprender a controlar LEDs com um Arduino Uno, ligand
 - Use fios de conexão (jumpers) para ligar os componentes ao Arduino.
 
 1. **Conexões dos LEDs:**
-   
+
    > **Primeiro LED:**
    > - Conecte o ânodo (terminal positivo) do primeiro LED ao pino digital 9 do Arduino.
    > - Conecte o cátodo (terminal negativo) do primeiro LED a um resistor de 220 Ω.
@@ -43,14 +43,12 @@ O objetivo deste projeto é aprender a controlar LEDs com um Arduino Uno, ligand
    > - O outro terminal estará conectado ao GND (terra) do Arduíno.
   
 4. **Diagrama do Circuito:**
-   
 ![fotoi](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_2/Diagrama_Aula_2.png)
 <details>
 <summary> :dvd: Teste Prático: Luzes de Sinalização de Garagem </summary>
 
 [Luzes de Sinalização de Garagem](https://github.com/user-attachments/assets/2bb3d1d8-f805-40ad-b18f-218ab6cd244a)
 </details>
-
 
 
 # Código Comentado
