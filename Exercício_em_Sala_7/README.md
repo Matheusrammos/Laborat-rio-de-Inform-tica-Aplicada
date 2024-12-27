@@ -1,5 +1,6 @@
 # Display Sete Segmentos: Hexadecimal
 
+
 ## Descrição
 O projeto utiliza um display de 7 segmentos para exibir caracteres no formato hexadecimal (0–9 e A–F). O Arduino controla quais segmentos do display serão ativados para formar cada número ou letra. A exibição de caracteres ocorre de forma sequencial, alternando a cada segundo.
 
@@ -59,9 +60,12 @@ O objetivo deste projeto é construir um circuito eletrônico utilizando um Ardu
 ## Montagem do Circuito
 
 1. **Diagrama de montagem:**
-   
-    ![fotgfjsdo](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_7/Diagrama_Aula_7.png)
+![fotgfjsdo](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_7/Diagrama_Aula_7.png)
+<details>
+<summary> :dvd: Teste Prático: Display Sete Segmentos: Hexadecimal </summary>
 
+[Display Sete Segmentos: Hexadecimal](https://github.com/user-attachments/assets/2bb3d1d8-f805-40ad-b18f-218ab6cd244a)
+</details>
 
 ## Código Comentado
 ```cpp
@@ -150,5 +154,11 @@ void displayDigit(int num) {
 
 ## Participações
 - Este projeto contou com a assistência do ChatGPT, um assistente virtual da OpenAI, para fornecer informações e orientações durante o desenvolvimento e a elaboração da documentação.
-  *(OPENAI. ChatGPT. Disponível em: ChatGPT - [OpenAI](https://www.openai.com/chatgpt). Acesso em: 15/12/24.)*
+  *(OPENAI. ChatGPT. Disponível em: ChatGPT - [OpenAI](https://www.openai.com/chatgpt). Acesso em: 27/12/24.)*
 - [Epaminondaslage](https://www.bing.com/ck/a?!&&p=cf945232149fce13JmltdHM9MTcyNjcwNDAwMCZpZ3VpZD0yNGZkYWYyYS1lMjZiLTYzMWYtMzY0MC1iYmJiZTNlZTYyZGImaW5zaWQ9NTE5Mg&ptn=3&ver=2&hsh=3&fclid=24fdaf2a-e26b-631f-3640-bbbbe3ee62db&psq=src%3d%22https%3a%2f%2fgithub.com%2fEpaminondaslage%2fAluno_Fulano_de_Tal%2fblob%2fmain%2fExercicio_em_Casa_1%2fFigura.jpeg%22+alt%3d%22Circuito%22+width%3d%2250%25%22&u=a1aHR0cHM6Ly9naXRodWIuY29tL0VwYW1pbm9uZGFzbGFnZQ&ntb=1) foi responsável por instruir e coordernar este projeto.
+
+### Aviso de Direitos Autorais
+>[!WARNING]
+>
+>Este repositório contém materiais de terceiros protegidos por direitos autorais. A música "On the Go, On the Go Link" de John Fiddy é usada apenas para fins educacionais e sem intenção de infringir os direitos. Para mais detalhes, veja [DISCLAIMER.md](./DISCLAIMER.md).
+
