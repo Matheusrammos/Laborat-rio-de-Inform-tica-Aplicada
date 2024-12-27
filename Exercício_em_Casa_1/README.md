@@ -50,7 +50,6 @@ Eles evitam estados flutuantes que podem causar leituras instáveis ou interfer�
 3. **Diagrama de montagem**
    - *Ultilizando um resistor pull-dow:*
       > ![fotodd](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Casa_1/Diagrama_Casa_1%3A%20pull-dow.png)
-
       <details>
       <summary> :dvd: Teste Prático: Circuito Pull-dow </summary>
 
