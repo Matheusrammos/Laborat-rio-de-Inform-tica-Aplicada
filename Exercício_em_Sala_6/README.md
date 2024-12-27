@@ -130,5 +130,5 @@ void loop() {
 ### Aviso de Direitos Autorais
 >[!WARNING]
 >
->Este repositório contém materiais de terceiros protegidos por direitos autorais. A música "On the Go, On the Go Link" de John Fiddy é usada apenas para fins educacionais e sem intenção de infringir os direitos. Para mais detalhes, veja [DISCLAIMER.md](./DISCLAIMER.md).
+>Este repositório contém materiais de terceiros protegidos por direitos autorais. A música "Walkin' the Dog" de John Fiddy é usada apenas para fins educacionais e sem intenção de infringir os direitos. Para mais detalhes, veja [DISCLAIMER.md](./DISCLAIMER.md).
 
