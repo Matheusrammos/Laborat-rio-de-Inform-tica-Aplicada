@@ -1,5 +1,6 @@
 # Sequência de 4 canais com Arduino
 
+
 ## Descrição
 Este projeto controla quatro LEDs conectados a diferentes pinos do Arduino, fazendo-os acender e apagar de forma sequencial com um intervalo de 0,5 segundos entre cada ação. O uso do comando `for` torna o código mais compacto e eficiente, pois permite iterar pelos LEDs de forma sistemática.
 
@@ -67,6 +68,8 @@ O `for` é preferido nesse caso por ser mais compacto e direto.
 
 </details>
 
+
+
 <details>
 <summary> :jigsaw: Como o For Funciona no Código </summary>
 
@@ -100,6 +103,11 @@ Controlar quatro LEDs conectados ao Arduino, fazendo-os acender e apagar de form
 
 2. **Diagrama de montagem:**
 ![fotoddd](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_5/Diagrama_Aula_5.png)
+<details>
+<summary> :dvd: Teste Prático: Sequencial de 4 canais </summary>
+
+[Sequencial de 4 canais](https://github.com/user-attachments/assets/fdacd06a-5b5d-4285-af78-d2eec4ffa06b)
+</details>
 
 
 ## Código Comentado
@@ -158,3 +166,8 @@ Quando o último LED (pino 3) termina, o `loop` começa novamente, criando um ci
 - Este projeto contou com a assistência do ChatGPT, um assistente virtual da OpenAI, para fornecer informações e orientações durante o desenvolvimento e a elaboração da documentação.
   *(OPENAI. ChatGPT. Disponível em: ChatGPT - [OpenAI](https://www.openai.com/chatgpt). Acesso em: 15/12/24.)*
 - [Epaminondaslage](https://www.bing.com/ck/a?!&&p=cf945232149fce13JmltdHM9MTcyNjcwNDAwMCZpZ3VpZD0yNGZkYWYyYS1lMjZiLTYzMWYtMzY0MC1iYmJiZTNlZTYyZGImaW5zaWQ9NTE5Mg&ptn=3&ver=2&hsh=3&fclid=24fdaf2a-e26b-631f-3640-bbbbe3ee62db&psq=src%3d%22https%3a%2f%2fgithub.com%2fEpaminondaslage%2fAluno_Fulano_de_Tal%2fblob%2fmain%2fExercicio_em_Casa_1%2fFigura.jpeg%22+alt%3d%22Circuito%22+width%3d%2250%25%22&u=a1aHR0cHM6Ly9naXRodWIuY29tL0VwYW1pbm9uZGFzbGFnZQ&ntb=1) foi responsável por instruir e coordernar este projeto.
+
+### Aviso de Direitos Autorais
+>[!WARNING]
+>
+>Este repositório contém materiais de terceiros protegidos por direitos autorais. A música "On the Go, On the Go Link" de John Fiddy é usada apenas para fins educacionais e sem intenção de infringir os direitos. Para mais detalhes, veja [DISCLAIMER.md](./DISCLAIMER.md).
