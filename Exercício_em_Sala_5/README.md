@@ -159,8 +159,7 @@ void loop() {
   1. Os LEDs acendem e apagam um por vez, sempre na ordem definida pelo array `ledPins` (13 → 9 → 6 → 3).  
   2. Cada LED permanece aceso por 0,5 segundos e apagado por 0,5 segundos antes de passar para o próximo LED.  
   3. O padrão de acendimento se repete indefinidamente.  
-
-Quando o último LED (pino 3) termina, o `loop` começa novamente, criando um ciclo contínuo de luzes acendendo e apagando em sequência.
+> Quando o último LED (pino 3) termina, o `loop` começa novamente, criando um ciclo contínuo de luzes acendendo e apagando em sequência.
 
 
 ## Participações
