@@ -5,6 +5,7 @@
 Este projeto demonstra como contar o número de vezes que um botão é pressionado utilizando um Arduino. O objetivo é detectar as transições do estado do botão de desligado (LOW) para ligado (HIGH) e contabilizar cada pressionamento. Os resultados são exibidos no Serial Monitor, permitindo monitorar a contagem em tempo real.
 > *A montagem do circuito desse exercício é coincidente à vista em [Exercício_em_Casa_1](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Casa_1). Alem disso, nesse projeto, optei por usar o modelo [pull-dow](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Casa_1/Diagrama_Casa_1%3A%20pull-dow.png), mas não se pode descartar a possibilidade do uso de [pull-up](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Casa_1/Diagrama_Casa_1%3A%20pull-up.png) com algumas alterações na montagem e no código.*
 
+
 ## Componentes Utilizados
 - **1 Placa Arduino (por exemplo, Arduino Uno)**
 - **1 LED (integrado no pino 13)**
@@ -24,6 +25,13 @@ Este projeto demonstra como contar o número de vezes que um botão é pressiona
 
 3. **Diagrama de montagem:**
 ![fotodd](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Casa_1/Diagrama_Casa_1%3A%20pull-dow.png)
+<details>
+<summary> :dvd: Teste Prático: Circuito Pull-dow </summary>
+
+https://github.com/user-attachments/assets/957b440d-5a92-4934-900a-3db9f1c8c693
+
+
+</details>
 
 
 ## Código Comentado
