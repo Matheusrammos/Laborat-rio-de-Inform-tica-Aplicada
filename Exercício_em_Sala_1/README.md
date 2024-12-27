@@ -35,7 +35,7 @@ O objetivo do projeto é demonstrar como controlar um pino de saída digital no 
 <details>
 <summary> :dvd: Teste Prático: Circuito BLINK </summary>
 
-https://github.com/user-attachments/assets/0fd8602f-0a26-4570-a3aa-290ff9b52ce1
+[Circuito BLINK](https://github.com/user-attachments/assets/0fd8602f-0a26-4570-a3aa-290ff9b52ce1)
 </details>
 
 
