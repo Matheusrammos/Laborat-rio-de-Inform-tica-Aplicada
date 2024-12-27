@@ -15,7 +15,7 @@ Eles evitam estados flutuantes que podem causar leituras instáveis ou interfer�
 
 
 
-## Componentes Utilizados
+## Materiais Necessários
 - **1 Placa Arduino (por exemplo, Arduino Uno)**
 - **1 LED (integrado no pino 13)**
 - **1 Botão (integrado no pino 5)**
