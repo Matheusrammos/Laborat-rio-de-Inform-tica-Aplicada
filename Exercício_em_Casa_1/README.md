@@ -156,4 +156,4 @@ void loop() {
 ### Aviso de Direitos Autorais 
 >[!WARNING]
 >
->Este repositório contém materiais de terceiros protegidos por direitos autorais. A música "Story Time, Story Time Link" de John Fiddy é usada apenas para fins educacionais e sem intenção de infringir os direitos. Para mais detalhes, veja [DISCLAIMER.md](./DISCLAIMER.md).
+>Este repositório contém materiais de terceiros protegidos por direitos autorais. A música "By the River (1979)" de John Fiddy é usada apenas para fins educacionais e sem intenção de infringir os direitos. Para mais detalhes, veja [DISCLAIMER.md](./DISCLAIMER.md).
