@@ -52,7 +52,7 @@ Eles evitam estados flutuantes que podem causar leituras instáveis ou interfer�
       > ![fotodd](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Casa_1/Diagrama_Casa_1%3A%20pull-dow.png)
 
       <details>
-      <summary> :bangbang: Teste Prático: Circuito Pull-dow </summary>
+      <summary> :floppy_disk: Teste Prático: Circuito Pull-dow </summary>
 
       https://github.com/user-attachments/assets/f7c91363-db0e-4735-83f3-607546ecbd15
       </details>
