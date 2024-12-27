@@ -1,5 +1,6 @@
 # Controle de Pisca-Pisca de LED com Variáveis Configuráveis
 
+
 ## Descrição
 Este projeto utiliza um Arduino para controlar um LED conectado ao pino 10, fazendo-o piscar 3 vezes a cada 0,1 segundo (100ms) através do `while` e, em seguida, apagar por 1,5 segundos (1500ms). O número de piscadas, a duração de cada piscada e a duração do apagamento são variáveis configuráveis no código, permitindo ajustes para testar diferentes comportamentos do sistema.
 
@@ -29,12 +30,14 @@ while (condição) {
 ## Objetivo
 O objetivo deste projeto é aprender a manipular o comportamento de um LED através de variáveis configuráveis em um sketch Arduino. Este exercício permite a prática de controle de tempo (com o comando `delay()`e `while`), manipulação de pinos digitais e a modificação de variáveis para alterar o comportamento do sistema.
 
+
 ## Materiais Necessários
 - **1 Arduino Uno (ou outra placa compatível)**
 - **1 LED**
 - **1 Resistor de 220 Ω (para limitar a corrente do LED)**
 - **Fios de conexão (jumpers)**
 - **1 Protoboard (opcional, para montagem do circuito)**
+
 
 ## Montagem do Circuito
 1. **Conexões do LED:**
@@ -43,6 +46,12 @@ O objetivo deste projeto é aprender a manipular o comportamento de um LED atrav
 
 2. **Diagrama do Circuito:**
  ![fotodud](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_4/Diagrama_Aula_4.png)
+<details>
+<summary> :dvd: Teste Prático: Pisca-Pisca de LED com Variáveis Configuráveis </summary>
+
+[Pisca-Pisca de LED com Variáveis Configuráveis](https://github.com/user-attachments/assets/dba6e9f7-2438-4efa-ae55-25a470038d68)
+</details>
+
 
 ## Código Comentado
 
@@ -72,6 +81,7 @@ void loop() {
 }
 ```
 
+
 ## Funcionamento
 
 1. **Configuração Inicial:**
@@ -92,3 +102,8 @@ void loop() {
   *(OPENAI. ChatGPT. Disponível em: ChatGPT - [OpenAI](https://www.openai.com/chatgpt). Acesso em: 14/12/24.)*
 - [Epaminondaslage](https://www.bing.com/ck/a?!&&p=cf945232149fce13JmltdHM9MTcyNjcwNDAwMCZpZ3VpZD0yNGZkYWYyYS1lMjZiLTYzMWYtMzY0MC1iYmJiZTNlZTYyZGImaW5zaWQ9NTE5Mg&ptn=3&ver=2&hsh=3&fclid=24fdaf2a-e26b-631f-3640-bbbbe3ee62db&psq=src%3d%22https%3a%2f%2fgithub.com%2fEpaminondaslage%2fAluno_Fulano_de_Tal%2fblob%2fmain%2fExercicio_em_Casa_1%2fFigura.jpeg%22+alt%3d%22Circuito%22+width%3d%2250%25%22&u=a1aHR0cHM6Ly9naXRodWIuY29tL0VwYW1pbm9uZGFzbGFnZQ&ntb=1) foi responsável por instruir e coordernar este projeto.
 - Fonte do [gif](https://i.pinimg.com/originals/b9/b9/48/b9b948ec034a0c5474e2d82ecf41c9b1.gif) utilizado para explicar o funcionamento do `while`.
+
+### Aviso de Direitos Autorais
+>[!WARNING]
+>
+>Este repositório contém materiais de terceiros protegidos por direitos autorais. A música "On the Go, On the Go Link" de John Fiddy é usada apenas para fins educacionais e sem intenção de infringir os direitos. Para mais detalhes, veja [DISCLAIMER.md](./DISCLAIMER.md).
