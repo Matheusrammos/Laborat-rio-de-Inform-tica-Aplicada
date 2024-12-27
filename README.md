@@ -20,6 +20,15 @@ Os diagramas de circuito de cada projeto são, em suma, feitos através do Tinke
 
 ## Diretórios
 
+### [Exercício_em_Casa_1: Ligar e Desligar o LED com o Botão](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Casa_1)
+Exercício de casa onde os alunos criam um circuito para ligar e desligar um LED com um botão.
+
+### [Exercício_em_Casa_2: Contagem de Pressionamentos de Botão](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Casa_2)
+Neste exercício, os alunos contam quantas vezes um botão é pressionado, reforçando o uso de variáveis.
+
+### [Exercício_em_Casa_3: Enviando Dados para Porta Serial](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Casa_3)
+Os alunos aprendem a enviar e receber dados entre o Arduino e um computador via porta serial.
+
 ### [Exercício_em_Sala_1: Programa BLINK](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Sala_1)
 Primeiro exercício que ensina o básico do Arduino com o programa "Blink", fazendo um LED piscar.
 
@@ -40,15 +49,6 @@ Controle de LEDs com sequências aleatórias em 4 canais, usando geração de n�
 
 ### [Exercício_em_Sala_7: Display Sete Segmentos: Hexadecimal](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Sala_7)
 Exibição de caracteres hexadecimais (0–9, A–F) em um display de sete segmentos.
-
-### [Exercício_em_Casa_1: Ligar e Desligar o LED com o Botão](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Casa_1)
-Exercício de casa onde os alunos criam um circuito para ligar e desligar um LED com um botão.
-
-### [Exercício_em_Casa_2: Contagem de Pressionamentos de Botão](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Casa_2)
-Neste exercício, os alunos contam quantas vezes um botão é pressionado, reforçando o uso de variáveis.
-
-### [Exercício_em_Casa_3: Enviando Dados para Porta Serial](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Casa_3)
-Os alunos aprendem a enviar e receber dados entre o Arduino e um computador via porta serial.
 
 ### [Projeto_Final_de_Disciplina](https://github.com/Matheusrammos/LIA-Docs/tree/main/Projeto_Final_de_Disciplina)
 O projeto final integra todos os conceitos do curso, desafiando os alunos a criar um sistema interativo complexo.
