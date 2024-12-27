@@ -26,6 +26,12 @@ Este diretório contém o terceiro exercício de casa, onde demonstramos como en
 ![fotodd](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Casa_1/Diagrama_Casa_1%3A%20pull-dow.png)
 
 
+<summary> :dvd: Teste Prático: Circuito Pull-dow </summary>
+
+https://github.com/user-attachments/assets/5c721e95-d484-4fbe-aead-86e4e88b54a2
+
+</details>
+
 ## Código Comentado
 ```cpp
 // Definindo os pinos e algumas variáveis
