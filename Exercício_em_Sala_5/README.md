@@ -132,7 +132,7 @@ void loop() {
       delay(500); // Espera 0,5 segundos
    }
 }
-```
+````
 
 
 ## Funcionamento
