@@ -17,7 +17,6 @@ O objetivo deste projeto é aprender a controlar múltiplos LEDs com um Arduino 
 - **1 Protoboard (opcional, para montagem do circuito)**
 
 
-
 ## Montagem do Circuito
 #### Organização do Circuito:
    - Utilize a protoboard para montar o circuito e organizar as conexões de forma limpa.
