@@ -1,5 +1,5 @@
 ### Aviso de Direitos Autorais
-Este repositório contém um vídeo que inclui a música "Story Time, Story Time Link" de John Fiddy, lançada em 1979.  
+Este repositório contém um vídeo que inclui a música "By the River", lançada em 1979 e atribuída a John Fiddy.  
 A música é utilizada apenas para fins educacionais/demonstrativos e sem intenção de infringir os direitos autorais.  
 Se você for o detentor dos direitos e desejar a remoção deste conteúdo, entre em contato para que possamos corrigir a situação imediatamente.  
 
