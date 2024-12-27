@@ -140,7 +140,7 @@ void loop() {
 - A função `setup` é chamada apenas uma vez ao iniciar o Arduino.  
 - O laço `for` percorre o array `ledPins` (que contém os números dos pinos onde os LEDs estão conectados) e configura cada pino como uma saída usando o comando `pinMode()`.  
     - Exemplo: Se o pino 13 for o primeiro do array, ele será configurado como saída, depois o pino 9, e assim por diante até o pino 3.  
-  > Resultado: Os pinos 13, 9, 6 e 3 do Arduino estão prontos para controlar os LEDs.  
+  > Resultado: Os pinos 13, 9, 6 e 3 do Arduino estão prontos para controlar os LEDs.
 
 2. **Laço Principal (Função `loop`)**  
 - O código dentro da função `loop` é executado continuamente.  
@@ -149,10 +149,10 @@ void loop() {
     2. O comando `delay(500)` mantém o LED aceso por 0,5 segundos.  
     3. O comando `digitalWrite(ledPins[i], LOW)` apaga o LED.  
     4. Outro `delay(500)` espera 0,5 segundos antes de passar ao próximo LED.  
-> Resultado:  
-> - O primeiro LED (pino 13) acende por 0,5 segundos e depois apaga.  
-> - O segundo LED (pino 9) acende por 0,5 segundos e depois apaga.  
-> - O processo continua para os LEDs no pino 6 e pino 3.  
+  > Resultado:  
+  > - O primeiro LED (pino 13) acende por 0,5 segundos e depois apaga.  
+  > - O segundo LED (pino 9) acende por 0,5 segundos e depois apaga.  
+  > - O processo continua para os LEDs no pino 6 e pino 3.  
 
 ### **Resumo do Comportamento**
   1. Os LEDs acendem e apagam um por vez, sempre na ordem definida pelo array `ledPins` (13 → 9 → 6 → 3).  
