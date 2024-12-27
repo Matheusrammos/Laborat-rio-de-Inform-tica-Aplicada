@@ -6,7 +6,7 @@ O programa Blink é um dos exemplos mais fundamentais e tradicionais para inicia
 ## Objetivo
 O objetivo do projeto é demonstrar como controlar um pino de saída digital no Arduino para acionar um LED. O código alterna o estado do LED, ligando-o e desligando-o a cada segundo, permitindo que os usuários compreendam os conceitos básicos de controle digital.
 
-## Componentes Necessários
+## Materiais Necessários
 - **1 Arduino Uno (ou qualquer outra placa Arduino)**
 - **1 LED (se não usar o embutido)**
 - **1 Resistor de 220 Ω (para o LED externo)**
