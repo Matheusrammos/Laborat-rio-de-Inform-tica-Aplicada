@@ -2,7 +2,7 @@
 
 
 ## Descrição
-Este projeto utiliza um Arduino Uno para acender três LEDs conectados aos pinos 4, 5 e 6 de forma sequencial. Cada LED permanece aceso por 1 segundo antes que o próximo seja ativado. Após o terceiro LED acender, o ciclo se reinicia, repetindo indefinidamente.
+Este projeto utiliza um Arduino Uno para acender três LEDs conectados aos pinos 6, 9 e 13 de forma sequencial. Cada LED permanece aceso por 1 segundo antes que o próximo seja ativado. Após o terceiro LED acender, o ciclo se reinicia, repetindo indefinidamente.
 
 
 ## Objetivo
@@ -25,11 +25,11 @@ O objetivo deste projeto é aprender a controlar múltiplos LEDs com um Arduino 
 1. **Conexões dos LEDs:**
 
    **Primeiro LED:**
-   - Conecte o ânodo (terminal positivo) ao pino digital 4 do Arduino através de um resistor de 220 Ω.
+   - Conecte o ânodo (terminal positivo) ao pino digital 13 do Arduino através de um resistor de 220 Ω.
    - Conecte o cátodo (terminal negativo) a um resistor.
    
    **Segundo LED:**
-   - Conecte o ânodo ao pino digital 5 do Arduino através de um resistor de 220 Ω.
+   - Conecte o ânodo ao pino digital 9 do Arduino através de um resistor de 220 Ω.
    - Conecte o cátodo a outro resistor.
    
    **Terceiro LED:**
