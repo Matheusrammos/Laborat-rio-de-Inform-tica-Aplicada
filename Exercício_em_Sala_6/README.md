@@ -104,7 +104,7 @@ void loop() {
    - A função `randomSeed(analogRead(0))` inicializa o gerador de números aleatórios.
 
 3. **Geração Aleatória de LED**
-   - A função `random(8, 12)` gera um número aleatório entre 8 e 11, correspondendo aos pinos dos LEDs.
+   - A função `random(8, 12)` gera um número aleatório entre 8 e 11, correspondendo aos pinos dos LEDs. Em Arduino, a função `random(min, max)` retorna um número inteiro aleatório no intervalo de `[min, max-1]`. Ou seja, o valor gerado começa no valor de `min` (inclusive) e vai até **um a menos que o valor de `max`** (exclusivo).
    - O LED correspondente ao número gerado é aceso com `digitalWrite(a, HIGH)` e apagado após 500 milissegundos com `digitalWrite(a, LOW)`.
 
 4. **Controle do Botão**
