@@ -16,8 +16,6 @@ for (inicialização; condição; finalização) {
 ```
 </details>
 
-
-
 <details>
 <summary> :open_file_folder: Detalhes de Cada Processo </summary>
 
@@ -46,8 +44,6 @@ for (inicialização; condição; finalização) {
      Isso incrementa o valor de `i` em 1 a cada iteração.
 </details>
 
-
-
 <details>
 <summary> :hammer_and_wrench: Comparação com While </summary>
 
@@ -65,10 +61,7 @@ while (i < 4) {
 ```
 
 O `for` é preferido nesse caso por ser mais compacto e direto.
-
 </details>
-
-
 
 <details>
 <summary> :jigsaw: Como o For Funciona no Código </summary>
@@ -116,12 +109,14 @@ Controlar quatro LEDs conectados ao Arduino, fazendo-os acender e apagar de form
 // Definindo os pinos dos LEDs
 const int ledPins[] = {13, 9, 6, 3}; // Pinos onde os LEDs estão conectados
 
+
 void setup() {
    // Configura os pinos dos LEDs como saída
    for (int i = 0; i < 4; i++) {
       pinMode(ledPins[i], OUTPUT); 
    }
 }
+
 
 void loop() {
    // Acende e apaga os LEDs sequencialmente
