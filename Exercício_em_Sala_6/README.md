@@ -89,6 +89,49 @@ void loop() {
   digitalWrite(led4, LOW);
 }
 ```
+<details>
+<summary> :cyclone: Código desenvolvido pelo aluno </summary>
+
+```cpp
+// Definição dos pinos dos LEDs
+const int ledPins[] = {8, 9, 10, 11}; // Pino do LED 1, 2, 3 e 4.
+
+// Definição do pino do botão
+const int buttonPin = 3; // Pino do botão
+
+long i; // Variável para o pino do LED a ser acionado
+
+
+void setup() {
+  // Inicializa o pino do botão como entrada
+  pinMode(buttonPin, INPUT);
+
+  // Inicializa o gerador de números aleatórios
+  randomSeed(analogRead(0)); // Gera a semente para números aleatórios
+
+  // Inicializa os pinos dos LEDs como saídas
+  for (; i < 4; i++) { 
+    pinMode(ledPins[i], OUTPUT); 
+  }
+}
+
+
+void loop() {
+  // Usando um loop for para repetir indefinidamente enquanto o botão for pressionado
+  while (digitalRead(buttonPin) == LOW) { //Também poderia ser o seguinte comando:   for (;digitalRead(buttonPin) == HIGH;) {
+    i = random(0, 4); // Gera um número aleatório de 0 a 3 (4 números)
+    digitalWrite(ledPins[i], HIGH); // Acende o LED correspondente
+    delay(500); // Aguarda por um período de tempo
+    digitalWrite(ledPins[i], LOW); // Apaga o LED
+    delay(500); // Aguarda por um período de tempo antes de repetir
+  }
+}
+````
+</details>
+
+
+
+
 
 
 ## Funcionamento
