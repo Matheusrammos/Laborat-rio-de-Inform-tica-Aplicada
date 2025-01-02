@@ -64,7 +64,8 @@ void setup() {
   pinMode(led3, OUTPUT);
   pinMode(led4, OUTPUT);
 
-  pinMode(buttonPin, INPUT); // Inicializa o pino do botão como entrada
+  // Inicializa o pino do botão como entrada
+  pinMode(buttonPin, INPUT); 
   
   // Inicializa o gerador de números aleatórios
   randomSeed(analogRead(0)); // Gera a semente para números aleatórios
