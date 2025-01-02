@@ -56,37 +56,29 @@ const int buttonPin = 3; // Pino do botão
 // Variável para armazenar o valor aleatório
 long a; // Variável para o pino do LED a ser acionado
 
+
 void setup() {
   // Inicializa os pinos dos LEDs como saídas
   pinMode(led1, OUTPUT);
   pinMode(led2, OUTPUT);
   pinMode(led3, OUTPUT);
   pinMode(led4, OUTPUT);
-  
-  // Inicializa o pino do botão como entrada
-  pinMode(buttonPin, INPUT);
+
+  pinMode(buttonPin, INPUT); // Inicializa o pino do botão como entrada
   
   // Inicializa o gerador de números aleatórios
   randomSeed(analogRead(0)); // Gera a semente para números aleatórios
 }
 
+
 void loop() {
   // Usando um loop for para repetir indefinidamente enquanto o botão estiver pressionado
   for (; digitalRead(buttonPin) == HIGH;) {
-    // Gera um número aleatório entre 8 e 11 (pinos dos LEDs)
-    a = random(8, 12);
-    
-    // Acende o LED correspondente
-    digitalWrite(a, HIGH);
-    
-    // Aguarda por um período de tempo
-    delay(500);
-    
-    // Apaga o LED
-    digitalWrite(a, LOW);
-    
-    // Aguarda por um período de tempo antes de repetir
-    delay(500);
+    a = random(8, 12); // Gera um número aleatório entre 8 e 11 (pinos dos LEDs)
+    digitalWrite(a, HIGH); // Acende o LED correspondente
+    delay(500); // Aguarda por um período de tempo
+    digitalWrite(a, LOW); // Apaga o LED
+    delay(500); // Aguarda por um período de tempo antes de repetir 
   }
   
   // Apaga todos os LEDs quando o botão não estiver pressionado
