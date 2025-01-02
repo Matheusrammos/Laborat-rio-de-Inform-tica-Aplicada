@@ -71,7 +71,7 @@ void setup() {
 }
 
 void loop() {
-  // Usando um loop for para repetir indefinidamente enquanto o botão não for pressionado
+  // Usando um loop for para repetir indefinidamente enquanto o botão estiver pressionado
   for (; digitalRead(buttonPin) == HIGH;) {
     // Gera um número aleatório entre 8 e 11 (pinos dos LEDs)
     a = random(8, 12);
@@ -89,7 +89,7 @@ void loop() {
     delay(500);
   }
   
-  // Apaga todos os LEDs quando o botão for pressionado
+  // Apaga todos os LEDs quando o botão não estiver pressionado
   digitalWrite(led1, LOW);
   digitalWrite(led2, LOW);
   digitalWrite(led3, LOW);
