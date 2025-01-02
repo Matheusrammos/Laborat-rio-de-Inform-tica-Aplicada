@@ -50,11 +50,13 @@ O objetivo deste projeto é aprender a controlar LEDs com um Arduino Uno, ligand
 const int led1Pin = 9; // Pino do primeiro LED
 const int led2Pin = 13; // Pino do segundo LED
 
+
 void setup() {
   // Configurando os pinos dos LEDs como saída
   pinMode(led1Pin, OUTPUT);
   pinMode(led2Pin, OUTPUT);
 }
+
 
 void loop() {
   digitalWrite(led1Pin, HIGH); // Acende o primeiro LED
@@ -66,6 +68,34 @@ void loop() {
   delay(1000); // Aguarda 1 segundo
 }
 ````
+
+<details>
+<summary> :cyclone: Código desenvolvido pelo aluno </summary>
+
+```cpp
+// Definindo os pinos dos LEDs
+const int ledPins[] = {9, 13};  // Pinos onde os LEDs estão conectados
+
+
+void setup() {
+  // Configurando os pinos dos LEDs como saída
+  for (int i = 0; i < 2; i++) {
+  pinMode(ledPins[i], OUTPUT);
+  }
+}
+
+
+void loop() {
+  // Acende e apaga os LEDs sequencialmente
+  for (int i = 0; i < 2; i++) {
+    digitalWrite(ledPins[i], HIGH); // Acende o LED correspondente ao número "i"
+    delay(1000); // Aguarda 1 segundo
+    digitalWrite(ledPins[i], LOW); // Apaga o LED correspondente ao número "i"
+  }
+}
+
+````
+</details>
 
 
 ## Funcionamento
