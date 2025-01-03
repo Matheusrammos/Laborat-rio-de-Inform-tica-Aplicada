@@ -112,7 +112,7 @@ void setup() {
 
 
 void loop() {
-  // Loop para exibir números de 0 a 9 no display
+  // Loop para exibir números de 0 a F no display
   for (int i = 0; i < 16; i++) {
     displayDigit(i);  // Exibe o número no display
     delay(1000);      // Espera 1 segundo antes de mudar para o próximo número
