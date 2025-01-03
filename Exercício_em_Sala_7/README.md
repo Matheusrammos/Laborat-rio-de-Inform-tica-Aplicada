@@ -140,7 +140,7 @@ void displayDigit(int num) {
 
 2. **Mapeamento de Dígitos:**  
    - Uma matriz (`digit`) armazena os estados necessários (ligado ou desligado) para cada segmento, mapeando caracteres de 0 a F.  
-   - Exemplo: Para exibir o número "0", os segmentos A, B, C, D, E e F são ativados, enquanto o segmento G é desligado.  
+     > Exemplo: Para exibir o número "0", os segmentos A, B, C, D, E e F são ativados, enquanto o segmento G é desligado.  
 3. **Exibição de Caracteres:**  
    - A função `displayDigit()` recebe o número ou letra como entrada e ativa os segmentos correspondentes com base no mapeamento da matriz.  
 
