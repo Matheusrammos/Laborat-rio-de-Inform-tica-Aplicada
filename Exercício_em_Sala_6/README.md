@@ -94,11 +94,12 @@ void loop() {
 
 ```cpp
 // Definição dos pinos dos LEDs
-const int ledPins[] = {8, 9, 10, 11}; // Pino do LED 1, 2, 3 e 4.
+const int ledPins[] = {8, 9, 10, 11}; // Pinos onde os LEDs estão conectados (Pinos dos 4 LEDs)
 
 // Definição do pino do botão
 const int buttonPin = 3; // Pino do botão
 
+// Definição das variáveis
 long i; // Variável para o pino do LED a ser acionado
 
 
