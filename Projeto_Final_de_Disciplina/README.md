@@ -30,6 +30,7 @@ Este projeto simula uma roleta luminosa utilizando seis LEDs e um botão, com co
 ![fotodd](https://github.com/Matheusrammos/LIA-Docs/blob/main/Projeto_Final_de_Disciplina/Diagrama_TRFinal.png)
 
 
+## :cyclone: Código Comentado
 ```cpp
 // Definindo pinos e algumas variáveis
 const int ledPins[] = {3, 4, 5, 6, 7, 8}; // Pinos onde os LEDs estão conectados (Pinos dos 6 LEDs)
