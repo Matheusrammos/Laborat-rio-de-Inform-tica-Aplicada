@@ -78,7 +78,7 @@ const int segE = 6;
 const int segF = 7;
 const int segG = 8;
 
-// Mapeamento dos números (0-9) para os segmentos do display
+// Mapeamento dos números (0-9) e (A-F) para os segmentos do display
 const int digit[16][7] = {
   {1, 1, 1, 1, 1, 1, 0}, // 0
   {0, 1, 1, 0, 0, 0, 0}, // 1
