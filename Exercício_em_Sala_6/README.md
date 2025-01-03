@@ -58,13 +58,13 @@ long a; // Variável para o pino do LED a ser acionado
 
 
 void setup() {
-  // Inicializa o pino do botão como entrada
+  // Inicializando o pino do botão como entrada
   pinMode(buttonPin, INPUT); 
   
-  // Inicializa o gerador de números aleatórios
+  // Inicializando o gerador de números aleatórios
   randomSeed(analogRead(0)); // Gera a semente para números aleatórios
 
-  // Inicializa os pinos dos LEDs como saídas
+  // Inicializando os pinos dos LEDs como saídas
   pinMode(led1, OUTPUT);
   pinMode(led2, OUTPUT);
   pinMode(led3, OUTPUT);
@@ -103,13 +103,13 @@ long i; // Variável para o pino do LED a ser acionado
 
 
 void setup() {
-  // Inicializa o pino do botão como entrada
+  // Inicializando o pino do botão como entrada
   pinMode(buttonPin, INPUT);
 
-  // Inicializa o gerador de números aleatórios
+  // Inicializando o gerador de números aleatórios
   randomSeed(analogRead(0)); // Gera a semente para números aleatórios
 
-  // Inicializa os pinos dos LEDs como saídas
+  // Inicializando os pinos dos LEDs como saídas
   for (; i < 4; i++) { 
     pinMode(ledPins[i], OUTPUT); 
   }
