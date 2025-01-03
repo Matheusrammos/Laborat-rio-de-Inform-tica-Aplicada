@@ -8,7 +8,7 @@ Este projeto simula uma roleta luminosa utilizando seis LEDs e um botão, com co
 - **1 Placa Arduino (por exemplo, Arduino Uno)**
 - **6 LED (integrado aos pinos de 3 a 8)**
 - **1 Botão (integrado no pino 13)**
-- **1 Resistor de 220 Ω**
+- **6 Resistor de 220 Ω**
 - **1 Resistor de 10 kΩ (pull-dow)**
 - **Fios de conexão (jumpers)**
 - **1 Protoboard (opcional, para montagem do circuito)**
