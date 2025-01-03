@@ -19,6 +19,7 @@ Eles evitam estados flutuantes que podem causar leituras instáveis ou interfer�
 - **1 Placa Arduino (por exemplo, Arduino Uno)**
 - **1 LED (integrado no pino 13)**
 - **1 Botão (integrado no pino 5)**
+- **1 Resistor de 220 Ω**
 - **1 Resistor de 10 kΩ (pull-up ou pull-dow)**
 - **Fios de conexão (jumpers)**
 - **1 Protoboard (opcional, para montagem do circuito)**
