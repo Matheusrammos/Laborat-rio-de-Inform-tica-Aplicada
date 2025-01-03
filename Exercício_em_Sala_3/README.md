@@ -90,7 +90,6 @@ void setup() {
   // Inicializando os pinos dos LEDs como saídas
   for (int i = 0; i < 3; i++)
     pinMode(ledPins[i], OUTPUT);
-
 }
 
 
