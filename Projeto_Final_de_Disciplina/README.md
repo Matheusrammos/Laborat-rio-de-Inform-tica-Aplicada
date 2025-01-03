@@ -15,12 +15,12 @@ Este projeto simula uma roleta luminosa utilizando seis LEDs e um botão, com co
 
 
 ## Montagem do Circuito
-1. **Conexão do LED:**
-   - Conecte o ânodo (lado maior) no pino 13.
+1. **Conexão dos LEDs:**
+   - Conecte o ânodo (lado maior) no respéctivo pino de forma horária.
    - Conecte o cátodo (lado menor) ao GND.
      
 2. **Conectar o Botão:** 
-   - Um terminal do botão deve ser conectado ao pino digital 5 do Arduino.
+   - Um terminal do botão deve ser conectado ao pino digital 13 do Arduino.
    - O outro terminal do botão deve ser conectado ao VCC (5V) da placa.
 
 3. **Configuração do Resistor pull-dow**:
