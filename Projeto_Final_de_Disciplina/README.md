@@ -41,7 +41,7 @@ void loop() {
     // Acende e apaga os LEDs sequencialmente
     for (int i = 0; i < 7; i++) {
       // i = 6 será considerado como estado temporário. Quando isso ocorrer, a roleta, após o LED do pino 8 desligar, resetará para o LED do pino 3
-      if (i == 6) { 
+      if (i == 6) { // Estado temporário
         i = 0; // Resetado para o pino 3
       }
 
