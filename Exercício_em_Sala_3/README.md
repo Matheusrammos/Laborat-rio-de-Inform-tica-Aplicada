@@ -78,6 +78,33 @@ void loop() {
 }
 ````
 
+<details>
+<summary> :cyclone: Código desenvolvido pelo aluno </summary>
+
+```cpp
+// Definindo os pinos dos LEDs
+const int ledPins[] = {13, 9, 6}; // Pinos onde os LEDs estão conectados
+
+
+void setup() {
+  // Inicializando os pinos dos LEDs como saídas
+  for (int i = 0; i < 3; i++)
+    pinMode(ledPins[i], OUTPUT);
+
+}
+
+
+void loop() {
+  // Acende e apaga os LEDs sequencialmente
+  for (int i = 0; i < 3; i++) {
+    digitalWrite(ledPins[i], HIGH); // Acende o respectivo LED
+    delay(1000); // Aguarda 1 segundo
+    digitalWrite(ledPins[i], LOW); // Apaga o mesmo
+  }
+}
+````
+</details>
+
 
 ## Funcionamento
 > O projeto consiste em **acender três LEDs sequencialmente** utilizando uma placa Arduino Uno. Cada LED permanece aceso por **1 segundo** antes de apagar e ativar o próximo. O processo se repete em um **ciclo infinito**.
