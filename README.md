@@ -3,6 +3,10 @@
 ## Repositório de Projetos e Exercícios da Disciplina de Laboratório de Informática Aplicada
 Este repositório é destinado a expor os projetos, trabalhos e atividades que foram feitos através do arduíno. Cada diretório corresponde a uma tarefa realizada.
 
+:diamonds: [Slides das Aulas](https://github.com/Epaminondaslage/Kit-Arduino?tab=readme-ov-file#slides-das-aulas)
+- [Apresentação 1](https://docs.google.com/presentation/d/1xNcnfATCOnP69R0GXfWbdoShxTK1as-e/edit?usp=drive_link&ouid=101750793150395365396&rtpof=true&sd=true)
+- [Apresentação 2](https://docs.google.com/presentation/d/1FcnofAPZK5yyRE3SWqcSLbuY-w5lGori/edit?usp=drive_link&ouid=101750793150395365396&rtpof=true&sd=true)
+     
 ## Códigos com a Arduino IDE
 A Arduino IDE (Ambiente de Desenvolvimento Integrado) é um software utilizado para programar placas Arduino. Ela oferece uma interface amigável que facilita a escrita, compilação e upload de códigos para os microcontroladores.
 > ### O que faz a Arduino IDE?
@@ -11,6 +15,7 @@ A Arduino IDE (Ambiente de Desenvolvimento Integrado) é um software utilizado p
 > - **Compilação e Upload:** Compila o código escrito e carrega o programa diretamente na placa Arduino, além de fornecer um Serial Monitor para visualização de dados e depuração em tempo real.
 > ### Sobre a plataforma da IDE
 > Versão 2.3.2 Plataforma: Arduino UNO
+
 
 ## Diagramas com o Tinkercad
 Os diagramas de circuito de cada projeto são, em suma, feitos através do Tinkercad. Uma ferramenta online capaz de simular o funcionamento de um arduíno, representando-o por imagens 3D. A ferramenta permitiu montar e construir diagramas 3D dos circuitos em cada projeto de uma maneira totalmente online e gratuita.
