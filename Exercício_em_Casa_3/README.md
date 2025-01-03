@@ -59,11 +59,27 @@ delay(50); // Debouncing
 ````
 
 ## Funcionamento
-1. **Configuração Inicial:** O Arduino é configurado para monitorar o botão no pino digital 5 e controlar o LED no pino digital 13. Inicialmente, o LED é configurado como apagado (**LOW**) e a comunicação serial é iniciada para enviar informações ao **Serial Monitor**.
-2. **Leitura do Estado do Botão:** A cada ciclo do programa, o estado do botão é lido utilizando o comando **`digitalRead(buttonPin)`** e armazenado na variável **`Estbutton`**.  
-3. **Controle do LED:** Se o botão estiver pressionado (**HIGH**), o LED é aceso com **`digitalWrite(ledPin, HIGH)`**. Caso contrário, o LED é apagado com **`digitalWrite(ledPin, LOW)`**.
-4. **Exibição no Serial Monitor:** O estado atual do botão é exibido no **Serial Monitor** por meio de **`Serial.println(Estbutton)`**, permitindo que o usuário veja se o botão está pressionado ou não.
-5. **Debouncing:** Para evitar múltiplas leituras causadas por ruídos no botão, é aplicado um atraso de 50ms ao final de cada iteração do loop principal.
+
+> Este projeto simples utiliza um botão conectado a um Arduino para controlar o estado de um LED. Quando o botão é pressionado, o LED acende; quando o botão é solto, o LED apaga. Além disso, o estado do botão é exibido no **Serial Monitor** para monitoramento em tempo real.
+1. **Configuração Inicial:**
+   - O LED está conectado ao pino 13 e configurado como saída.
+   - O botão está conectado ao pino 5 e configurado como entrada.
+   - A comunicação serial é iniciada com `Serial.begin(9600)` para enviar os dados do estado do botão ao computador.
+
+2. **Leitura do Botão:**
+   - O estado do botão é lido com `digitalRead(buttonPin)` e armazenado na variável `Estbutton`.
+
+3. **Controle do LED:**
+   - Se o botão estiver pressionado (estado **HIGH**):
+     - O LED é ligado usando `digitalWrite(ledPin, HIGH)`.
+   - Caso contrário (estado **LOW**):
+     - O LED é desligado com `digitalWrite(ledPin, LOW)`.
+
+4. **Monitoramento Serial:**
+   - O estado do botão (`Estbutton`) é enviado ao **Serial Monitor** usando `Serial.println(Estbutton)` para fins de depuração.
+
+5. **Debouncing:**
+   - Um pequeno atraso (`delay(50)`) é adicionado ao final do loop para evitar leituras instáveis devido ao ruído do botão (debouncing).
 
 
 ## Participações
