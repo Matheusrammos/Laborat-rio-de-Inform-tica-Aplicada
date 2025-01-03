@@ -78,8 +78,6 @@ const int segE = 6;
 const int segF = 7;
 const int segG = 8;
 
-
-
 // Mapeamento dos números (0-9) para os segmentos do display
 const int digit[16][7] = {
   {1, 1, 1, 1, 1, 1, 0}, // 0
@@ -101,7 +99,6 @@ const int digit[16][7] = {
 };
 
 
-
 void setup() {
   // Configurando os pinos dos segmentos como saída
   pinMode(segA, OUTPUT);
@@ -113,6 +110,7 @@ void setup() {
   pinMode(segG, OUTPUT);
 }
 
+
 void loop() {
   // Loop para exibir números de 0 a 9 no display
   for (int i = 0; i < 16; i++) {
@@ -120,7 +118,6 @@ void loop() {
     delay(1000);      // Espera 1 segundo antes de mudar para o próximo número
   }
 }
-
 
 
 // Função para exibir um dígito no display
