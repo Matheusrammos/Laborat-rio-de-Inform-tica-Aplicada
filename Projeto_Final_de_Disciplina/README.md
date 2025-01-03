@@ -28,7 +28,7 @@ Este projeto simula uma roleta luminosa utilizando seis LEDs e um botão, com co
 
 4. **Diagrama de montagem:**
 ![fotodd](https://github.com/Matheusrammos/LIA-Docs/blob/main/Projeto_Final_de_Disciplina/Diagrama_TRFinal.png)
-
+![sh](https://github.com/Matheusrammos/LIA-Docs/blob/main/Projeto_Final_de_Disciplina/Circuito_Digital.png)
 
 
 ## :cyclone: Código Comentado
