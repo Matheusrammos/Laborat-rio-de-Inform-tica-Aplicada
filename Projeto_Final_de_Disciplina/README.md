@@ -164,3 +164,8 @@ void loop() {
 
 6. **Reinício:**
    - O processo pode ser reiniciado pressionando o botão novamente.
+
+
+## Participações
+- Este projeto contou com a assistência do ChatGPT, um assistente virtual da OpenAI, para fornecer informações e orientações durante o desenvolvimento e a elaboração da documentação.
+  *(OPENAI. ChatGPT. Disponível em: ChatGPT - [OpenAI](https://www.openai.com/chatgpt). Acesso em: 03/01/25.)*
