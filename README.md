@@ -61,7 +61,7 @@ O projeto final integra todos os conceitos do curso, desafiando os alunos a cria
 ## Notas
 
 ### Como Navegar?
-> - Navegue pelos diretórios acima para acessar os códigos e relatórios de cada exercício ou projeto.
+> - Navegue pelos diretórios acima para acessar os códigos e relatórios de cada exercício ou projeto. Alguns repositórios possuem conteúdos extras, como códigos desenvolvidos parcialmente pelo aluno, explicação de alguns comandos do c++ e/ou até vídeos que mostram o funcionamento prático do código. Por isso é importante o examinamento dos repositórios de forma calma e atenta para total aproiveito do conteúdo.
 > - Cada diretório contém um README adicional  explicando em detalhes o funcionamento do código e as instruções para execução.
 
 ### Considerações
