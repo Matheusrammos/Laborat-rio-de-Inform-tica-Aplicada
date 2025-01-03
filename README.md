@@ -2,10 +2,9 @@
 
 ## Repositório de Projetos e Exercícios da Disciplina de Laboratório de Informática Aplicada
 Este repositório é destinado a expor os projetos, trabalhos e atividades que foram feitos através do arduíno. Cada diretório corresponde a uma tarefa realizada.
+      
+  :diamonds: [Slides das Aulas](https://github.com/Epaminondaslage/Kit-Arduino?tab=readme-ov-file#slides-das-aulas)
 
-:diamonds: [Slides das Aulas](https://github.com/Epaminondaslage/Kit-Arduino?tab=readme-ov-file#slides-das-aulas)
-- [Apresentação 1](https://docs.google.com/presentation/d/1xNcnfATCOnP69R0GXfWbdoShxTK1as-e/edit?usp=drive_link&ouid=101750793150395365396&rtpof=true&sd=true)
-- [Apresentação 2](https://docs.google.com/presentation/d/1FcnofAPZK5yyRE3SWqcSLbuY-w5lGori/edit?usp=drive_link&ouid=101750793150395365396&rtpof=true&sd=true)
      
 ## Códigos com a Arduino IDE
 A Arduino IDE (Ambiente de Desenvolvimento Integrado) é um software utilizado para programar placas Arduino. Ela oferece uma interface amigável que facilita a escrita, compilação e upload de códigos para os microcontroladores.
