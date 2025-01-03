@@ -71,7 +71,7 @@ void loop() {
 ````
 
 
-### Funcionamento do Projeto: Roleta com LEDs
+### Funcionamento
 
 > Este projeto utiliza seis LEDs conectados a um Arduino que acendem de forma sequencial, simulando uma roleta. A velocidade da roleta é determinada por um número gerado aleatoriamente, e o ciclo é interrompido gradualmente até que um LED final permaneça piscando. O botão controla o início e o fim da roleta. 
 1. **Configuração Inicial:**
