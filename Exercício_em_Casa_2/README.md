@@ -16,14 +16,18 @@ Este projeto demonstra como contar o número de vezes que um botão é pressiona
 
 
 ## Montagem do Circuito
-1. **Conectar o Botão:**
+1. **Conexão do LED:**
+   - Conecte o ânodo (lado maior) no pino 13.
+   - Conecte o cátodo (lado menor) ao GND.
+     
+2. **Conectar o Botão:** 
    - Um terminal do botão deve ser conectado ao pino digital 5 do Arduino.
    - O outro terminal do botão deve ser conectado ao VCC (5V) da placa.
 
-2. **Configuração do Resistor pull-dow**:
+3. **Configuração do Resistor pull-dow**:
    - Conecte um resistor de 10 kΩ entre o pino 5 (onde o botão está conectado) e o GND (terra). Isso garantirá que o pino 5 esteja em um estado baixo quando o botão não estiver pressionado.
 
-3. **Diagrama de montagem:**
+4. **Diagrama de montagem:**
 ![fotodd](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Casa_1/Diagrama_Casa_1%3A%20pull-dow.png)
 <details>
 <summary> :dvd: Teste Prático: Contagem de Pressionamentos de Botão </summary>
