@@ -4,11 +4,9 @@
 
 
 ```cpp
-// Definição dos pinos dos LEDs e do botão
+// Definindo pinos e algumas variáveis
 const int ledPins[] = {3, 4, 5, 6, 7, 8}; // Pinos onde os LEDs estão conectados (Pinos dos 6 LEDs)
 const int buttonPin = 13; // Pino do botão
-
-//Definindo variáveis
 bool a = false;
 long x;
 int parado;
@@ -22,8 +20,11 @@ void setup() {
   for (int i = 0; i < 6; i++) {
     pinMode(ledPins[i], OUTPUT); 
   }
+
   // Inicializando o gerador de números aleatórios
   randomSeed(analogRead(0)); // Gera a semente para números aleatórios
+
+
   Serial.begin(9600); // Inicializa a comunicação serial a 9600 bps. Isso é necessário para começar a enviar dados ao Serial Monitor
 }
 
