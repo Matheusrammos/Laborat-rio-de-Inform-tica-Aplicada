@@ -10,6 +10,7 @@ Este projeto demonstra como contar o número de vezes que um botão é pressiona
 - **1 Placa Arduino (por exemplo, Arduino Uno)**
 - **1 LED (integrado no pino 13)**
 - **1 Botão (integrado no pino 5)**
+- **1 Resistor de 220 Ω**
 - **1 Resistor de 10 kΩ (pull-dow)**
 - **Fios de conexão (jumpers)**
 - **1 Protoboard (opcional, para montagem do circuito)**
