@@ -42,7 +42,6 @@ Este projeto faz com que quatro LEDs pisquem aleatoriamente sempre que o botão 
 
 
 ## Código Comentado
-
 ```cpp
 // Definição dos pinos dos LEDs
 const int led1 = 8; // Pino do LED 1
