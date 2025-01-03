@@ -47,7 +47,7 @@ void loop() {
 
       p = 1000/x; // O tempo de piscada ficará maior a cada ciclo, pois o valor de "x" diminuirá a cada repetição
       digitalWrite(ledPins[i], HIGH); // Acende o respectivo LED
-      delay(parado); // Espera o tempo de piscada
+      delay(p); // Espera o tempo de piscada
       digitalWrite(ledPins[i], LOW); // Apaga o mesmo
       x--; // O valor de "x" diminui em 1
 
@@ -89,7 +89,7 @@ void loop() {
    - Esse número controla a velocidade e o tempo total da roleta.
 
 4. **Sequência dos LEDs:**
-   - Os LEDs acendem e apagam sequencialmente em um ciclo controlado pelo valor de `x`. A velocidade é ajustada dinamicamente com base no cálculo `parado = 1000 / x`.
+   - Os LEDs acendem e apagam sequencialmente em um ciclo controlado pelo valor de `x`. A velocidade é ajustada dinamicamente com base no cálculo `p = 1000 / x`.
    - O número `x` diminui gradualmente a cada ciclo, fazendo com que a roleta desacelere.
 
 5. **Finalização:**
