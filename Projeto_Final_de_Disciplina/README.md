@@ -4,6 +4,9 @@
 Este projeto simula uma roleta luminosa utilizando seis LEDs e um botão, com controle de velocidade e parada gradual. A roleta é acionada ao pressionar o botão, e os LEDs piscam sequencialmente, desacelerando até que um LED final seja destacado como o "vencedor". A interface com o Serial Monitor permite acompanhar o número gerado aleatoriamente.
 
 
+
+
+
 ## Materiais Necessários
 - **1 Placa Arduino (por exemplo, Arduino Uno)**
 - **6 LED (integrado aos pinos de 3 a 8)**
