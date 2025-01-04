@@ -29,9 +29,9 @@ Este projeto simula uma roleta luminosa utilizando seis LEDs e um botão, com co
 
 O **push button** desempenha um papel crucial na interação com o usuário, tornando este projeto intuitivo e acessível mesmo para iniciantes.
 
-   <img height="200" width="283" align="right" alt="WhileDIAGRAMA" src="https://github.com/user-attachments/assets/454ddd04-1086-4226-8b8f-7cb032603cd3">
+   <img height="200" width="303" align="right" alt="WhileDIAGRAMA" src="https://github.com/user-attachments/assets/454ddd04-1086-4226-8b8f-7cb032603cd3">
    
-   > <img height="200" width="300" alt="WhileDIAGRAMA" src="https://github.com/user-attachments/assets/7696e638-6d4b-4f56-9ffc-ed535ae8bded">
+   > <img height="200" width="310" alt="WhileDIAGRAMA" src="https://github.com/user-attachments/assets/7696e638-6d4b-4f56-9ffc-ed535ae8bded">
 
 
 ## Materiais Necessários
