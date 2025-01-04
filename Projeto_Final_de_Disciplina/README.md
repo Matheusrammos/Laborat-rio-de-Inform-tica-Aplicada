@@ -167,7 +167,17 @@ void loop() {
 
 
 ## Desafios enfrentados
-Esse projeto é fruto das aulas e exercícios realizados no Arduíno UNO. Para desenvolver o projeto, utilizei alguns conceitos aprendidos para desenvolver algumas funcionalidades, como a utilização de um [pull-dow](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Casa_1#ultilizando-um-resistor-pull-dow) no botão, um [sequencial de 6 canais](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Sala_5), [geração de 1 número aleatório](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Sala_6#funcionamento), enviar o "x" para o [Monitor Serial](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Casa_2), repetição das piscadas LED, utilização de um estado temporário e, ao longo do tempo, a velocidade dessas "piscadas LED" diminuem. O maior dos desafios foi a "repetição das piscadas LED", pois, enquanto, no `void loop()`, `for (int i = 0; i < 6; i++) {` se repetia, a variável "i" recebia como valor final o número 5, que acionava o LED do pino 8. Isso encerrava o ciclo, não cumprindo o ciclo conforme o "número de piscadas" (x). A solução foi fazer um "estado temporário", inspirado nos conteúdos da disciplina de Sistemas Digitais, que demonstraram o funcionamento de um contador assíncrono. Com isso, foi possível realizar um reset na variável "i", que dá a impressão de que a roda está girando, ou seja, utilizando `for (int i = 0; i < 7; i++) {`, quando i = 6, a variável "i" recebe o valor de 0 instantâneamente.
+Esse projeto é fruto das aulas e exercícios realizados no Arduíno UNO. Para desenvolver o projeto, utilizei alguns conceitos aprendidos para desenvolver algumas funcionalidades, como a utilização de:
+- [Pull-dow](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Casa_1#ultilizando-um-resistor-pull-dow) no botão.
+- [Sequencial de 6 canais](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Sala_5).
+- [Geração de 1 número aleatório](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Sala_6#funcionamento).
+- Enviar a variável "x" para o [Monitor Serial](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Casa_2).
+- Repetição das piscadas LED.
+- Utilização de um estado temporário.
+- A velocidade dessas "piscadas LED" diminuem ao longo do tempo.
+
+
+O maior dos desafios foi a "repetição das piscadas LED", pois, enquanto, no `void loop()`, `for (int i = 0; i < 6; i++) {` se repetia, a variável "i" recebia como valor final o número 5, que acionava o LED do pino 8. Isso encerrava o ciclo, não cumprindo o ciclo conforme o "número de piscadas" (x). A solução foi fazer um "estado temporário", inspirado nos conteúdos da disciplina de Sistemas Digitais, que demonstraram o funcionamento de um contador assíncrono. Com isso, foi possível realizar um reset na variável "i", que dá a impressão de que a roda está girando, ou seja, utilizando `for (int i = 0; i < 7; i++) {`, quando i = 6, a variável "i" recebe o valor de 0 instantâneamente.
 
 ## Participações
 - Este projeto contou com a assistência do ChatGPT, um assistente virtual da OpenAI, para fornecer informações e orientações durante o desenvolvimento e a elaboração da documentação.
