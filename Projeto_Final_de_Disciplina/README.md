@@ -167,7 +167,7 @@ void loop() {
 
 
 ## Desafios enfrentados
-Esse projeto é fruto das aulas e exercícios realizados no Arduíno UNO. Para desenvolver o projeto, utilizei alguns conceitos aprendidos para desenvolver algumas funcionalidades, como a utilização de um [pull-dow]() no botão, um [sequencial de 6 canais](, geração de 1 numero aleatório, enviar o "x" para o Morta Serial, repetição das piscadas LED, utilizaçao de um estado temporário e, ao longobdo tempo, a velocidade dessas "piscadas LED" diminuem.
+Esse projeto é fruto das aulas e exercícios realizados no Arduíno UNO. Para desenvolver o projeto, utilizei alguns conceitos aprendidos para desenvolver algumas funcionalidades, como a utilização de um [pull-dow]() no botão, um [sequencial de 6 canais](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Sala_5), geração de 1 numero aleatório, enviar o "x" para o Monitor Serial, repetição das piscadas LED, utilizaçao de um estado temporário e, ao longobdo tempo, a velocidade dessas "piscadas LED" diminuem.
 
 
 ## Participações
