@@ -176,9 +176,35 @@ Esse projeto é fruto das aulas e exercícios realizados no Arduíno UNO. Para d
 - Utilização de um estado temporário.
 - A velocidade dessas "piscadas LED" diminuem ao longo do tempo.
 
+## Desafios Enfrentados  
+> O desenvolvimento deste projeto foi uma oportunidade de consolidar conceitos aprendidos ao longo das aulas, como o uso de resistores pull-down, sequencial de LEDs, geração de números aleatórios e interação com o Monitor Serial. Porém, alguns desafios se destacaram:  
 
-     O maior dos desafios foi a "repetição das piscadas LED", pois, enquanto, no `void loop()`, `for (int i = 0; i < 6; i++) {`
-se repetia, a variável "i" recebia como valor final o número 5, que acionava o LED do pino 8. Isso encerrava o ciclo, não cumprindo o ciclo conforme o "número de piscadas" (x). A solução foi fazer um "estado temporário", inspirado nos conteúdos da disciplina de Sistemas Digitais, que demonstraram o funcionamento de um contador assíncrono. Com isso, foi possível realizar um reset na variável "i", que dá a impressão de que a roda está girando, ou seja, utilizando `for (int i = 0; i < 7; i++) {`, quando i = 6, a variável "i" recebe o valor de 0 instantâneamente.
+1. **Repetição das Piscadas LED**  
+   - O principal obstáculo foi implementar a repetição contínua dos LEDs até o cumprimento total do número de piscadas gerado aleatoriamente (`x`). Inicialmente, o código interrompia o ciclo ao acender o LED do pino 8, já que o valor final da variável `i` no loop `for` era 5.  
+   - **Solução:**  
+     Para resolver isso, implementei um estado temporário no loop. Quando `i` atingia 6, a variável era redefinida para 0, criando uma sequência ininterrupta que simula o giro contínuo da roleta. Essa abordagem foi inspirada nos princípios dos contadores assíncronos estudados em Sistemas Digitais.
+
+2. **Controle da Velocidade da Roleta**  
+   - Ajustar a velocidade de piscada de forma dinâmica, de modo que ela desacelerasse gradualmente, exigiu um cálculo preciso. Foi necessário criar uma relação inversa entre o tempo de piscada (`p`) e o número total de piscadas (`x`) para que a transição ocorresse suavemente.  
+
+3. **Ruídos no Push Button (Debouncing)**  
+   - O comportamento instável do botão devido a ruídos elétricos gerava leituras indesejadas, fazendo com que o botão fosse "acionado" mais de uma vez.  
+   - **Solução:**  
+     Adicionei um pequeno atraso (`delay(50)`) no código após a leitura do botão, para evitar sinais duplicados.
+
+4. **Gerenciamento do Estado da Roleta**  
+   - A alternância entre ativar e desativar a roleta, controlada pela variável booleana `a`, precisou de ajustes para garantir que a roleta pudesse ser reiniciada de forma consistente após o término de cada ciclo.
+
+5. **Interação com o Monitor Serial**  
+   - Implementar a exibição do número aleatório gerado (`x`) no Monitor Serial exigiu a inicialização correta da comunicação e a formatação dos dados para facilitar a leitura durante os testes.
+
+Esses desafios foram superados com criatividade e aplicação dos conceitos aprendidos, permitindo a construção de um projeto funcional, didático e alinhado aos objetivos do curso.
+
+
+  O maior desafio foi implementar a repetição contínua das piscadas dos LEDs. Inicialmente, no `void loop()`, ao usar o loop `for (int i = 0; i < 6; i++) {`, a variável "i" chegava ao valor 5, acionando o LED do pino 8 e encerrando o ciclo, sem completar o número total de piscadas definido pela variável "x". Isso impedia que o comportamento esperado da roleta fosse reproduzido corretamente.  
+
+  A solução foi implementar um "estado temporário", inspirado nos conceitos de contadores assíncronos estudados na disciplina de Sistemas Digitais. Essa abordagem permitiu redefinir o valor da variável "i" para 0 quando atingisse 6, criando um ciclo contínuo. Com a modificação para `for (int i = 0; i < 7; i++) {`, o valor de "i" era instantaneamente reiniciado ao atingir 6, proporcionando a impressão de que a roleta girava de forma fluida e ininterrupta.
+
 
 ## Participações
 - Este projeto contou com a assistência do ChatGPT, um assistente virtual da OpenAI, para fornecer informações e orientações durante o desenvolvimento e a elaboração da documentação.
