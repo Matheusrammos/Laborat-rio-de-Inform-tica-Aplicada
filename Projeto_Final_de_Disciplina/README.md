@@ -166,16 +166,6 @@ void loop() {
    - O processo pode ser reiniciado pressionando o botão novamente.
 
 
-## Desafios enfrentados
-Esse projeto é fruto das aulas e exercícios realizados no Arduíno UNO. Para desenvolver o projeto, utilizei alguns conceitos aprendidos para desenvolver algumas funcionalidades, como a utilização de:
-- [Pull-dow](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Casa_1#ultilizando-um-resistor-pull-dow) no botão.
-- [Sequencial de 6 canais](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Sala_5).
-- [Geração de 1 número aleatório](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Sala_6#funcionamento).
-- Enviar a variável "x" para o [Monitor Serial](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Casa_2).
-- Repetição das piscadas LED.
-- Utilização de um estado temporário.
-- A velocidade dessas "piscadas LED" diminuem ao longo do tempo.
-
 ## Desafios Enfrentados  
 > O desenvolvimento deste projeto foi uma oportunidade de consolidar conceitos aprendidos ao longo das aulas, como o uso de resistores [pull-dow](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Casa_1#ultilizando-um-resistor-pull-dow), [sequencial de LEDs](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Sala_5), [geração de números aleatórios](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Sala_6#funcionamento) e [interação com o Monitor Serial](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Casa_2). Porém, alguns desafios se destacaram:  
 
@@ -195,7 +185,8 @@ Esse projeto é fruto das aulas e exercícios realizados no Arduíno UNO. Para d
 
 Esses desafios foram superados com criatividade e aplicação dos conceitos aprendidos, permitindo a construção de um projeto funcional, didático e alinhado aos objetivos do curso.
 
-### Maior Desafio:
+#### Maior Desafio:
+
    O maior desafio foi implementar a repetição contínua das piscadas dos LEDs. Inicialmente, no `void loop()`, ao usar o loop `for (int i = 0; i < 6; i++) {`, a variável "i" chegava ao valor 5, acionando o LED do pino 8 e encerrando o ciclo, sem completar o número total de piscadas definido pela variável "x". Isso impedia que o comportamento esperado da roleta fosse reproduzido corretamente.
 
 A solução foi implementar um "estado temporário", inspirado nos conceitos de contadores assíncronos estudados na disciplina de Sistemas Digitais. Essa abordagem permitiu redefinir o valor da variável "i" para 0 quando atingisse 6, criando um ciclo contínuo. Com a modificação para `for (int i = 0; i < 7; i++) {`, o valor de "i" era instantaneamente reiniciado ao atingir 6, proporcionando a impressão de que a roleta girava de forma fluida e ininterrupta.
