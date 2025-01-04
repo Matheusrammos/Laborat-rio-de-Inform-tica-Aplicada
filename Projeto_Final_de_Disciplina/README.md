@@ -180,23 +180,23 @@ Esse projeto é fruto das aulas e exercícios realizados no Arduíno UNO. Para d
 > O desenvolvimento deste projeto foi uma oportunidade de consolidar conceitos aprendidos ao longo das aulas, como o uso de resistores pull-down, sequencial de LEDs, geração de números aleatórios e interação com o Monitor Serial. Porém, alguns desafios se destacaram:  
 
 1. **Repetição das Piscadas LED**  
-   - O principal obstáculo foi implementar a repetição contínua dos LEDs até o cumprimento total do número de piscadas gerado aleatoriamente (`x`). Inicialmente, o código interrompia o ciclo ao acender o LED do pino 8, já que o valor final da variável `i` no loop `for` era 5.  
+- O principal obstáculo foi implementar a repetição contínua dos LEDs até o cumprimento total do número de piscadas gerado aleatoriamente (`x`). Inicialmente, o código interrompia o ciclo ao acender o LED do pino 8, já que o valor final da variável `i` no loop `for` era 5.  
    - **Solução:**  
      Para resolver isso, implementei um estado temporário no loop. Quando `i` atingia 6, a variável era redefinida para 0, criando uma sequência ininterrupta que simula o giro contínuo da roleta. Essa abordagem foi inspirada nos princípios dos contadores assíncronos estudados em Sistemas Digitais.
 
 2. **Controle da Velocidade da Roleta**  
-   - Ajustar a velocidade de piscada de forma dinâmica, de modo que ela desacelerasse gradualmente, exigiu um cálculo preciso. Foi necessário criar uma relação inversa entre o tempo de piscada (`p`) e o número total de piscadas (`x`) para que a transição ocorresse suavemente.  
+- Ajustar a velocidade de piscada de forma dinâmica, de modo que ela desacelerasse gradualmente, exigiu um cálculo preciso. Foi necessário criar uma relação inversa entre o tempo de piscada (`p`) e o número total de piscadas (`x`) para que a transição ocorresse suavemente.  
 
 3. **Ruídos no Push Button (Debouncing)**  
-   - O comportamento instável do botão devido a ruídos elétricos gerava leituras indesejadas, fazendo com que o botão fosse "acionado" mais de uma vez.  
+- O comportamento instável do botão devido a ruídos elétricos gerava leituras indesejadas, fazendo com que o botão fosse "acionado" mais de uma vez.  
    - **Solução:**  
      Adicionei um pequeno atraso (`delay(50)`) no código após a leitura do botão, para evitar sinais duplicados.
 
 4. **Gerenciamento do Estado da Roleta**  
-   - A alternância entre ativar e desativar a roleta, controlada pela variável booleana `a`, precisou de ajustes para garantir que a roleta pudesse ser reiniciada de forma consistente após o término de cada ciclo.
+- A alternância entre ativar e desativar a roleta, controlada pela variável booleana `a`, precisou de ajustes para garantir que a roleta pudesse ser reiniciada de forma consistente após o término de cada ciclo.
 
 5. **Interação com o Monitor Serial**  
-   - Implementar a exibição do número aleatório gerado (`x`) no Monitor Serial exigiu a inicialização correta da comunicação e a formatação dos dados para facilitar a leitura durante os testes.
+- Implementar a exibição do número aleatório gerado (`x`) no Monitor Serial exigiu a inicialização correta da comunicação e a formatação dos dados para facilitar a leitura durante os testes.
 
 Esses desafios foram superados com criatividade e aplicação dos conceitos aprendidos, permitindo a construção de um projeto funcional, didático e alinhado aos objetivos do curso.
 
