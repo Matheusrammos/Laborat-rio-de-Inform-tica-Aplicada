@@ -166,8 +166,8 @@ void loop() {
    - O processo pode ser reiniciado pressionando o botão novamente.
 
 
-## Desafios enfrentados:
-utilizacao de um pull-dow, sequencial de 6 canais, geraçao de 1 numero aleatorio, enviar o numero para a porta serial, repetiçao das piscadas led, utilizaçao de um estado temporario, velocidade de piscadas diminui.
+## Desafios enfrentados
+Esse projeto é fruto das aulas e exercícios realizados no Arduíno UNO. Para desenvolver o projeto, utilizei alguns conceitos aprendidos para desenvolver algumas funcionalidades, como a utilização de um pull-dow, sequencial de 6 canais, geraçao de 1 numero aleatorio, enviar o numero para a porta serial, repetiçao das piscadas led, utilizaçao de um estado temporario, velocidade de piscadas diminui.
 
 ## Participações
 - Este projeto contou com a assistência do ChatGPT, um assistente virtual da OpenAI, para fornecer informações e orientações durante o desenvolvimento e a elaboração da documentação.
