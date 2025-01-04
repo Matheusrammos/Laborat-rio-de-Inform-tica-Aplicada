@@ -185,7 +185,7 @@ void loop() {
 
 Esses desafios foram superados com criatividade e aplicação dos conceitos aprendidos, permitindo a construção de um projeto funcional, didático e alinhado aos objetivos do curso.
 
-#### Maior Desafio:
+### Maior Desafio:
 
    O maior desafio foi implementar a repetição contínua das piscadas dos LEDs. Inicialmente, no `void loop()`, ao usar o loop `for (int i = 0; i < 6; i++) {`, a variável "i" chegava ao valor 5, acionando o LED do pino 8 e encerrando o ciclo, sem completar o número total de piscadas definido pela variável "x". Isso impedia que o comportamento esperado da roleta fosse reproduzido corretamente.
 
@@ -194,4 +194,4 @@ A solução foi implementar um "estado temporário", inspirado nos conceitos de 
 
 ## Participações
 - Este projeto contou com a assistência do ChatGPT, um assistente virtual da OpenAI, para fornecer informações e orientações durante o desenvolvimento e a elaboração da documentação.
-  *(OPENAI. ChatGPT. Disponível em: ChatGPT - [OpenAI](https://www.openai.com/chatgpt). Acesso em: 03/01/25.)*
+  *(OPENAI. ChatGPT. Disponível em: ChatGPT - [OpenAI](https://www.openai.com/chatgpt). Acesso em: 04/01/25.)*
