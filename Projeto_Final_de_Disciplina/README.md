@@ -1,5 +1,6 @@
 # Roleta com LEDs
 
+
 ## Descrição
 Este projeto simula uma roleta luminosa utilizando seis LEDs e um botão, com controle de velocidade e parada gradual. A roleta é acionada ao pressionar o botão, e os LEDs piscam sequencialmente, desacelerando até que um LED final seja destacado como o "vencedor". A interface com o Serial Monitor permite acompanhar o número gerado aleatoriamente.
 
@@ -33,8 +34,6 @@ O **push button** desempenha um papel crucial na interação com o usuário, tor
    > <img height="200" width="300" alt="WhileDIAGRAMA" src="https://github.com/user-attachments/assets/7696e638-6d4b-4f56-9ffc-ed535ae8bded">
 
 
-
-
 ## Materiais Necessários
 - **1 Placa Arduino (por exemplo, Arduino Uno)**
 - **6 LED (integrado aos pinos de 3 a 8)**
@@ -65,7 +64,6 @@ O **push button** desempenha um papel crucial na interação com o usuário, tor
 
 ![sh](https://github.com/Matheusrammos/LIA-Docs/blob/main/Projeto_Final_de_Disciplina/Circuito_Digital.png)
 </details>
-
 
 
 ## :cyclone: Código Comentado
