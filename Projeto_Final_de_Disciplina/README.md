@@ -177,7 +177,8 @@ Esse projeto é fruto das aulas e exercícios realizados no Arduíno UNO. Para d
 - A velocidade dessas "piscadas LED" diminuem ao longo do tempo.
 
 
-O maior dos desafios foi a "repetição das piscadas LED", pois, enquanto, no `void loop()`, `for (int i = 0; i < 6; i++) {` se repetia, a variável "i" recebia como valor final o número 5, que acionava o LED do pino 8. Isso encerrava o ciclo, não cumprindo o ciclo conforme o "número de piscadas" (x). A solução foi fazer um "estado temporário", inspirado nos conteúdos da disciplina de Sistemas Digitais, que demonstraram o funcionamento de um contador assíncrono. Com isso, foi possível realizar um reset na variável "i", que dá a impressão de que a roda está girando, ou seja, utilizando `for (int i = 0; i < 7; i++) {`, quando i = 6, a variável "i" recebe o valor de 0 instantâneamente.
+     O maior dos desafios foi a "repetição das piscadas LED", pois, enquanto, no `void loop()`, `for (int i = 0; i < 6; i++) {`
+se repetia, a variável "i" recebia como valor final o número 5, que acionava o LED do pino 8. Isso encerrava o ciclo, não cumprindo o ciclo conforme o "número de piscadas" (x). A solução foi fazer um "estado temporário", inspirado nos conteúdos da disciplina de Sistemas Digitais, que demonstraram o funcionamento de um contador assíncrono. Com isso, foi possível realizar um reset na variável "i", que dá a impressão de que a roda está girando, ou seja, utilizando `for (int i = 0; i < 7; i++) {`, quando i = 6, a variável "i" recebe o valor de 0 instantâneamente.
 
 ## Participações
 - Este projeto contou com a assistência do ChatGPT, um assistente virtual da OpenAI, para fornecer informações e orientações durante o desenvolvimento e a elaboração da documentação.
