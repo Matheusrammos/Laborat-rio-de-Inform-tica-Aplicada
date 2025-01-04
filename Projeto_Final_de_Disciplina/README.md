@@ -177,7 +177,7 @@ Esse projeto é fruto das aulas e exercícios realizados no Arduíno UNO. Para d
 - A velocidade dessas "piscadas LED" diminuem ao longo do tempo.
 
 ## Desafios Enfrentados  
-> O desenvolvimento deste projeto foi uma oportunidade de consolidar conceitos aprendidos ao longo das aulas, como o uso de resistores pull-down, sequencial de LEDs, geração de números aleatórios e interação com o Monitor Serial. Porém, alguns desafios se destacaram:  
+> O desenvolvimento deste projeto foi uma oportunidade de consolidar conceitos aprendidos ao longo das aulas, como o uso de resistores [pull-dow](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Casa_1#ultilizando-um-resistor-pull-dow), [sequencial de LEDs](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Sala_5), [geração de números aleatórios](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Sala_6#funcionamento) e [interação com o Monitor Serial](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Casa_2). Porém, alguns desafios se destacaram:  
 
 1. **Repetição das Piscadas LED**  
 - O principal obstáculo foi implementar a repetição contínua dos LEDs até o cumprimento total do número de piscadas gerado aleatoriamente (`x`). Inicialmente, o código interrompia o ciclo ao acender o LED do pino 8, já que o valor final da variável `i` no loop `for` era 5.  
