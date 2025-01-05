@@ -27,16 +27,16 @@ Este projeto simula uma roleta luminosa utilizando seis LEDs e um botão, com co
 - **Debouncing:** Devido à natureza física dos contatos internos, um botão pode gerar sinais elétricos instáveis ao ser pressionado. Neste projeto, o problema é mitigado com um pequeno atraso (`delay(50)`) no código.  
 - **Pull-down ou Pull-up Resistor:** Para garantir leituras confiáveis no Arduino, um resistor pull-down interno ou externo pode ser necessário para evitar flutuações de sinal quando o botão não é pressionado.  
 
-O **push button** desempenha um papel crucial na interação com o usuário, tornando este projeto intuitivo e acessível mesmo para iniciantes.
+
 
 
    <img height="200" width="303" align="right" alt="WhileDIAGRAMA" src="https://github.com/user-attachments/assets/454ddd04-1086-4226-8b8f-7cb032603cd3">
    
-   > <img height="200" width="300" alt="WhileDIAGRAMA" src="https://github.com/user-attachments/assets/7696e638-6d4b-4f56-9ffc-ed535ae8bded">
+   > <img height="200" width="310" alt="WhileDIAGRAMA" src="https://github.com/user-attachments/assets/7696e638-6d4b-4f56-9ffc-ed535ae8bded">
    > 
-   > <img height="400" width="803" alt="WhileDIAGRAMA" src="https://github.com/user-attachments/assets/3dd7da58-2744-456b-86a5-990ecb17d68f">
-
-
+   > <img height="400" width="803" align="right" alt="WhileDIAGRAMA" src="https://github.com/user-attachments/assets/3dd7da58-2744-456b-86a5-990ecb17d68f">
+   > 
+   > O **push button** desempenha um papel crucial na interação com o usuário, tornando este projeto intuitivo e acessível mesmo para iniciantes.
 
 ## Materiais Necessários
 - **1 Placa Arduino (por exemplo, Arduino Uno)**
