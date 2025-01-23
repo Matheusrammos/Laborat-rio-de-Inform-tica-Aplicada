@@ -76,16 +76,21 @@ Este projeto simula uma roleta luminosa utilizando seis LEDs e um botão, com co
 // Definindo pinos e algumas variáveis
 const int ledPins[] = { 3, 4, 5, 6, 7, 8, 9, 10 };  // Pinos onde os LEDs estão conectados (Pinos dos 6 LEDs)
 const int buttonPin = 13;                           // Pino do botão
+const int buzzerPin = 12;                            // Pino do buzzer
 bool a = false;                                     // Variável iterruptora
 long x;                                             // Número de piscadas
 int p;                                              // Tempo de cada piscada
 int c = 0;                                          //LED excolhido
+const int notes[] = {, 329, 392};                // Notas (C4, E4, G4)
 
 
 
 void setup() {
   // Inicializando o pino do botão como entrada
   pinMode(buttonPin, INPUT);
+
+  // Configura o pino do buzzer como saída
+  pinMode(buzzerPin, OUTPUT); 
 
   // Configura os pinos dos LEDs como saída
   for (int i = 0; i < 8; i++) {
@@ -101,12 +106,14 @@ void setup() {
 
 
 void loop() {
+
   for (int counter = 0; counter <= 4;) {
     Serial.println(counter);         // Mostrar esse número no Serial Monitor
     digitalWrite(ledPins[c], HIGH);  // Acende o respectivo LED
 
     if (digitalRead(buttonPin) == HIGH) {  // Se o botão for pressionado
       counter++;
+      tone(buzzerPin, 261); // Toca a nota correspondente
       delay(700);
     }
 
@@ -135,7 +142,7 @@ void loop() {
       if (i == 6) {  // Estado temporário
         i = 0;       // Resetado para o pino 3
       }
-
+      tone(buzzerPin, notes[1]); // Toca a nota correspondente
       p = 1000 / x;                    // O tempo de piscada ficará maior a cada ciclo, pois o valor de "x" diminuirá a cada repetição
       digitalWrite(ledPins[i], HIGH);  // Acende o respectivo LED
       delay(p);                        // Espera o tempo de piscada
@@ -172,6 +179,7 @@ void loop() {
     }
   }
 }
+
 ````
 
 
