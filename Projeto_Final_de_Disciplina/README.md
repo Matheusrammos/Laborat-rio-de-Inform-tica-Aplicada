@@ -73,16 +73,15 @@ Este projeto simula uma roleta luminosa utilizando seis LEDs e um botão, com co
 ## :cyclone: Código Comentado
 ```cpp
 
+
 // Definindo pinos e algumas variáveis
 const int ledPins[] = { 3, 4, 5, 6, 7, 8, 9, 10 };  // Pinos onde os LEDs estão conectados (Pinos dos 6 LEDs)
 const int buttonPin = 13;                           // Pino do botão
-const int buzzerPin = 12;                            // Pino do buzzer
+const int buzzerPin = 12;                           // Pino do buzzer
 bool a = false;                                     // Variável iterruptora
 long x;                                             // Número de piscadas
 int p;                                              // Tempo de cada piscada
-int c = 0;                                          //LED excolhido
-const int notes[] = {, 329, 392};                // Notas (C4, E4, G4)
-
+int c = 0;                                          // LED excolhido
 
 
 void setup() {
@@ -113,39 +112,46 @@ void loop() {
 
     if (digitalRead(buttonPin) == HIGH) {  // Se o botão for pressionado
       counter++;
-      tone(buzzerPin, 261); // Toca a nota correspondente
-      delay(700);
+      delay(80);
     }
 
     if ((digitalRead(buttonPin) == LOW) && (counter >= 1 && counter < 3)) {
-      digitalWrite(ledPins[c], LOW);  // Apaga o mesmo
-      c++;                            // O "interruptor" marcará 'true'
+      digitalWrite(ledPins[c], LOW);   // Apaga o mesmo
+      c++;                             // O "interruptor" marcará 'true'
+      tone(buzzerPin, 58);             // Toca a nota correspondente
+      delay(60);                       // Espera 60 mili segundos 
+      noTone(buzzerPin);               // Deixa de tocar a nota
 
       if (c == 6) {
         c = 0;
       }
       counter = 0;
-
     } else if (counter >= 3) {
       a = !a;
     }
   }
 
-
-  if (a == true) {        // Se o "interrruptor" marcar 'true'
-    x = random(41, 591);  // Gerar um número aleatório de 41 a 590
-    Serial.println(x);    // Mostrar esse número no Serial Monitor
+  // Se o "interrruptor" marcar "true"
+  if (a == true) {
+    x = random(41, 591);       // Gerar um número aleatório de 41 a 590
+    Serial.println(x);         // Mostrar esse número no Serial Monitor
 
     // Acende e apaga os LEDs sequencialmente
     for (int i = 0; i < 7; i++) {
       // i = 6 será considerado como estado temporário. Quando isso ocorrer, a roleta, após o LED do pino 8 desligar, resetará para o LED do pino 3
-      if (i == 6) {  // Estado temporário
-        i = 0;       // Resetado para o pino 3
+      if (i == 6) {            // Estado temporário
+        i = 0;                 // Resetado para o pino 3
       }
-      tone(buzzerPin, notes[1]); // Toca a nota correspondente
+
       p = 1000 / x;                    // O tempo de piscada ficará maior a cada ciclo, pois o valor de "x" diminuirá a cada repetição
       digitalWrite(ledPins[i], HIGH);  // Acende o respectivo LED
-      delay(p);                        // Espera o tempo de piscada
+
+      if (digitalRead(ledPins[i]) == HIGH) {
+        tone(buzzerPin, 58);   // Toca a nota correspondente
+        delay(p/2);            // Espera metade do tempo de piscada         
+        noTone(buzzerPin);     // Deixa de tocar a nota
+      }   
+      delay(p/2);                      // Espera metade do tempo de piscada                 
       digitalWrite(ledPins[i], LOW);   // Apaga o mesmo
       x--;                             // O valor de "x" diminui em 1
 
@@ -172,14 +178,13 @@ void loop() {
         // Finaliza a roleta
         digitalWrite(ledPins[6], LOW);
         digitalWrite(ledPins[7], LOW);
-        a = false;  // Desativa o modo de roleta
-        c = 0;      // Reseta o índice de LEDs
-        i = 7;      // Força a saída do comando for
+        a = false;                     // Desativa o modo de roleta
+        c = 0;                         // Reseta o índice de LEDs
+        i = 7;                         // Força a saída do comando for
       }
     }
   }
 }
-
 ````
 
 
