@@ -105,7 +105,6 @@ void setup() {
 
 
 void loop() {
-
   for (int counter = 0; counter <= 4;) {
     Serial.println(counter);         // Mostrar esse número no Serial Monitor
     digitalWrite(ledPins[c], HIGH);  // Acende o respectivo LED
