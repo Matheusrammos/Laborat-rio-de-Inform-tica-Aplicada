@@ -247,11 +247,9 @@ void loop() {
    - Quando `x` atinge 0, a roleta para, e o LED atual pisca algumas vezes para indicar o resultado final.
    - Dependendo do LED final, diferentes frequências de som são emitidas pelo buzzer para indicar se foi um resultado esperado ou não.  
 
-
 6. **Reinício:**
    - Após um pequeno tempo de espera, o sistema é reinicializado e aguarda uma nova interação do usuário via botão.  
       > Essa lógica torna o projeto interativo e dinâmico, podendo ser usado como base para jogos ou sorteios eletrônicos.
-
 
 
 ## Desafios Enfrentados  
