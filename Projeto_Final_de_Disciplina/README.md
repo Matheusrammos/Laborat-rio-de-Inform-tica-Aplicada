@@ -250,7 +250,7 @@ void loop() {
 
 6. **Reinício:**
    - Após um pequeno tempo de espera, o sistema é reinicializado e aguarda uma nova interação do usuário via botão.  
-   > Essa lógica torna o projeto interativo e dinâmico, podendo ser usado como base para jogos ou sorteios eletrônicos.
+      > Essa lógica torna o projeto interativo e dinâmico, podendo ser usado como base para jogos ou sorteios eletrônicos.
 
 
 
