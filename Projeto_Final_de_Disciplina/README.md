@@ -48,7 +48,7 @@ Este projeto simula uma roleta luminosa utilizando seis LEDs e um botão, com co
 - **1 Protoboard (opcional, para montagem do circuito)**
 
 <details>
-<summary> :card_index_dividers: Detalhes </summary>
+<summary> :card_index_dividers: Detalhes EXTRAS: Tabela de Materias </summary>
    
 [Materiais-Detalhes](https://github.com/user-attachments/files/18581050/bom.csv)
 </details>
