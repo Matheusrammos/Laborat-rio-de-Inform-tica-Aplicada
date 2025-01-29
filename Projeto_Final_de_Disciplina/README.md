@@ -66,8 +66,10 @@ Este projeto simula uma roleta luminosa utilizando seis LEDs e um botão, com co
 <details>
 <summary> :card_index_dividers: Diagrama EXTRA: Circuito Digital </summary>
 
-![sh](https://github.com/Matheusrammos/LIA-Docs/blob/main/Projeto_Final_de_Disciplina/Circuito_Digital.png)
+[Circuito Digital](https://github.com/user-attachments/files/18581037/Copy.of.Mighty.Duup.1.pdf)
 </details>
+
+
 
 
 ## :cyclone: Código Comentado
