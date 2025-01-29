@@ -80,7 +80,6 @@ Este projeto simula uma roleta luminosa utilizando seis LEDs e um botão, com co
 ## :cyclone: Código Comentado
 ```cpp
 
-
 // Definindo pinos e algumas variáveis
 const int ledPins[] = { 3, 4, 5, 6, 7, 8, 9, 10 };  // Pinos onde os LEDs estão conectados (Pinos dos 6 LEDs)
 const int buttonPin = 13;                           // Pino do botão
@@ -112,7 +111,7 @@ void setup() {
 
 
 void loop() {
-  for (int counter = 0; counter <= 4;) {
+  for (int counter = 0; counter <= 6;) {
     Serial.println(counter);         // Mostrar esse número no Serial Monitor
     digitalWrite(ledPins[c], HIGH);  // Acende o respectivo LED
 
@@ -121,7 +120,7 @@ void loop() {
       delay(80);
     }
 
-    if ((digitalRead(buttonPin) == LOW) && (counter >= 1 && counter < 3)) {
+    if ((digitalRead(buttonPin) == LOW) && (counter >= 1 && counter <= 4)) {
       digitalWrite(ledPins[c], LOW);   // Apaga o mesmo
       c++;                             // O "interruptor" marcará 'true'
       tone(buzzerPin, 58);             // Toca a nota correspondente
@@ -132,7 +131,7 @@ void loop() {
         c = 0;
       }
       counter = 0;
-    } else if (counter >= 3) {
+    } else if ((counter > 4) && ((digitalRead(buttonPin) == LOW) or (digitalRead(buttonPin) == HIGH))) {
       a = !a;
     }
   }
@@ -165,20 +164,46 @@ void loop() {
       if (x == 0) {
         if (c == i) {
           digitalWrite(ledPins[7], HIGH);
+          delay(70);
+          digitalWrite(ledPins[i], LOW);
+          delay(100);
+          digitalWrite(ledPins[i], HIGH);
+
+          tone(buzzerPin, 120);            // Toca a nota correspondente
+          delay(60);                       // Espera 60 mili segundos 
+          noTone(buzzerPin);               // Deixa de tocar a nota
+
+          delay(40);
+          digitalWrite(ledPins[i], LOW);
+          delay(100);
+          digitalWrite(ledPins[i], HIGH);
+
+          tone(buzzerPin, 350);            // Toca a nota correspondente
+          delay(60);                       // Espera 60 mili segundos 
+          noTone(buzzerPin);               // Deixa de tocar a nota
 
         } else {
           digitalWrite(ledPins[6], HIGH);
+          delay(70);
+          digitalWrite(ledPins[i], LOW);
+          delay(100);
+          digitalWrite(ledPins[i], HIGH);
+
+          tone(buzzerPin, 500);            // Toca a nota correspondente
+          delay(60);                       // Espera 60 mili segundos 
+          noTone(buzzerPin);               // Deixa de tocar a nota
+
+          delay(40);
+          digitalWrite(ledPins[i], LOW);
+          delay(100);
+          digitalWrite(ledPins[i], HIGH);
+
+          tone(buzzerPin, 300);            // Toca a nota correspondente
+          delay(60);                       // Espera 60 mili segundos 
+          noTone(buzzerPin);               // Deixa de tocar a nota
         }
 
-        delay(70);
-        digitalWrite(ledPins[i], LOW);
-        delay(100);
-        digitalWrite(ledPins[i], HIGH);
-        delay(100);
-        digitalWrite(ledPins[i], LOW);
-        delay(100);
-        digitalWrite(ledPins[i], HIGH);
-        delay(5000);
+        delay(4940);
         digitalWrite(ledPins[i], LOW);
 
         // Finaliza a roleta
