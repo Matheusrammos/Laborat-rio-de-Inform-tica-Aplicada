@@ -46,6 +46,24 @@ Este projeto simula uma roleta luminosa utilizando seis LEDs e um botão, com co
 - **1 Resistor de 10 kΩ (pull-dow)**
 - **Fios de conexão (jumpers)**
 - **1 Protoboard (opcional, para montagem do circuito)**
+<details>
+<summary> :card_index_dividers: Detalhes </summary>
+   
+[Materiais-Detalhes](https://github.com/user-attachments/files/18581050/bom.csv)
+
+Nome,Quantidade,Componente
+"U1",1," Arduino Uno R3"
+"R1",1,"10 kΩ Resistor"
+"D1, D2, D4, D6, D5, D7",6,"Azul LED"
+"S1",1," Botão"
+"R3, R4, R5, R6, R7, R8, R2, R9",8,"220 Ω Resistor"
+"PIEZO1",1," Piezo"
+"D3",1,"Verde LED"
+"D8",1,"Vermelho LED"
+
+
+[Circuito Digital](https://github.com/user-attachments/files/18581037/Copy.of.Mighty.Duup.1.pdf)
+</details>
 
 
 ## Montagem do Circuito
