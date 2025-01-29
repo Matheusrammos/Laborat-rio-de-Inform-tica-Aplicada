@@ -219,14 +219,15 @@ void loop() {
 ````
 
 
-### Funcionamento
+## Funcionamento
 
 > Este projeto utiliza seis LEDs conectados a um Arduino que acendem de forma sequencial, simulando uma roleta. A velocidade da roleta é determinada por um número gerado aleatoriamente, e o ciclo é interrompido gradualmente até que um LED final permaneça piscando. O botão controla o início e o fim da roleta. 
 1. **Configuração Inicial:**
-   - Os LEDs são conectados aos pinos digitais 3 a 8 e configurados como saídas.
-   - O botão é conectado ao pino 13 e configurado como entrada.
-   - O gerador de números aleatórios é inicializado usando `randomSeed(analogRead(0))` para criar a semente baseada em ruído analógico.
-   - A comunicação serial é iniciada para monitoramento no Serial Monitor.
+   - **LEDs**: Seis LEDs são conectados aos pinos digitais 3 a 8 e configurados como saídas.  
+   - **Botão**: Um botão é conectado ao pino 13 e configurado como entrada.  
+   - **Buzzer**: Conectado ao pino 12 e utilizado para emitir sons ao longo da execução.  
+   - **Gerador Aleatório**: `randomSeed(analogRead(0))` é usado para inicializar a geração de números aleatórios, garantindo variação entre execuções.  
+   - **Monitoramento Serial**: A comunicação serial é iniciada (`Serial.begin(9600)`) para exibir informações no Serial Monitor.  
 
 2. **Controle do Botão:**
    - O estado do botão é monitorado com `digitalRead(buttonPin)`.
@@ -237,15 +238,20 @@ void loop() {
    - Esse número controla a velocidade e o tempo total da roleta.
 
 4. **Sequência dos LEDs:**
-   - Os LEDs acendem e apagam sequencialmente em um ciclo controlado pelo valor de `x`. A velocidade é ajustada dinamicamente com base no cálculo `p = 1000 / x`.
+   - Os LEDs piscam sequencialmente, simulando o movimento da roleta.  
+   - A velocidade da piscagem é determinada pela fórmula `p = 1000 / x`.  
    - O número `x` diminui gradualmente a cada ciclo, fazendo com que a roleta desacelere.
+   - O buzzer emite um tom curto quando um LED acende.  
 
 5. **Finalização:**
    - Quando `x` atinge 0, a roleta para, e o LED atual pisca algumas vezes para indicar o resultado final.
-   - Após o LED piscar, a roleta aguarda 3 segundos antes de ser desativada completamente.
+   - Dependendo do LED final, diferentes frequências de som são emitidas pelo buzzer para indicar se foi um resultado esperado ou não.  
+
 
 6. **Reinício:**
-   - O processo pode ser reiniciado pressionando o botão novamente.
+   - Após um pequeno tempo de espera, o sistema é reinicializado e aguarda uma nova interação do usuário via botão.  
+   > Essa lógica torna o projeto interativo e dinâmico, podendo ser usado como base para jogos ou sorteios eletrônicos.
+
 
 
 ## Desafios Enfrentados  
