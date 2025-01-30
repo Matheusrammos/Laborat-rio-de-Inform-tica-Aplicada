@@ -1,7 +1,7 @@
-
+#include <TimerOne.h>  // Biblioteca para usar Timer
 
 // Definindo pinos e algumas variáveis
-const int ledPins[] = {3, 4, 5, 6, 7, 8, 9, 10};  // Pinos onde os LEDs estão conectados (Pinos dos 6 LEDs)
+const int ledPins[] = { 3, 4, 5, 6, 7, 8, 9, 10 };  // Pinos onde os LEDs estão conectados (Pinos dos 6 LEDs)
 const int buttonPin = 13;                           // Pino do botão
 const int buzzerPin = 12;                           // Pino do buzzer
 bool a = false;                                     // Variável iterruptora
@@ -9,9 +9,9 @@ long x;                                             // Número de piscadas
 int p;                                              // Tempo de cada piscada
 int c = 0;                                          // LED excolhido
 
-bool z = true;
+bool z = true; //modo Tigr
 int counter = 0;
-int v = true;
+bool estadoLEDs = false;
 
 int vitorias = 0;
 int chance;
@@ -23,7 +23,7 @@ void setup() {
   pinMode(buttonPin, INPUT);
 
   // Configura o pino do buzzer como saída
-  pinMode(buzzerPin, OUTPUT); 
+  pinMode(buzzerPin, OUTPUT);
 
   // Configura os pinos dos LEDs como saída
   for (int i = 0; i < 8; i++) {
@@ -36,49 +36,83 @@ void setup() {
   // Inicializando a comunicação serial a 9600 bps. Isso é necessário para começar a enviar dados ao Serial Monitor
   Serial.begin(9600);
 
-  attachInterrupt(digitalPinToInterrupt(buttonPin), contarPressionamentos, RISING);  
 }
 
 
 
-void contarPressionamentos() {
-  if ((z == true) && (v == true) && (counter >= 1 && counter <= 4)){
-    c++;  // Incrementa a "c" sempre que a interrupção ocorre
-    v = false;
-  } else if ((counter > 4) && ((digitalRead(buttonPin) == LOW) || (digitalRead(buttonPin) == HIGH))) {
-    a = !a; 
-  } 
+void piscarLEDs() {
+
+  if (z == true) {
+    estadoLEDs = !estadoLEDs;  // Alterna o estado dos LEDs
+
+    for (int i = 0;(i < 6); i++) {
+      if  (i == c){
+        i++;
+      }
+      digitalWrite(ledPins[i], estadoLEDs);
+
+    }
+  }
 }
 
 
 void loop() {
   for (int counter = 0; counter <= 6;) {
 
-    if (z == true){
-  for (int counter = 0; counter <= 6;) {
-    Serial.println(counter);         // Mostrar esse número no Serial Monitor
-    digitalWrite(ledPins[c], HIGH);  // Acende o respectivo LED
+    if (z == true) {
+      Timer1.initialize(1200000);  // Configura Timer para 400ms (400.000 microssegundos)
+      Timer1.attachInterrupt(piscarLEDs);  // Ativa interrupção a cada 500ms
 
-    if (digitalRead(buttonPin) == HIGH) {  // Se o botão for pressionado
-      counter++;
-      delay(80);
-    }
+      Serial.println(counter);         // Mostrar esse número no Serial Monitor
+      //digitalWrite(ledPins[c], LOW);  // Apaga o respectivo LED
 
-    if ((digitalRead(buttonPin) == LOW) && (counter >= 1 && counter <= 4)) {
-      digitalWrite(ledPins[c], LOW);   // Apaga o mesmo
-      c++;                             // O "interruptor" marcará 'true'
-      tone(buzzerPin, 58);             // Toca a nota correspondente
-      delay(60);                       // Espera 60 mili segundos 
-      noTone(buzzerPin);               // Deixa de tocar a nota
-
-      if (c == 6) {
-        c = 0;
+      if (estadoLEDs == true){
+        digitalWrite(ledPins[c], LOW);  // Acende o respectivo LED
+      }else{
+        digitalWrite(ledPins[c], HIGH);  // Acende o respectivo LED
       }
-      counter = 0;
-    } else if ((counter > 4) && ((digitalRead(buttonPin) == LOW) or (digitalRead(buttonPin) == HIGH))) {
-      a = !a;
-    }
-  }
+
+
+      if (estadoLEDs == true){
+        digitalWrite(ledPins[c-1], HIGH);  // Acende o respectivo LED
+      }else{
+        digitalWrite(ledPins[c-1], LOW);  // Acende o respectivo LED
+      }
+
+
+      if (digitalRead(buttonPin) == HIGH) {  // Se o botão for pressionado
+        counter++;
+        delay(80);
+      }
+
+      if ((digitalRead(buttonPin) == LOW) && (counter >= 1 && counter <= 4)) {
+        if (estadoLEDs == true){
+          digitalWrite(ledPins[c], HIGH);  // Acende o respectivo LED
+        }else{
+          digitalWrite(ledPins[c], LOW);  // Acende o respectivo LED
+        }
+
+        c++;                            // O "interruptor" marcará 'true'
+
+        if (estadoLEDs == true){
+          digitalWrite(ledPins[c-1], HIGH);  // Acende o respectivo LED
+        }else{
+          digitalWrite(ledPins[c-1], LOW);  // Acende o respectivo LED
+        }
+      
+        if (c == 6) {
+          c = 0;
+        }
+        tone(buzzerPin, 108);
+        delay(60);               // Espera 60 mili segundos
+        noTone(buzzerPin);              // Deixa de tocar a nota
+
+        
+        counter = 0;
+      } else if ((counter > 4) && ((digitalRead(buttonPin) == LOW) or (digitalRead(buttonPin) == HIGH))) {
+        a = !a;
+      }
+      
     } else {
     }
   }
