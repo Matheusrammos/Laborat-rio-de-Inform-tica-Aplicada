@@ -9,10 +9,9 @@ long x;                                             // Número de piscadas
 int p;                                              // Tempo de cada piscada
 int c = 0;                                          // LED excolhido
 
-bool z = true; //modo Tigr
+bool z = true; // Modo Tigrgrinho
 int counter = 0;
 bool estadoLEDs = false;
-
 int vitorias = 0;
 int chance;
 int sorte;
@@ -35,16 +34,12 @@ void setup() {
 
   // Inicializando a comunicação serial a 9600 bps. Isso é necessário para começar a enviar dados ao Serial Monitor
   Serial.begin(9600);
-
 }
 
 
-
 void piscarLEDs() {
-
   if (z == true) {
     estadoLEDs = !estadoLEDs;  // Alterna o estado dos LEDs
-
     for (int i = 0;(i < 6); i++) {
       if  (i == c){
         i++;
@@ -62,23 +57,17 @@ void loop() {
     if (z == true) {
       Timer1.initialize(1200000);  // Configura Timer para 400ms (400.000 microssegundos)
       Timer1.attachInterrupt(piscarLEDs);  // Ativa interrupção a cada 500ms
-
       Serial.println(counter);         // Mostrar esse número no Serial Monitor
-      //digitalWrite(ledPins[c], LOW);  // Apaga o respectivo LED
 
       if (estadoLEDs == true){
         digitalWrite(ledPins[c], LOW);  // Acende o respectivo LED
       }else{
         digitalWrite(ledPins[c], HIGH);  // Acende o respectivo LED
-      }
-
-
-      if (estadoLEDs == true){
+      } if (estadoLEDs == true){
         digitalWrite(ledPins[c-1], HIGH);  // Acende o respectivo LED
       }else{
         digitalWrite(ledPins[c-1], LOW);  // Acende o respectivo LED
       }
-
 
       if (digitalRead(buttonPin) == HIGH) {  // Se o botão for pressionado
         counter++;
@@ -92,27 +81,21 @@ void loop() {
           digitalWrite(ledPins[c], LOW);  // Acende o respectivo LED
         }
 
-        c++;                            // O "interruptor" marcará 'true'
-
-        if (estadoLEDs == true){
-          digitalWrite(ledPins[c-1], HIGH);  // Acende o respectivo LED
-        }else{
-          digitalWrite(ledPins[c-1], LOW);  // Acende o respectivo LED
-        }
-      
+        c++;                            
         if (c == 6) {
           c = 0;
         }
+
         tone(buzzerPin, 108);
         delay(60);               // Espera 60 mili segundos
         noTone(buzzerPin);              // Deixa de tocar a nota
 
-        
         counter = 0;
+
       } else if ((counter > 4) && ((digitalRead(buttonPin) == LOW) or (digitalRead(buttonPin) == HIGH))) {
         a = !a;
       }
-      
+
     } else {
     }
   }
