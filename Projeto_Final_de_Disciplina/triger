@@ -1,0 +1,59 @@
+
+
+void introModoTigrin() {
+  // Acende e apaga os LEDs sequencialmente
+  for (int i = 0; (i < 7) && (intrTiger == true); i++) {
+    p = 130;  // O tempo de piscada ficará maior a cada ciclo, pois o valor de "x" diminuirá a cada repetição
+
+    // i = 6 será considerado como estado temporário. Quando isso ocorrer, a roleta, após o LED do pino 8 desligar, resetará para o LED do pino 3
+    if (i == 6) {  // Estado temporário
+      i = 0;       // Resetado para o pino 3
+      c++;
+    }
+
+    if ((c == 2) && (i == 1)) {
+      digitalWrite(ledPins[5], LOW);  // Apaga o mesmo
+    } else if (c == 3){
+      if (i == 1){
+        digitalWrite(ledPins[4], LOW);  // Apaga o mesmo
+      } else if (i == 2) {
+        digitalWrite(ledPins[5], LOW);  // Apaga o mesmo
+      }
+
+    } else if (c == 4){
+      if (i == 1){
+        digitalWrite(ledPins[3], LOW);  // Apaga o mesmo
+      } else if (i == 2) {
+        digitalWrite(ledPins[4], LOW);  // Apaga o mesmo
+      } else if (i == 3) {
+        digitalWrite(ledPins[5], LOW);  // Apaga o mesmo
+      }
+
+    } else if (c == 5){
+      if (i == 1){
+        digitalWrite(ledPins[2], LOW);  // Apaga o mesmo
+      } else if (i == 2) {
+        digitalWrite(ledPins[3], LOW);  // Apaga o mesmo
+      } else if (i == 3) {
+        digitalWrite(ledPins[4], LOW);  // Apaga o mesmo
+      } else if (i == 4){
+        digitalWrite(ledPins[5], LOW);  // Apaga o mesmo
+      } else if (i == 5){
+        digitalWrite(ledPins[0], LOW);  // Apaga o mesmo
+      }
+
+    } else if (c == 6){
+      c = 0;
+      intrTiger = false;
+    }
+
+    digitalWrite(ledPins[i], HIGH);  // Acende o respectivo LED
+    if (digitalRead(ledPins[i]) == HIGH) {
+      tone(buzzerPin, som[z]);  // Toca a nota correspondente
+      delay(p / 2);             // Espera metade do tempo de piscada
+      noTone(buzzerPin);        // Deixa de tocar a nota
+    }
+    delay((p / 2)+(p / 2) * c);                 // Espera metade do tempo de piscada
+    digitalWrite(ledPins[i - c], LOW);  // Apaga o mesmo
+  }
+}
