@@ -80,6 +80,7 @@ Este projeto simula uma roleta luminosa utilizando seis LEDs e um botão, com co
 ## :cyclone: Código Comentado
 ```cpp
 
+
 #include <TimerOne.h>  // Biblioteca para usar Timer
 
 // Definindo pinos e algumas variáveis
@@ -225,7 +226,9 @@ void giraRoleta() {
           z = !z;                                   // Ativa ou desativa a variável do Modo Tigirnho
           vitorias = 0;                             // Reseta vitóras
           c = 0;                                    // Reseta o índice de LEDs
-          digitalWrite(ledPins[6, 7], HIGH);        // Liga o LED vermelho e o LED verde
+            // Liga o LED vermelho e o LED verde
+          digitalWrite(ledPins[6], HIGH);        
+          digitalWrite(ledPins[7], HIGH);       
 
           if (z == true) {                        // Se "z" for ativado
             digitalWrite(ledPins[i], LOW);        // O LED que representa o resultado se apaga
@@ -239,10 +242,12 @@ void giraRoleta() {
         // Finaliza a roleta
         delay(4940);                                  // Espera 4940 mili segundos (4,94 segundos)
         digitalWrite(ledPins[i], LOW);                // O LED que representa o resultado se apaga 
-        digitalWrite(ledPins[6, 7], LOW);             // Desliga o LED vermelho e o LED verde
         a = false;                                    // Desativa o modo de roleta
         c = 0;                                        // Reseta o índice de LEDs
         i = 7;                                        // Força a saída do comando for
+          // Desliga o LED vermelho e o LED verde
+        digitalWrite(ledPins[6], LOW);    
+        digitalWrite(ledPins[7], LOW);          
       }
     }
   }
@@ -296,7 +301,8 @@ void introModoTigrin() {
       if (vitorias == 2) {
         counter = 0;
         vitorias = 0;
-        digitalWrite(ledPins[6, 7], LOW);
+        digitalWrite(ledPins[6], LOW);
+        digitalWrite(ledPins[7], LOW);
         delay(500);
         return;
       }
@@ -363,7 +369,6 @@ void loop() {
     } else {
       Serial.println(counter);                // Mostrar esse número no Serial Monitor
       digitalWrite(ledPins[c], HIGH);         // Acende o respectivo LED
-
       if (digitalRead(buttonPin) == HIGH) {   // Se o botão for pressionado
         counter++;
         delay(80);
@@ -375,7 +380,6 @@ void loop() {
         tone(buzzerPin, som[z]);              // Toca a nota correspondente
         delay(60);                            // Espera 60 mili segundos
         noTone(buzzerPin);                    // Deixa de tocar a nota
-
         if (c == 6) {
           c = 0;
         }
