@@ -446,6 +446,12 @@ void loop() {
 4. **Interação com o Monitor Serial**  
 - Implementar a exibição do número aleatório gerado (`x`) no Monitor Serial exigiu a inicialização correta da comunicação e a formatação dos dados para facilitar a leitura durante os testes.
 
+5. **Modo Tigrinho: Ajuste Dinâmico de Probabilidades**  
+O **Modo Tigrinho** adiciona variação às probabilidades ao longo do tempo, simulando um jogo de azar que mantém o jogador engajado.  
+- Em algumas rodadas, a roleta pode gerar uma "falsa esperança" ao aumentar ligeiramente as chances de vitória, incentivando o jogador a continuar.  
+- Após essas rodadas, a dificuldade aumenta drasticamente.  
+- Um algoritmo de ajuste probabilístico verifica o histórico recente de vitórias e derrotas para modificar os resultados de maneira dinâmica.  
+
 Esses desafios foram superados com criatividade e aplicação dos conceitos aprendidos, permitindo a construção de um projeto funcional, didático e alinhado aos objetivos do curso.
 
 ### Maior Desafio:
@@ -454,139 +460,18 @@ Esses desafios foram superados com criatividade e aplicação dos conceitos apre
 
 A solução foi implementar um "estado temporário", inspirado nos conceitos de contadores assíncronos estudados na disciplina de Sistemas Digitais. Essa abordagem permitiu redefinir o valor da variável "i" para 0 quando atingisse 6, criando um ciclo contínuo. Com a modificação para `for (int i = 0; i < 7; i++) {`, o valor de "i" era instantaneamente reiniciado ao atingir 6, proporcionando a impressão de que a roleta girava de forma fluida e ininterrupta.
 
-
-
-
-
-
-
-
-
-
-
-### **Configuração Inicial**  
-
-- **LEDs:** Seis LEDs conectados aos pinos digitais 3 a 8, configurados como saídas.  
-- **Botão:** Conectado ao pino 13 e utilizado para iniciar a roleta.  
-- **Buzzer:** Conectado ao pino 12 para efeitos sonoros durante a execução.  
-- **Gerador Aleatório:** `randomSeed(analogRead(0))` inicializa a geração de números aleatórios para variação entre execuções.  
-- **Monitoramento Serial:** Comunicação serial (`Serial.begin(9600)`) para exibir informações sobre as rodadas.  
-
-### **Controle do Botão**  
-
-- O estado do botão é monitorado com `digitalRead(buttonPin)`.  
-- Quando pressionado, a variável `a` é alternada entre verdadeiro (`true`) e falso (`false`), ativando ou desativando a roleta.  
-
-### **Funcionamento da Roleta**  
-
-
-
----
-
-### **Implementação da Lógica "A Banca Sempre Vence"**  
-
+**Implementação da Lógica "A Banca Sempre Vence":**  
 Para criar um sistema onde o jogador inicialmente ganha e depois começa a perder progressivamente, foi implementado um contador de jogadas.  
 
 - No início, os LEDs que representam a vitória têm maior probabilidade de serem escolhidos.  
 - Após algumas rodadas, o código começa a ajustar as probabilidades, favorecendo LEDs de "derrota".  
 - Essa manipulação é feita modificando os limites da função `random()`, reduzindo a chance de LEDs vitoriosos.  
 
-**Código Baseado em Probabilidades:**  
-
-```cpp
-int rodada = 0;  // Contador de rodadas
-int ledSorteado;
-
-void sortearResultado() {
-    rodada++;
-
-    if (rodada <= 3) {  
-        // Primeiras rodadas, chances iguais
-        ledSorteado = random(3, 9);
-    } else if (rodada <= 6) {  
-        // Reduz ligeiramente a chance de vitória
-        int probabilidade = random(100);
-        if (probabilidade < 30) {
-            ledSorteado = random(3, 6); // LEDs de "vitória"
-        } else {
-            ledSorteado = random(6, 9); // LEDs de "derrota"
-        }
-    } else {  
-        // Após a 6ª rodada, o jogador começa a perder mais vezes
-        int probabilidade = random(100);
-        if (probabilidade < 10) {
-            ledSorteado = random(3, 6); // Raras vitórias
-        } else {
-            ledSorteado = random(6, 9); // Maioria dos casos perde
-        }
-    }
-}
-```
-
-Essa abordagem mantém a ilusão de sorte, mas gradualmente faz o jogador perder mais frequentemente.
-
----
-
-### **Modo Tigrinho: Ajuste Dinâmico de Probabilidades**  
-
-O **Modo Tigrinho** adiciona variação às probabilidades ao longo do tempo, simulando um jogo de azar que mantém o jogador engajado.  
-
-- Em algumas rodadas, a roleta pode gerar uma "falsa esperança" ao aumentar ligeiramente as chances de vitória, incentivando o jogador a continuar.  
-- Após essas rodadas, a dificuldade aumenta drasticamente.  
-- Um algoritmo de ajuste probabilístico verifica o histórico recente de vitórias e derrotas para modificar os resultados de maneira dinâmica.  
-
-**Código para o Modo Tigrinho:**  
-
-```cpp
-bool modoTigrinho = true;
-int historicoVitorias = 0;
-
-void ajustarModoTigrinho() {
-    int probabilidade = random(100);
-
-    if (modoTigrinho) {
-        if (historicoVitorias < 2) {  
-            // Se perdeu muito, cria esperança
-            if (probabilidade < 50) {
-                ledSorteado = random(3, 6); // Maior chance de vitória
-            } else {
-                ledSorteado = random(6, 9); // Pode perder também
-            }
-        } else {  
-            // Se já ganhou algumas vezes, dificulta
-            if (probabilidade < 20) {
-                ledSorteado = random(3, 6); // Pequena chance de vitória
-            } else {
-                ledSorteado = random(6, 9); // Grande chance de derrota
-            }
-        }
-    }
-}
-```
-
 No **Modo Tigrinho**, o sistema observa se o jogador perdeu muito e dá algumas vitórias para mantê-lo jogando, mas depois retoma a lógica "A banca sempre vence".  
 
----
 
-### **Desafios Enfrentados e Soluções**  
 
-1. **Repetição das Piscadas LED**  
-   - **Problema:** O ciclo era interrompido no LED 8, impedindo a repetição contínua.  
-   - **Solução:** Implementar um contador circular que redefine `i` para 0 quando atinge 6, garantindo a rotação contínua.  
 
-2. **Controle da Velocidade da Roleta**  
-   - **Problema:** A desaceleração não era suave.  
-   - **Solução:** Ajustar `x` para decair progressivamente em vez de reduzir abruptamente.  
-
-3. **Gerenciamento do Estado da Roleta**  
-   - **Problema:** A roleta precisava ser reiniciada corretamente.  
-   - **Solução:** Criar uma variável de controle que reseta ao final de cada rodada.  
-
-4. **Implementação da Manipulação Probabilística**  
-   - **Problema:** Ajustar probabilidades sem tornar previsível.  
-   - **Solução:** Criar um sistema dinâmico que modifica chances com base no histórico de rodadas.  
-
----
 
 ### **Conclusão**  
 
