@@ -82,7 +82,6 @@ Este projeto simula uma roleta luminosa utilizando seis LEDs e um botão, com co
 ## :cyclone: Código Comentado
 ```cpp
 
-
 #include <TimerOne.h>  // Biblioteca para usar Timer
 
 // Definindo pinos e algumas variáveis
@@ -148,15 +147,11 @@ void giraRoleta() {
         chance = 80;                                  // 80% de chance de ganhar
       } else if (vitorias < 5) {
         chance = 50;                                  // 50% de chance de ganhar
-        vitorias = vitorias--;
       } else {
         chance = 28;                                  // 28% de chance de ganhar
-        vitorias -= 2;                                // vitorias = vitorias - 2;
       }
-
       sorte = random(0, 101);                           // Gera um número de 0 a 100 que corresponde a "sorte" do jogador
       Serial.println(sorte);                            // Mostrar esse número no Serial Monitor
-
       // Determina se o jogador vence ou perde
       if (sorte <= chance) {                          // Se o número sorteado, a "sorte", for menor que a variável que deternina a chance de vitória do jogador, o jogador terá seu LED excolhido
         while (x <= 10) {                             // Enquanto o número de transições de LEDs for menor ou igual a 10
@@ -168,18 +163,19 @@ void giraRoleta() {
         do {                                          // Realizará no mínimo uma vez
           x = random(41, 591);                        // Sorteará um número entre 41 e 590, tal que ele representa o número de transições LEDs
         } while (((x % 6) - 1) == c);                 // O progama sorteará um novo número até que o LED que representa o resultado final seja diferente do LED excolhido (força a derrota do jogador)
+        if (chance == 50){
+          vitorias--;                                 // vitorias = vitorias - 1;
+        } else if (chance == 28){
+          vitorias -= 2;                              // vitorias = vitorias - 2;
+        }
       }
-      Serial.println(vitorias);                         // Mostra o número de vitorias até o momento
-
+      Serial.println(vitorias);   // Mostra o número de vitorias até o momento
 
     // Se o "interrruptor" marcar "false"
     } else {
       x = random(41, 591);                              // Gera um número entre 41 e 590, tal que ele representa o número de transições LEDs
       Serial.println(x);                                // Mostrar esse número no Serial Monitor
     }
-
-
-
     // Percorre os LEDs simulando o giro da roleta (transição LED)
     for (int i = 0; i < 7; i++) { 
       // i = 6 será considerado como estado temporário. Quando isso ocorrer, a roleta, após o LED do pino 8 desligar, resetará para o LED do pino 3
@@ -331,7 +327,7 @@ void loop() {
     if (z == true) {
       Timer1.initialize(1200000);             // Configura Timer para 1200ms (1.200.000 microssegundos)
       Timer1.attachInterrupt(piscarLEDs);     // Ativa interrupção a cada 500ms
-      Serial.println(counter);                // Mostrar esse número no Serial Monitor
+      // Serial.println(counter);                // Mostrar esse número no Serial Monitor
 
       if (estadoLEDs == true) {
         digitalWrite(ledPins[c], LOW);        // Acende o respectivo LED
@@ -370,7 +366,7 @@ void loop() {
 
 
     } else {
-      Serial.println(counter);                // Mostrar esse número no Serial Monitor
+      // Serial.println(counter);                // Mostrar esse número no Serial Monitor
       digitalWrite(ledPins[c], HIGH);         // Acende o respectivo LED
       if (digitalRead(buttonPin) == HIGH) {   // Se o botão for pressionado
         counter++;
