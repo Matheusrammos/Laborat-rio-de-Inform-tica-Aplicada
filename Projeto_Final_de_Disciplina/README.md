@@ -402,7 +402,10 @@ void loop() {
 
 ## Funcionamento
 
-> Este projeto utiliza seis LEDs conectados a um Arduino que acendem de forma sequencial, simulando uma roleta. A velocidade da roleta é determinada por um número gerado aleatoriamente, e o ciclo é interrompido gradualmente até que um LED final permaneça piscando. O botão controla o início e o fim da roleta. 
+> Este projeto utiliza seis LEDs conectados a um Arduino que acendem de forma sequencial, simulando uma roleta. A velocidade da roleta é determinada por um número gerado aleatoriamente, e o ciclo é interrompido gradualmente até que um LED final permaneça piscando. O botão controla o início da roleta e, por meio dele, é possível escolher um determinado LED.
+>
+> 
+> Além disso, foi implementada uma lógica especial que simula o conceito de "A banca sempre vence". No início, o jogador tem maiores chances de ganhar, mas conforme joga mais vezes, as chances de perder aumentam progressivamente. Também foi incluído o **"Modo Tigrinho"**, que ajusta dinamicamente as probabilidades para criar um sistema de apostas mais envolvente.  
 1. **Configuração Inicial:**
    - **LEDs**: Seis LEDs são conectados aos pinos digitais 3 a 8 e configurados como saídas.  
    - **Botão**: Um botão é conectado ao pino 13 e configurado como entrada.  
@@ -414,23 +417,16 @@ void loop() {
    - O estado do botão é monitorado com `digitalRead(buttonPin)`.
    - Quando o botão é pressionado, a variável `a` é alternada entre verdadeiro (`true`) e falso (`false`), ativando ou desativando o funcionamento da roleta.
 
-3. **Início da Roleta:**
+3. **Passo a passo:**
    - Quando `a` é verdadeiro, um número aleatório `x` entre 41 e 590 é gerado.
    - Esse número controla a velocidade e o tempo total da roleta.
 
 4. **Sequência dos LEDs:**
-   - Os LEDs piscam sequencialmente, simulando o movimento da roleta.  
-   - A velocidade da piscagem é determinada pela fórmula `p = 1000 / x`.  
-   - O número `x` diminui gradualmente a cada ciclo, fazendo com que a roleta desacelere.
-   - O buzzer emite um tom curto quando um LED acende.  
-
-5. **Finalização:**
-   - Quando `x` atinge 0, a roleta para, e o LED atual pisca algumas vezes para indicar o resultado final.
-   - Dependendo do LED final, diferentes frequências de som são emitidas pelo buzzer para indicar se foi um resultado esperado ou não.  
-
-6. **Reinício:**
-   - Após um pequeno tempo de espera, o sistema é reinicializado e aguarda uma nova interação do usuário via botão.  
-      > Essa lógica torna o projeto interativo e dinâmico, podendo ser usado como base para jogos ou sorteios eletrônicos.
+   1. **Início:** Quando `a` é verdadeiro, um número aleatório `x` entre 41 e 590 é gerado para controlar a velocidade e duração da roleta.  
+   2. **Giro:** Os LEDs piscam sequencialmente, simulando a roleta. A velocidade é determinada pela fórmula `p = 1000 / x`.  
+   3. **Desaceleração:** O número `x` diminui gradualmente, fazendo a roleta desacelerar antes de parar. O buzzer emite um tom curto a cada LED aceso.  
+   4. **Parada:** Quando `x` atinge 0, a roleta para, e o LED final pisca algumas vezes para indicar o resultado.  
+   5. **Reinício:** Após um pequeno intervalo, a roleta aguarda uma nova interação.  
 
 
 ## Desafios Enfrentados  
@@ -457,6 +453,155 @@ Esses desafios foram superados com criatividade e aplicação dos conceitos apre
    O maior desafio foi implementar a repetição contínua das piscadas dos LEDs. Inicialmente, no `void loop()`, ao usar o loop `for (int i = 0; i < 6; i++) {`, a variável "i" chegava ao valor 5, acionando o LED do pino 8 e encerrando o ciclo, sem completar o número total de piscadas definido pela variável "x". Isso impedia que o comportamento esperado da roleta fosse reproduzido corretamente.
 
 A solução foi implementar um "estado temporário", inspirado nos conceitos de contadores assíncronos estudados na disciplina de Sistemas Digitais. Essa abordagem permitiu redefinir o valor da variável "i" para 0 quando atingisse 6, criando um ciclo contínuo. Com a modificação para `for (int i = 0; i < 7; i++) {`, o valor de "i" era instantaneamente reiniciado ao atingir 6, proporcionando a impressão de que a roleta girava de forma fluida e ininterrupta.
+
+
+
+
+
+
+
+
+
+
+
+### **Configuração Inicial**  
+
+- **LEDs:** Seis LEDs conectados aos pinos digitais 3 a 8, configurados como saídas.  
+- **Botão:** Conectado ao pino 13 e utilizado para iniciar a roleta.  
+- **Buzzer:** Conectado ao pino 12 para efeitos sonoros durante a execução.  
+- **Gerador Aleatório:** `randomSeed(analogRead(0))` inicializa a geração de números aleatórios para variação entre execuções.  
+- **Monitoramento Serial:** Comunicação serial (`Serial.begin(9600)`) para exibir informações sobre as rodadas.  
+
+### **Controle do Botão**  
+
+- O estado do botão é monitorado com `digitalRead(buttonPin)`.  
+- Quando pressionado, a variável `a` é alternada entre verdadeiro (`true`) e falso (`false`), ativando ou desativando a roleta.  
+
+### **Funcionamento da Roleta**  
+
+
+
+---
+
+### **Implementação da Lógica "A Banca Sempre Vence"**  
+
+Para criar um sistema onde o jogador inicialmente ganha e depois começa a perder progressivamente, foi implementado um contador de jogadas.  
+
+- No início, os LEDs que representam a vitória têm maior probabilidade de serem escolhidos.  
+- Após algumas rodadas, o código começa a ajustar as probabilidades, favorecendo LEDs de "derrota".  
+- Essa manipulação é feita modificando os limites da função `random()`, reduzindo a chance de LEDs vitoriosos.  
+
+**Código Baseado em Probabilidades:**  
+
+```cpp
+int rodada = 0;  // Contador de rodadas
+int ledSorteado;
+
+void sortearResultado() {
+    rodada++;
+
+    if (rodada <= 3) {  
+        // Primeiras rodadas, chances iguais
+        ledSorteado = random(3, 9);
+    } else if (rodada <= 6) {  
+        // Reduz ligeiramente a chance de vitória
+        int probabilidade = random(100);
+        if (probabilidade < 30) {
+            ledSorteado = random(3, 6); // LEDs de "vitória"
+        } else {
+            ledSorteado = random(6, 9); // LEDs de "derrota"
+        }
+    } else {  
+        // Após a 6ª rodada, o jogador começa a perder mais vezes
+        int probabilidade = random(100);
+        if (probabilidade < 10) {
+            ledSorteado = random(3, 6); // Raras vitórias
+        } else {
+            ledSorteado = random(6, 9); // Maioria dos casos perde
+        }
+    }
+}
+```
+
+Essa abordagem mantém a ilusão de sorte, mas gradualmente faz o jogador perder mais frequentemente.
+
+---
+
+### **Modo Tigrinho: Ajuste Dinâmico de Probabilidades**  
+
+O **Modo Tigrinho** adiciona variação às probabilidades ao longo do tempo, simulando um jogo de azar que mantém o jogador engajado.  
+
+- Em algumas rodadas, a roleta pode gerar uma "falsa esperança" ao aumentar ligeiramente as chances de vitória, incentivando o jogador a continuar.  
+- Após essas rodadas, a dificuldade aumenta drasticamente.  
+- Um algoritmo de ajuste probabilístico verifica o histórico recente de vitórias e derrotas para modificar os resultados de maneira dinâmica.  
+
+**Código para o Modo Tigrinho:**  
+
+```cpp
+bool modoTigrinho = true;
+int historicoVitorias = 0;
+
+void ajustarModoTigrinho() {
+    int probabilidade = random(100);
+
+    if (modoTigrinho) {
+        if (historicoVitorias < 2) {  
+            // Se perdeu muito, cria esperança
+            if (probabilidade < 50) {
+                ledSorteado = random(3, 6); // Maior chance de vitória
+            } else {
+                ledSorteado = random(6, 9); // Pode perder também
+            }
+        } else {  
+            // Se já ganhou algumas vezes, dificulta
+            if (probabilidade < 20) {
+                ledSorteado = random(3, 6); // Pequena chance de vitória
+            } else {
+                ledSorteado = random(6, 9); // Grande chance de derrota
+            }
+        }
+    }
+}
+```
+
+No **Modo Tigrinho**, o sistema observa se o jogador perdeu muito e dá algumas vitórias para mantê-lo jogando, mas depois retoma a lógica "A banca sempre vence".  
+
+---
+
+### **Desafios Enfrentados e Soluções**  
+
+1. **Repetição das Piscadas LED**  
+   - **Problema:** O ciclo era interrompido no LED 8, impedindo a repetição contínua.  
+   - **Solução:** Implementar um contador circular que redefine `i` para 0 quando atinge 6, garantindo a rotação contínua.  
+
+2. **Controle da Velocidade da Roleta**  
+   - **Problema:** A desaceleração não era suave.  
+   - **Solução:** Ajustar `x` para decair progressivamente em vez de reduzir abruptamente.  
+
+3. **Gerenciamento do Estado da Roleta**  
+   - **Problema:** A roleta precisava ser reiniciada corretamente.  
+   - **Solução:** Criar uma variável de controle que reseta ao final de cada rodada.  
+
+4. **Implementação da Manipulação Probabilística**  
+   - **Problema:** Ajustar probabilidades sem tornar previsível.  
+   - **Solução:** Criar um sistema dinâmico que modifica chances com base no histórico de rodadas.  
+
+---
+
+### **Conclusão**  
+
+Este projeto combina conceitos eletrônicos e programação para criar uma roleta interativa com elementos estratégicos. A lógica de **"A banca sempre vence"** e o **"Modo Tigrinho"** trazem uma abordagem divertida e realista dos sistemas de apostas.  
+
+Além de reforçar conhecimentos sobre Arduino, este projeto também permitiu explorar conceitos avançados como manipulação de probabilidades, simulação de comportamento humano em jogos e controle preciso de tempo e eventos.  
+
+Este sistema pode ser expandido com novos elementos, como um display LCD para mostrar estatísticas ou até mesmo um sistema de apostas virtual.
+
+
+
+
+
+
+
 
 
 ## Participações
