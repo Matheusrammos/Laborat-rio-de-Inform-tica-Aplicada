@@ -95,6 +95,7 @@ int p;                                              // Tempo de cada piscada
 int c = 0;                                          // LED excolhido
 int som[] = { 58, 108, 0, 0, 0, 0, 500, 120, 300, 350 };
 
+// Variáveis do Modo Tigrinho 
 bool z = false;  // Modo Tigrinho
 int counter = 0;
 bool estadoLEDs = false;
