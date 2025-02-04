@@ -105,7 +105,6 @@ int sorte;
 
 
 void setup() {
-
   pinMode(buttonPin, INPUT);    // Inicializando o pino do botão como entrada
   pinMode(buzzerPin, OUTPUT);   // Configura o pino do buzzer como saída
 
