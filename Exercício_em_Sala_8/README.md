@@ -1,4 +1,4 @@
-# Piano com LEDs: tomada de decisão com entradas digitais 
+# Piano com LEDs: Tomada de Decisão com Entradas Digitais 
 
 
 ## Descrição
