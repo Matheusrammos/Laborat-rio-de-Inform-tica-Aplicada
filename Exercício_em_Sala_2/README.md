@@ -19,7 +19,7 @@ Este projeto demonstra uma montagem básica utilizando um Arduino Uno e dois LED
      > <img height="254.3" width="325" align="right" alt="WhileDIAGRAMA" src="https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_2/LED_IMG_1.png">
      >
      >
-     > <img height="255" width="463" alt="WhileDIAGRAMA" src="https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_1/D%C3%ADodo_Emissor_de_Luz_2..png">
+     > <img height="255" width="463" alt="WhileDIAGRAMA" src="https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_2/LED_IMG_1.png">
      >
      > Essas aplicações facilitam o aprendizado de circuitos e programação, além de servirem como base para projetos mais avançados em comunicação, redes de sensores e automação. Assim, a integração de LEDs com Arduino proporciona amplas possibilidades de experimentação e desenvolvimento na eletrônica.
      
