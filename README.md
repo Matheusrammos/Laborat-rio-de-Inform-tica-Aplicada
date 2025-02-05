@@ -45,14 +45,17 @@ Montagem de circuitos simples com LEDs, aprendendo sobre componentes eletrônico
 ### [Exercício_em_Sala_4: Controle de Pisca-Pisca de LED com Variáveis Configuráveis](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Sala_4)
 Controle de LEDs com ajuste dinâmico do tempo de pisca utilizando variáveis configuráveis.
 
-### [Exercício_em_Sala_5: Sequência de 4 canais com Arduino](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Sala_5)
+### [Exercício_em_Sala_5: Sequência de 4 Canais com ARDUINO](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Sala_5)
 Sequência de LEDs em 4 canais, explorando controle digital e temporização.
 
-### [Exercício_em_Sala_6: Pisca-Pisca Led aleatório de 4 canais](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Sala_6)
+### [Exercício_em_Sala_6: Pisca-Pisca LED Aleatório de 4 Canais](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Sala_6)
 Controle de LEDs com sequências aleatórias em 4 canais, usando geração de números aleatórios.
 
 ### [Exercício_em_Sala_7: Display Sete Segmentos: Hexadecimal](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Sala_7)
 Exibição de caracteres hexadecimais (0–9, A–F) em um display de sete segmentos.
+
+### [Exercícios_em_Sala_8: Piano com LEDs: Tomada de Decisão com Entradas Digitais](
+Projeto Arduino onde cada botão acende um LED e toca uma nota no buzzer, demonstrando controle digital e lógica de decisão.
 
 ### [Projeto_Final_de_Disciplina](https://github.com/Matheusrammos/LIA-Docs/tree/main/Projeto_Final_de_Disciplina)
 O projeto final integra todos os conceitos do curso, desafiando os alunos a criar um sistema interativo complexo.
