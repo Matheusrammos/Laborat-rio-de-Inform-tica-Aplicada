@@ -39,7 +39,7 @@ O objetivo deste projeto é demonstrar como ler entradas digitais e tomar decis�
    - Verifique se os botões estão corretamente configurados para uso com o pull-up interno, garantindo que, quando não pressionados, o pino fique em estado **HIGH** e, ao serem pressionados, em **LOW**.
 
 5. **Diagrama do Circuito:**  
-> ![Diagrama do Circuito](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_8/Diagrama_Aula_8.png)
+![Diagrama do Circuito](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_8/Diagrama_Aula_8.png)
 
 
 
