@@ -27,10 +27,9 @@ Essas aplicações não só ajudam a aprender os conceitos básicos de circuitos
 </details>
 
 
-
-
 ## Objetivo
 O objetivo do projeto é demonstrar como controlar um pino de saída digital no Arduino para acionar um LED. O código alterna o estado do LED, ligando-o e desligando-o a cada segundo, permitindo que os usuários compreendam os conceitos básicos de controle digital.
+
 
 ## Materiais Necessários
 - **1 Arduino Uno (ou qualquer outra placa Arduino)**
