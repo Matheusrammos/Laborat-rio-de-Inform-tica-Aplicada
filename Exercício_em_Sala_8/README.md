@@ -1,7 +1,9 @@
 # Tomada de decisão com entradas digitais piano com led
 
+
 ## Descrição
 Este projeto utiliza um Arduino para implementar uma "tomada de decisão" através de botões, onde cada botão aciona um LED e toca uma nota musical correspondente via buzzer. Quando um dos botões (conectados aos pinos digitais) é pressionado, o LED associado se acende e o buzzer emite o som da nota definida para aquele botão. Ao soltar o botão, o LED se apaga e o buzzer para de tocar.
+
 
 ## Objetivo
 O objetivo deste projeto é demonstrar como ler entradas digitais e tomar decisões no Arduino. Através desse circuito, aprende-se a:
@@ -9,6 +11,7 @@ O objetivo deste projeto é demonstrar como ler entradas digitais e tomar decis�
 - Acionar LEDs e buzzer com base na leitura dos botões;
 - Utilizar arrays para organizar múltiplos pinos e notas;
 - Integrar controle de som e iluminação para simular um piano básico.
+
 
 ## Materiais Necessários
 - **1 Arduino Uno (ou placa compatível)**
@@ -18,6 +21,7 @@ O objetivo deste projeto é demonstrar como ler entradas digitais e tomar decis�
 - **1 Buzzer**
 - **Fios de conexão (jumpers)**
 - **1 Protoboard (opcional, para montagem do circuito)**
+
 
 ## Montagem do Circuito
 1. **LEDs:**
