@@ -54,7 +54,7 @@ Controle de LEDs com sequências aleatórias em 4 canais, usando geração de n�
 ### [Exercício_em_Sala_7: Display Sete Segmentos: Hexadecimal](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Sala_7)
 Exibição de caracteres hexadecimais (0–9, A–F) em um display de sete segmentos.
 
-### [Exercícios_em_Sala_8: Piano com LEDs: Tomada de Decisão com Entradas Digitais](
+### [Exercícios_em_Sala_8: Piano com LEDs: Tomada de Decisão com Entradas Digitais](https://github.com/Matheusrammos/LIA-Docs/tree/main/Exerc%C3%ADcio_em_Sala_8)
 Projeto Arduino onde cada botão acende um LED e toca uma nota no buzzer, demonstrando controle digital e lógica de decisão.
 
 ### [Projeto_Final_de_Disciplina](https://github.com/Matheusrammos/LIA-Docs/tree/main/Projeto_Final_de_Disciplina)
