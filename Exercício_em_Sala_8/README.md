@@ -44,7 +44,7 @@ O objetivo deste projeto é demonstrar como ler entradas digitais e tomar decis�
 
 
 
-## Código 
+## Código Comentado
 
 ```cpp
 // Declaração dos pinos dos LEDs
