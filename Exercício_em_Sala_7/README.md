@@ -12,8 +12,6 @@ O projeto utiliza um display de 7 segmentos para exibir caracteres no formato he
       
     - Nesse caso, os pinos 3 e 8 (comuns) foram ligados ao terra. 
 
-
-    > <img height="505" width="803" alt="WhileDIAGRAMA" src="https://github.com/user-attachments/assets/ffbac0dc-0306-4d23-ae06-9b521a51fa61"> 
     >
     > <img height="300em" align="right" alt="WhileDIAGRAMA" src="https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_7/Displ_Sete_Seg2.png">
     > 
@@ -24,12 +22,17 @@ O projeto utiliza um display de 7 segmentos para exibir caracteres no formato he
 <details>
 <summary> :bangbang: Tipos de Configuração  </summary>
 
+
+
 1. **Anodo Comum (CA):**  
    - Todos os ânodos (terminais positivos) dos LEDs estão conectados juntos e precisam ser ligados a uma fonte de tensão positiva.  
    - Os segmentos são ativados ao conectar seus cátodos (terminais negativos) ao GND.  
 
 2. **Cátodo Comum (CC):**  
-   - Todos os cátodos (terminais negativos) dos LEDs estão conectados ao GND, e os segmentos são ativados ao aplicar tensão positiva nos ânodos (terminais positivos).  
+   - Todos os cátodos (terminais negativos) dos LEDs estão conectados ao GND, e os segmentos são ativados ao aplicar tensão positiva nos ânodos (terminais positivos).
+> 
+> 
+> <img height="505" width="903" alt="WhileDIAGRAMA" src="https://github.com/user-attachments/assets/ffbac0dc-0306-4d23-ae06-9b521a51fa61"> 
 </details>
 
 
