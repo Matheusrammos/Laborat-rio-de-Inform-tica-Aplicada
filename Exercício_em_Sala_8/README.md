@@ -7,7 +7,7 @@ Este projeto utiliza um Arduino para implementar uma "tomada de decisão" atrav�
 
 ## Objetivo
 O objetivo deste projeto é demonstrar como ler entradas digitais e tomar decisões no Arduino. Através desse circuito, aprende-se a:
-- Configurar botões com resistores pull-up internos;
+- Configurar botões com resistores pull-up ou pull-dow (pull-dow neste caso);
 - Acionar LEDs e buzzer com base na leitura dos botões;
 - Utilizar arrays para organizar múltiplos pinos e notas;
 - Integrar controle de som e iluminação para simular um piano básico.
@@ -17,6 +17,7 @@ O objetivo deste projeto é demonstrar como ler entradas digitais e tomar decis�
 - **1 Arduino Uno (ou placa compatível)**
 - **3 LEDs**
 - **3 Resistores de 220 Ω a 330 Ω** (para limitar a corrente dos LEDs)
+- **3 Resistores de 10 KΩ (pull-dow)**
 - **3 Botões**
 - **1 Buzzer**
 - **Fios de conexão (jumpers)**
@@ -36,7 +37,7 @@ O objetivo deste projeto é demonstrar como ler entradas digitais e tomar decis�
 
 4. **Observações:**
    - Certifique-se de conectar os LEDs com os resistores em série para evitar queima por corrente excessiva.
-   - Verifique se os botões estão corretamente configurados para uso com o pull-up interno, garantindo que, quando não pressionados, o pino fique em estado **HIGH** e, ao serem pressionados, em **LOW**.
+   - Verifique se os botões estão corretamente configurados para uso dos resistores pull-dow, garantindo que, quando não pressionados, o pino fique em estado **LOW** e, ao serem pressionados, em **HIGH**.
 
 5. **Diagrama do Circuito:**  
 ![Diagrama do Circuito](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_8/Diagrama_Aula_8.png)
@@ -64,9 +65,9 @@ void setup() {
     pinMode(ledPins[i], OUTPUT);
   }
   
-  // Configura os pinos dos botões como entrada com resistor pull-up interno
+  // Configura os pinos dos botões como entrada com resistor pull-dow externo
   for (int i = 0; i < 3; i++) {
-    pinMode(buttonPins[i], INPUT_PULLUP);
+    pinMode(buttonPins[i], INPUT);
   }
   
   // Configura o pino do buzzer como saída
@@ -76,8 +77,8 @@ void setup() {
 void loop() {
   // Percorre os botões e LEDs correspondentes
   for (int i = 0; i < 3; i++) {
-    // Se o botão estiver pressionado (estado LOW)
-    if (digitalRead(buttonPins[i]) == LOW) { 
+    // Se o botão estiver pressionado (estado HIGH)
+    if (digitalRead(buttonPins[i]) == HIGH) { 
       digitalWrite(ledPins[i], HIGH); // Liga o LED correspondente
       tone(buzzerPin, notes[i]);       // Toca a nota correspondente no buzzer
     } else {
@@ -99,11 +100,11 @@ void loop() {
 
 2. **Configuração Inicial (setup):**
    - Os pinos dos LEDs são configurados como saídas.
-   - Os pinos dos botões são configurados como entradas utilizando o `INPUT_PULLUP`, que ativa o resistor pull-up interno. Assim, quando os botões não estão pressionados, o estado dos pinos é HIGH, e ao serem pressionados, o estado muda para LOW.
+   - Os pinos dos botões são configurados como entradas utilizando o `INPUT` e também um resistor pull-dow externo. Assim, quando os botões não estão pressionados, o estado dos pinos é LOW, e ao serem pressionados, o estado muda para HIGH.
    - O pino do buzzer é configurado como saída.
 
 3. **Laço Principal (loop):**
-   - O código percorre todos os botões e, se um botão estiver pressionado (digitalRead retorna LOW), o LED correspondente é aceso e o buzzer toca a nota associada.
+   - O código percorre todos os botões e, se um botão estiver pressionado (digitalRead retorna HIGH), o LED correspondente é aceso e o buzzer toca a nota associada.
    - Se o botão não estiver pressionado, o LED é apagado e o buzzer para de emitir som.
 
 
