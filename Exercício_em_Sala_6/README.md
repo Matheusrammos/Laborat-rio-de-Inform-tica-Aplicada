@@ -118,7 +118,7 @@ void setup() {
 
 void loop() {
   // Usando um loop for para repetir indefinidamente enquanto o botão for pressionado
-  while (digitalRead(buttonPin) == LOW) { //Também poderia ser o seguinte comando:   for (;digitalRead(buttonPin) == HIGH;) {
+  while (digitalRead(buttonPin) == HIGH) { //Também poderia ser o seguinte comando:   for (;digitalRead(buttonPin) == HIGH;) {
     i = random(0, 4); // Gera um número aleatório de 0 a 3 (4 números)
     digitalWrite(ledPins[i], HIGH); // Acende o LED correspondente
     delay(500); // Aguarda por um período de tempo
