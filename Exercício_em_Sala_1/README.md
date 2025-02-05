@@ -20,6 +20,8 @@ Essas aplicações não só ajudam a aprender os conceitos básicos de circuitos
 > <img height="300" width="583" alt="WhileDIAGRAMA" src="https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_1/D%C3%ADodo_Emissor_de_Luz.png">
 
 
+> <img height="300" width="583" alt="WhileDIAGRAMA" src="https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_1/D%C3%ADodo_Emissor_de_Luz_2.png">
+
 
 <details>
 <summary> :bangbang: Funcionamento e Características </summary>
