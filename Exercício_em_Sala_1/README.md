@@ -17,6 +17,9 @@ Os LEDs são componentes essenciais para muitos projetos com Arduino, pois permi
 
 Essas aplicações não só ajudam a aprender os conceitos básicos de circuitos e programação, mas também servem de ponto de partida para projetos mais complexos envolvendo comunicação, redes de sensores e sistemas de automação. Em resumo, a combinação de LEDs com Arduino oferece um vasto campo de experimentação e desenvolvimento para entusiastas e profissionais da eletrônica.
 
+> <img height="300" width="583" alt="WhileDIAGRAMA" src="https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_1/D%C3%ADodo_Emissor_de_Luz.png">
+
+
 
 <details>
 <summary> :bangbang: Funcionamento e Características </summary>
