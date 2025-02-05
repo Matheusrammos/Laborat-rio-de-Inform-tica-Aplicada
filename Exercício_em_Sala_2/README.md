@@ -34,7 +34,7 @@ Este projeto demonstra uma montagem básica utilizando um Arduino Uno e dois LED
 
 > <img height="254.3" width="413" align="right" alt="WhileDIAGRAMA" src="https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_1/D%C3%ADodo_Emissor_de_Luz_3.png">
 
-> <img height="255" width="413" alt="WhileDIAGRAMA" src="https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_1/D%C3%ADodo_Emissor_de_Luz_TABELA%3ATENSAO.png">
+> <img height="255" width="413" alt="WhileDIAGRAMA" src="https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_2/LED_Tabela_TENS%C3%83O.png">
 </details>
 
 
