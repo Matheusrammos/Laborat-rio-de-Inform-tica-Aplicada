@@ -4,6 +4,40 @@
 ## Descrição do Projeto: Blink
 O programa Blink é um dos exemplos mais fundamentais e tradicionais para iniciantes que trabalham com microcontroladores, como o Arduino. Ele faz com que um LED pisque repetidamente, ligando e desligando em intervalos regulares. Este exemplo é especialmente útil para verificar se o ambiente de desenvolvimento e o hardware estão funcionando corretamente.
 
+### Sobre os Resistores:
+- Os resistores são componentes passivos fundamentais na eletrônica, utilizados para limitar e regular a corrente elétrica em um circuito. Eles funcionam de acordo com a lei de Ohm, dissipando energia em forma de calor e garantindo que outros componentes, como LEDs e microcontroladores, operem dentro de suas faixas seguras de corrente e tensão citeturn0search0.
+
+#### Aplicações no Arduino:
+
+No universo do Arduino, os resistores desempenham papéis essenciais para a segurança e o desempenho dos circuitos. Alguns exemplos de aplicações incluem:
+
+- **Divisores de Tensão:** Permitem reduzir a tensão de um sinal para níveis compatíveis com as entradas analógicas do Arduino, facilitando a leitura precisa de sensores e outros dispositivos.
+- **Proteção de LEDs e Outros Componentes:** Em circuitos com LEDs, resistores limitam a corrente que flui pelo diodo, evitando sobrecorrente e prolongando a vida útil do componente.
+- **Pull-up e Pull-down:** Utilizados para definir estados lógicos estáveis em entradas digitais, prevenindo leituras erráticas devido a flutuações de sinal em pinos não conectados.
+- **Circuitos RC (Resistor-Capacitor):** Junto com capacitores, os resistores formam circuitos temporizadores e filtros que ajudam em funções como o debouncing de botões e a criação de atrasos precisos em sinais.
+
+> <img height="254.3" width="325" align="right" alt="Diagrama de Resistor" src="https://github.com/seu-usuario/seu-repositorio/blob/main/resistor_diagram.png">
+>
+> Essas aplicações demonstram como os resistores são indispensáveis para o funcionamento seguro e estável de circuitos com Arduino, servindo tanto para proteção quanto para o controle preciso de sinais elétricos.
+
+<details>
+<summary> :bangbang: Funcionamento e Características </summary>
+
+- **Lei de Ohm:** A relação entre tensão (V), corrente (I) e resistência (R) é definida pela lei de Ohm, expressa pela fórmula V = I × R. Esse princípio básico orienta a utilização dos resistores em circuitos eletrônicos.
+  
+- **Dissipação de Potência:** Ao limitar a corrente, os resistores convertem parte da energia elétrica em calor. É fundamental escolher resistores com a capacidade de dissipação de potência adequada para evitar superaquecimento e danos ao componente.
+  
+- **Precisão e Tolerância:** Resistores são fabricados com diferentes níveis de tolerância (por exemplo, 1%, 5% ou 10%), o que influencia a precisão dos circuitos onde são aplicados. A escolha correta garante medições mais exatas e desempenho consistente.
+  
+- **Diversidade de Tipos:** Existem várias tecnologias de resistores, como os de carbono, metal film e wirewound, cada um oferecendo características específicas em termos de estabilidade, ruído e dissipação de calor.
+  
+> <img height="234.3" width="413" align="right" alt="Tabela de Resistores" src="https://github.com/seu-usuario/seu-repositorio/blob/main/resistor_table.png">
+
+</details>
+
+
+
+
 
 
 ## Objetivo
