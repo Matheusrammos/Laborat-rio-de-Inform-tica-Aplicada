@@ -1,4 +1,4 @@
-# Sequêncial de 4 Canais com Arduino
+# Sequencial de 4 Canais com Arduino
 
 
 ## Descrição
