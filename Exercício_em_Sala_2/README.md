@@ -16,7 +16,7 @@ Este projeto demonstra uma montagem básica utilizando um Arduino Uno e dois LED
    - **Sequências e Animações:** Projetos mais avançados podem envolver a criação de sequências de LEDs (como em uma matriz ou em tiras de LED endereçáveis WS2812B) para construir efeitos visuais, animações e até interfaces de usuário interativas.
    - **Interação com Sensores:** Os LEDs podem ser integrados a sensores para indicar estados ou eventos, como em sistemas de monitoramento, alarmes ou jogos interativos.
 
-     > <img height="254.3" width="325" align="right" alt="WhileDIAGRAMA" src="https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_1/D%C3%ADodo_Emissor_de_Luz.png">
+     > <img height="254.3" width="325" align="right" alt="WhileDIAGRAMA" src="https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_2/LED_IMG_1.png">
      >
      >
      > <img height="255" width="463" alt="WhileDIAGRAMA" src="https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_1/D%C3%ADodo_Emissor_de_Luz_2..png">
