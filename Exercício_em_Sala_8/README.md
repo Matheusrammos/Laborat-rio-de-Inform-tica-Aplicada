@@ -34,14 +34,13 @@ O objetivo deste projeto é demonstrar como ler entradas digitais e tomar decis�
    - Certifique-se de conectar os LEDs com os resistores em série para evitar queima por corrente excessiva.
    - Verifique se os botões estão corretamente configurados para uso com o pull-up interno, garantindo que, quando não pressionados, o pino fique em estado **HIGH** e, ao serem pressionados, em **LOW**.
 
-> **Diagrama do Circuito:**  
-> Você pode adicionar um diagrama do circuito abaixo, caso possua um link ou imagem ilustrativa.  
->  
-> ![Diagrama do Circuito](#)
+5. **Diagrama do Circuito:**  
+> ![Diagrama do Circuito](https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_8/Diagrama_Aula_8.png)
 
----
 
-## Código Comentado
+
+## Código 
+
 ```cpp
 // Declaração dos pinos dos LEDs
 const int ledPins[] = {11, 12, 13}; // Pinos dos LEDs
@@ -85,53 +84,6 @@ void loop() {
 }
 ```
 
-<details>
-<summary> :cyclone: Código desenvolvido pelo aluno </summary>
-
-```cpp
-// Declaração dos pinos dos LEDs
-const int ledPins[] = {11, 12, 13}; // Pinos dos LEDs
-
-// Declaração dos pinos dos botões
-const int buttonPins[] = {2, 3, 4}; // Pinos dos botões
-
-// Declaração do pino do buzzer
-const int buzzerPin = 9; // Pino do buzzer
-
-// Declaração das notas (frequências em Hz)
-const int notes[] = {261, 329, 392}; // Notas: C4, E4, G4
-
-void setup() {
-  // Configura os pinos dos LEDs como saída
-  for (int i = 0; i < 3; i++) {
-    pinMode(ledPins[i], OUTPUT);
-  }
-  
-  // Configura os pinos dos botões como entrada com resistor pull-up interno
-  for (int i = 0; i < 3; i++) {
-    pinMode(buttonPins[i], INPUT_PULLUP);
-  }
-  
-  // Configura o pino do buzzer como saída
-  pinMode(buzzerPin, OUTPUT);
-}
-
-void loop() {
-  // Verifica o estado de cada botão e atua de acordo
-  for (int i = 0; i < 3; i++) {
-    if (digitalRead(buttonPins[i]) == LOW) { // Se o botão estiver pressionado
-      digitalWrite(ledPins[i], HIGH);        // Liga o LED correspondente
-      tone(buzzerPin, notes[i]);              // Toca a nota correspondente
-    } else {
-      digitalWrite(ledPins[i], LOW);          // Desliga o LED correspondente
-      noTone(buzzerPin);                      // Para de tocar o buzzer
-    }
-  }
-}
-```
-</details>
-
----
 
 ## Funcionamento
 > O projeto consiste em ler a entrada de três botões e, para cada botão pressionado, acionar um LED e tocar uma nota musical no buzzer.
