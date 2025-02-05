@@ -33,8 +33,9 @@ No universo do Arduino, os resistores desempenham papéis essenciais para a segu
   
 - **Diversidade de Tipos:** Existem várias tecnologias de resistores, como os de carbono, metal film e wirewound, cada um oferecendo características específicas em termos de estabilidade, ruído e dissipação de calor.
   
-> <img height="234.3" width="413" align="right" alt="Tabela de Resistores" src="https://github.com/seu-usuario/seu-repositorio/blob/main/resistor_table.png">
+> <img height="234.3" width="413" align="right" alt="WhileDIAGRAMA" src="https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_2/LED_IMG_3.png">
 
+> <img height="235" width="413" alt="WhileDIAGRAMA" src="https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_2/LED_Tabela_TENS%C3%83O.png">
 </details>
 
 
