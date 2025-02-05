@@ -17,7 +17,7 @@ O programa Blink é um dos exemplos mais fundamentais e tradicionais para inicia
    - **Interação com Sensores:** Os LEDs podem ser integrados a sensores para indicar estados ou eventos, como em sistemas de monitoramento, alarmes ou jogos interativos.
 
 
-     > <img height="255" width="303" align="right" alt="WhileDIAGRAMA" src="https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_1/D%C3%ADodo_Emissor_de_Luz.png">
+     > <img height="255" width="325" align="right" alt="WhileDIAGRAMA" src="https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_1/D%C3%ADodo_Emissor_de_Luz.png">
      >
      >
      > <img height="255" width="463" alt="WhileDIAGRAMA" src="https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_1/D%C3%ADodo_Emissor_de_Luz_2..png">
@@ -36,9 +36,9 @@ O programa Blink é um dos exemplos mais fundamentais e tradicionais para inicia
 - **Diversidade de Cores:** A cor emitida pelo LED depende dos materiais semicondutores utilizados. Com técnicas de dopagem, é possível obter luz vermelha, verde, azul e até combiná-las para formar luz branca ou LEDs RGB.
 - **Compactos e Eficientes:** Devido ao seu tamanho reduzido e alta eficiência energética, os LEDs são amplamente utilizados em displays, indicadores e iluminação decorativa ou funcional.
 
-> <img height="255" width="423" align="right" alt="WhileDIAGRAMA" src="https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_1/D%C3%ADodo_Emissor_de_Luz_3.png">
+> <img height="255" width="413" align="right" alt="WhileDIAGRAMA" src="https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_1/D%C3%ADodo_Emissor_de_Luz_3.png">
 
-> <img height="255" width="403" alt="WhileDIAGRAMA" src="https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_1/D%C3%ADodo_Emissor_de_Luz_TABELA%3ATENSAO.png">
+> <img height="255" width="413" alt="WhileDIAGRAMA" src="https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_1/D%C3%ADodo_Emissor_de_Luz_TABELA%3ATENSAO.png">
    
 </details>
 
