@@ -106,19 +106,8 @@ void loop() {
    - O código percorre todos os botões e, se um botão estiver pressionado (digitalRead retorna LOW), o LED correspondente é aceso e o buzzer toca a nota associada.
    - Se o botão não estiver pressionado, o LED é apagado e o buzzer para de emitir som.
 
----
 
 ## Participações
 - Este projeto contou com a assistência do ChatGPT, um assistente virtual da OpenAI, que colaborou com orientações e sugestões durante o desenvolvimento e elaboração da documentação.
   *(OPENAI. ChatGPT. Disponível em: [ChatGPT - OpenAI](https://www.openai.com/chatgpt). Acesso em: 05/02/2025.)*
-
----
-
-### Aviso de Direitos Autorais
->[!WARNING]
->
->Este repositório contém materiais de terceiros protegidos por direitos autorais, se aplicável. Verifique os termos de uso dos componentes e, se necessário, consulte o arquivo [DISCLAIMER.md](./DISCLAIMER.md) para mais detalhes.
-
----
-
-Este repositório está pronto para ser utilizado como base para o seu projeto "Tomada de decisão com entradas digitais piano com led". Basta copiar os arquivos e seguir as instruções para compilar e carregar o código no seu Arduino.
+- [Epaminondaslage](https://www.bing.com/ck/a?!&&p=cf945232149fce13JmltdHM9MTcyNjcwNDAwMCZpZ3VpZD0yNGZkYWYyYS1lMjZiLTYzMWYtMzY0MC1iYmJiZTNlZTYyZGImaW5zaWQ9NTE5Mg&ptn=3&ver=2&hsh=3&fclid=24fdaf2a-e26b-631f-3640-bbbbe3ee62db&psq=src%3d%22https%3a%2f%2fgithub.com%2fEpaminondaslage%2fAluno_Fulano_de_Tal%2fblob%2fmain%2fExercicio_em_Casa_1%2fFigura.jpeg%22+alt%3d%22Circuito%22+width%3d%2250%25%22&u=a1aHR0cHM6Ly9naXRodWIuY29tL0VwYW1pbm9uZGFzbGFnZQ&ntb=1) foi responsável por instruir e coordernar este projeto.
