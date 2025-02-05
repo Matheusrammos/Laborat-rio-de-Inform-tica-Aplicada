@@ -16,30 +16,25 @@ O programa Blink é um dos exemplos mais fundamentais e tradicionais para inicia
    - **Sequências e Animações:** Projetos mais avançados podem envolver a criação de sequências de LEDs (como em uma matriz ou em tiras de LED endereçáveis WS2812B) para construir efeitos visuais, animações e até interfaces de usuário interativas.
    - **Interação com Sensores:** Os LEDs podem ser integrados a sensores para indicar estados ou eventos, como em sistemas de monitoramento, alarmes ou jogos interativos.
 
-
-     > <img height="255" width="325" align="right" alt="WhileDIAGRAMA" src="https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_1/D%C3%ADodo_Emissor_de_Luz.png">
+     > <img height="254.3" width="325" align="right" alt="WhileDIAGRAMA" src="https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_1/D%C3%ADodo_Emissor_de_Luz.png">
      >
      >
      > <img height="255" width="463" alt="WhileDIAGRAMA" src="https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_1/D%C3%ADodo_Emissor_de_Luz_2..png">
      >
      > Essas aplicações não só ajudam a aprender os conceitos básicos de circuitos e programação, mas também servem de ponto de partida para projetos mais complexos envolvendo comunicação, redes de sensores e sistemas de automação. Em resumo, a combinação de LEDs com Arduino oferece um vasto campo de experimentação e desenvolvimento para entusiastas e profissionais da eletrônica.
 
-
-
-
-   
-
 <details>
 <summary> :bangbang: Funcionamento e Características </summary>
 
 - **Baixo Consumo e Longa Vida:** Os LEDs consomem pouca energia e têm uma vida útil muito maior que as lâmpadas tradicionais, o que os torna ideais para aplicações em dispositivos portáteis e sistemas de iluminação de longa duração.
+
 - **Diversidade de Cores:** A cor emitida pelo LED depende dos materiais semicondutores utilizados. Com técnicas de dopagem, é possível obter luz vermelha, verde, azul e até combiná-las para formar luz branca ou LEDs RGB.
+
 - **Compactos e Eficientes:** Devido ao seu tamanho reduzido e alta eficiência energética, os LEDs são amplamente utilizados em displays, indicadores e iluminação decorativa ou funcional.
 
-> <img height="255" width="413" align="right" alt="WhileDIAGRAMA" src="https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_1/D%C3%ADodo_Emissor_de_Luz_3.png">
+> <img height="254.3" width="413" align="right" alt="WhileDIAGRAMA" src="https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_1/D%C3%ADodo_Emissor_de_Luz_3.png">
 
 > <img height="255" width="413" alt="WhileDIAGRAMA" src="https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_1/D%C3%ADodo_Emissor_de_Luz_TABELA%3ATENSAO.png">
-   
 </details>
 
 
