@@ -1,4 +1,4 @@
-# Pisca-Pisca LED aleatório de 4 canais
+# Pisca-Pisca LED Aleatório de 4 Canais
 
 
 ## Descrição
