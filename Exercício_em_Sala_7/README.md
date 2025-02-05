@@ -16,9 +16,11 @@ O projeto utiliza um display de 7 segmentos para exibir caracteres no formato he
 
     > <img height="300" width="583" alt="WhileDIAGRAMA" src="https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_7/Displ_Sete_Seg.png">
     > 
-    > <img height="470" width="1003" align="right" alt="WhileDIAGRAMA" src="https://github.com/user-attachments/assets/ffbac0dc-0306-4d23-ae06-9b521a51fa61"> 
+    > <img height="505" width="803" alt="WhileDIAGRAMA" src="https://github.com/user-attachments/assets/ffbac0dc-0306-4d23-ae06-9b521a51fa61"> 
+    >
     > 
-    > - Aplicações: Dispositivos portáteis: relógios e calculadoras; Medidores: termômetros digitais, multímetros e balanças eletrônicas; Eletrodomésticos: micro-ondas e máquinas de lavar.
+    >
+    > Aplicações: Dispositivos portáteis: relógios e calculadoras; Medidores: termômetros digitais, multímetros e balanças eletrônicas; Eletrodomésticos: micro-ondas e máquinas de lavar.
 
 <details>
 <summary> :bangbang: Tipos de Configuração  </summary>
