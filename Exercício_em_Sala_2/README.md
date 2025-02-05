@@ -32,7 +32,7 @@ Este projeto demonstra uma montagem básica utilizando um Arduino Uno e dois LED
 
 - **Compactos e Eficientes:** Devido ao seu tamanho reduzido e alta eficiência energética, os LEDs são amplamente utilizados em displays, indicadores e iluminação decorativa ou funcional.
 
-> <img height="254.3" width="413" align="right" alt="WhileDIAGRAMA" src="https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_1/D%C3%ADodo_Emissor_de_Luz_3.png">
+> <img height="254.3" width="413" align="right" alt="WhileDIAGRAMA" src="https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_2/LED_IMG_3.png">
 
 > <img height="255" width="413" alt="WhileDIAGRAMA" src="https://github.com/Matheusrammos/LIA-Docs/blob/main/Exerc%C3%ADcio_em_Sala_2/LED_Tabela_TENS%C3%83O.png">
 </details>
